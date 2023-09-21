@@ -3,6 +3,7 @@ import Chips from "./Chips.astro";
 import StandardArticle from "./StandardArticle.astro";
 import me from '../assets/aboutMe.png'
 import { Image } from "astro:assets";
+import Github from "./icons/Github"
 
 ---
 <StandardArticle span={{col:2}} >
@@ -27,6 +28,13 @@ import { Image } from "astro:assets";
       </div>
     <Image src={me} alt="Michael Lara Sánchez" class="aboutMe__image" width={500} />
   </div>
+</StandardArticle>
+<StandardArticle isBtn isSquare>
+  <a href="https://github.com/MrSetOne" target="_blank" class="gitHub">
+    <Github client:load />
+    <span>Visita mi perfil de</span>
+    <h2>GitHub</h2>
+  </a>
 </StandardArticle>
 
 
@@ -53,10 +61,10 @@ import { Image } from "astro:assets";
       }
     }
     .aboutMe__image{
-      height: 27rem;
+      height: 37rem;
       width: auto;
       position: absolute;
-      right: -13%;
+      right: -21%;
       top:-10%;
     }
     .aboutMe__chips{
@@ -65,4 +73,18 @@ import { Image } from "astro:assets";
       gap: .5rem;
     }
   }
+
+  .gitHub{
+    height: 100%;
+    text-decoration: none;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+      color:#FCA311;
+    }
+  }
+
 </style>

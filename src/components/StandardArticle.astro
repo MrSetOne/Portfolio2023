@@ -5,6 +5,8 @@ interface Props{
     col?: number,
     row?: number,
   }
+  isBtn?: boolean,
+  isSquare?: boolean,
 }
 
 const defaultSpan = {
@@ -12,11 +14,13 @@ const defaultSpan = {
   row: 1,
 }
 
-const { span=defaultSpan } = Astro.props;
-const { col, row } = span;
+const { span=defaultSpan, isBtn=false, isSquare=false } = Astro.props;
+const { col=1, row=1 } = span;
 
-const style = `grid-column: span ${col}; grid-row: span ${row};`
-
+const gridStyle = `grid-column: span ${col}; grid-row: span ${row};`
+const paddingStyle = !isBtn ? 'padding: 1.9rem;' : '';
+const squareStyle = isSquare ? 'aspect-ratio:1/1;' : '';
+const style = gridStyle + paddingStyle + squareStyle
 
 ---
 
@@ -30,7 +34,7 @@ const style = `grid-column: span ${col}; grid-row: span ${row};`
     border: 1px solid #62769F;
     border-radius: 1.25rem;
     color: white;
-    padding:1.875rem;
+    backdrop-filter: blur(4px);
   }
 </style>
 

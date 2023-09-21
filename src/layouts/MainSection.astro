@@ -1,6 +1,15 @@
 ---
+
+interface Props {
+  gradient?:string;
+}
+
+const {gradient} = Astro.props;
+
+const sectionBg = gradient ? `background:${gradient};` : '';
+
 ---
-<section>
+<section style={sectionBg}>
   <div>
     <slot/>
   </div>
@@ -13,6 +22,7 @@
     >div{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      gap:1rem;
       grid-auto-flow: dense;
       width: min(90vw, 80rem);
       margin: 0 auto;
