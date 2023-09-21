@@ -1,0 +1,21 @@
+---
+---
+<section>
+  <div>
+    <slot/>
+  </div>
+</section>
+
+<style lang="scss" >
+	section{
+    background-color: black;
+    width: 100%;
+    >div{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-flow: dense;
+      width: min(90vw, 80rem);
+      margin: 0 auto;
+    }
+	}
+</style>

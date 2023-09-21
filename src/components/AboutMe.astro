@@ -1,0 +1,21 @@
+---
+import Chips from "./Chips.astro";
+import StandardArticle from "./StandardArticle.astro";
+
+---
+<StandardArticle>
+  <h2>Sobre mi</h2>
+  <p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
+  <Chips chips={
+    [
+      'Detallista',
+      'Team player',
+      'Creativo',
+      'Organizado',
+      'Autodidacta',
+      'Implicado',
+      'Comunicativo',
+      'Curioso'
+    ]
+  }/>
+</StandardArticle>

@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import StandardArticle from '../components/StandardArticle.astro';
 import Hero from '../components/Hero.astro';
+import AboutMe from '../components/AboutMe.astro';
+import MainSection from '../layouts/MainSection.astro';
 
 ---
 
@@ -9,12 +11,9 @@ import Hero from '../components/Hero.astro';
 	<main>
 		<Hero/>
 		<main>
-			<section class="aboutMe">
-				<StandardArticle>
-					<h2>Sobre mi</h2>
-					<p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
-				</StandardArticle>
-			</section>
+			<MainSection>
+				<AboutMe/>
+			</MainSection>
 		</main>
 
 
@@ -22,11 +21,4 @@ import Hero from '../components/Hero.astro';
 	</main>
 </Layout>
 
-<style lang="scss" >
-	.aboutMe{
-		background-color: black;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-auto-flow: dense;
-	}
-</style>
+
