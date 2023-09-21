@@ -1,15 +1,94 @@
 ---
 
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import me from '../assets/meHero.png'
+import HeroArrow from '../components/HeroArrow';
+import HeroTitles from '../components/HeroTitles';
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		
+		<header class="hero">
+			<div class="hero__arrow">
+				<HeroArrow client:visible />
+			</div>
+			<div class="hello__text">
+				<span class="hero__hello">
+					¡Hola! Mi nombre es
+				</span>
+				<h1>
+					Michael Lara
+				</h1>
+				<HeroTitles client:visible />
+				<!-- <span class="hero__work">
+					Frontend Developer
+				</span> -->
+
+			</div>
+			<div class="hero__deco" />
+			<Image src={me} alt='Me' />
+		</header>
 	</main>
 </Layout>
 
 <style lang="scss" >
+	header{
+		height: 100vh;
+		position: relative;
+		overflow: hidden;
+		
+		.hello__text{
+			z-index: 1;
+			position: relative;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			line-height: .9;
+			padding-left: 16rem;
+			width: fit-content;
 
+			>span{
+				color:#717171;
+			}
+			.hero__hello{
+				font-weight: 500;
+				font-size: 2.5rem;
+			}
+			h1{
+				font-size: 8rem;
+				font-weight: 700;
+			}
+			.hero__work{
+				font-weight: 500;
+				font-size: 3.55rem;
+			}
+		}
+		img{
+			z-index: 0;
+			width: auto;
+			height: 100%;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			filter: grayscale(100%);
+		}
+		.hero__deco{
+			z-index: 2;
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			background-color: black;
+			width: 150%;
+			height: 50rem;
+			transform:rotate(11deg) translate(50%, 8rem);
+		}
+		.hero__arrow{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
 </style>
