@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 const HeroArrow = () => {
   return (
     <svg 
-      style={{height:'100vh'}}
+      style={{height:'100vh', zIndex:4}}
       xmlns="http://www.w3.org/2000/svg" 
       width="80" 
       fill="none" 
       viewBox="0 0 14 100"
     >
       <motion.path
-        stroke="#000"
+        stroke="#717171"
         strokeLinecap="round"
         strokeLinejoin="round"
         initial={{d:'M7 0v12m0 0l5-5m-5 5l-5-5'}}
