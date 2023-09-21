@@ -1,21 +1,68 @@
 ---
 import Chips from "./Chips.astro";
 import StandardArticle from "./StandardArticle.astro";
+import me from '../assets/aboutMe.png'
+import { Image } from "astro:assets";
 
 ---
-<StandardArticle>
-  <h2>Sobre mi</h2>
-  <p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
-  <Chips chips={
-    [
-      'Detallista',
-      'Team player',
-      'Creativo',
-      'Organizado',
-      'Autodidacta',
-      'Implicado',
-      'Comunicativo',
-      'Curioso'
-    ]
-  }/>
+<StandardArticle span={{col:2}} >
+  <div class="aboutMe">
+    <div class="aboutMe__text">
+      <h2>Sobre mi</h2>
+      <p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
+      <div class="aboutMe__chips" >
+        <Chips chips={
+          [
+            'Detallista',
+            'Team player',
+            'Creativo',
+            'Organizado',
+            'Autodidacta',
+            'Implicado',
+            'Comunicativo',
+            'Curioso'
+          ]
+        }/>
+      </div>
+      </div>
+    <Image src={me} alt="Michael Lara Sánchez" class="aboutMe__image" width={500} />
+  </div>
 </StandardArticle>
+
+
+
+<!-- TODO: BORRAME POR FAVOR -->
+<div style="width:100%;height:50rem;grid-column: span 3;" >
+
+</div>
+
+<style lang="scss">
+
+  .aboutMe{
+    position: relative;
+    .aboutMe__text{
+      width: calc(100% - 20rem);
+      display: flex;
+      flex-direction: column;
+      gap:1.3rem;
+      h2{
+        color:#FCA311;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+    .aboutMe__image{
+      height: 27rem;
+      width: auto;
+      position: absolute;
+      right: -13%;
+      top:-10%;
+    }
+    .aboutMe__chips{
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+  }
+</style>
