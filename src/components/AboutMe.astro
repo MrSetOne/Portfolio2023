@@ -4,6 +4,7 @@ import StandardArticle from "./StandardArticle.astro";
 import me from '../assets/aboutMe.png'
 import { Image } from "astro:assets";
 import Github from "./icons/Github"
+import Linkedin from "./icons/Linkedin";
 
 ---
 <StandardArticle span={{col:2}} >
@@ -36,7 +37,13 @@ import Github from "./icons/Github"
     <h2>GitHub</h2>
   </a>
 </StandardArticle>
-
+<StandardArticle isBtn isSquare>
+  <a href="https://github.com/MrSetOne" target="_blank" class="linkedIn">
+    <Linkedin client:load />
+    <span>Conecta conmigo en</span>
+    <h2>Linkedin</h2>
+  </a>
+</StandardArticle>
 
 
 <!-- TODO: BORRAME POR FAVOR -->
@@ -74,7 +81,7 @@ import Github from "./icons/Github"
     }
   }
 
-  .gitHub{
+  .gitHub, .linkedIn{
     height: 100%;
     text-decoration: none;
     color:white;
@@ -82,8 +89,12 @@ import Github from "./icons/Github"
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    span{
+      margin-top: 1rem;
+    }
     h2{
       color:#FCA311;
+      font-size: 2.25rem;
     }
   }
 
