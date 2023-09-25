@@ -1,28 +1,28 @@
 import { useSpring, type MotionValue, useMotionValueEvent, motion } from 'framer-motion'
 import React, { useMemo, useRef } from 'react'
 import FatCap from '../icons/FatCap'
+import ExperienceIcons from '../icons/ExperienceIcons/ExperienceIcons'
 
 interface Props {
   dir?: 'left' | 'right',
   scrollRef: React.RefObject<HTMLDivElement>,
   screenWidth: number,
   scrollYProgress: MotionValue<number>
+  knowledge: {
+    title: string;
+    color: string;
+  }[]
 }
 
-const ExperiencieRow = ({dir='left', scrollRef, screenWidth, scrollYProgress}:Props) => {
+const ExperiencieRow = ({dir='left', scrollRef, screenWidth, scrollYProgress, knowledge}:Props) => {
 
-  const { current:knowledge } = useRef(
-    [
-      {
-        title: 'React',
-        icon: <FatCap color='black' size='1rem' />,
-      }
-    ]
-  )
+  const { current:unsortedArray } = useRef(knowledge.sort(()=>Math.random()-0.5))
 
-  const arr = useMemo(() => {
-    return Array((Math.ceil(screenWidth / 100))+5).fill(knowledge[0])
-  }, [screenWidth])
+  const cutedArray = useMemo(() => {
+    const itemsLength = Math.ceil( screenWidth / 100)
+    const items = unsortedArray.slice(0,itemsLength)
+    return items
+  }, [screenWidth, unsortedArray])
 
   const x = useSpring(0, { stiffness: 600, damping: 200 })
 
@@ -43,19 +43,22 @@ const ExperiencieRow = ({dir='left', scrollRef, screenWidth, scrollYProgress}:Pr
         ref={scrollRef}
         style={{display:'flex',x, gap:'1rem'}}
       >
-        {arr.map((item,index)=>(
+        {cutedArray.map((item,index)=>(
           <div 
             key={index} 
             style={{
+              opacity:0.3,
+              fontSize:'1.5rem',
               display:'flex',
-              backgroundColor:'gray',
+              backgroundColor:`${item.color}`,
               padding:'.5rem 1rem',
-              borderRadius:'5rem'
+              borderRadius:'5rem',
+              color:'white',
+              gap:'.7rem',
             }} 
           >
-            {item.icon}
+            <ExperienceIcons icon={item.title} />
             <p>{item.title}</p>
-            <p></p>
           </div>
         ))  
         }
