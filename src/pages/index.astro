@@ -5,6 +5,7 @@ import Hero from '../components/Hero.astro';
 import AboutMe from '../components/AboutMe.astro';
 import MainSection from '../layouts/MainSection.astro';
 import Experiencie from '../components/Experiencie/Experiencie';
+import Experiences from '../components/Experiences.astro';
 
 ---
 
@@ -16,8 +17,8 @@ import Experiencie from '../components/Experiencie/Experiencie';
 				<AboutMe/>
 			</MainSection>
 			<Experiencie client:load />
-			<MainSection gradient='radial-gradient(closest-side, rgba(51,74,121,1) 0%, rgba(0,0,0,1) 100%)'>
-				<AboutMe/>
+			<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
+				<Experiences/>
 			</MainSection>
 
 
@@ -30,6 +31,3 @@ import Experiencie from '../components/Experiencie/Experiencie';
 
 	</main>
 </Layout>
-
-
-../components/Experiencie/Experiencie

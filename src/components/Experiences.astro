@@ -1,0 +1,130 @@
+---
+import { Image } from "astro:assets";
+import windMill from '../assets/windmillBgSm.jpg'
+import cantastik from '../assets/cantastik.webp'
+import quiz from '../assets/quiz.webp'
+import typescary from '../assets/typescary.png'
+  
+---
+<article class="crowmie">
+  <Image  src={windMill} width={300} alt={'Crowmie'} />
+  <div class="crowmie__info" >
+    <div class="crowmie__header">
+      <span>Mi paso por</span>
+      <h2>Crowmie</h2>
+    </div>
+    <div class="crowmie__desc">
+      <h3>Frontend developer UX/UI</h3>
+      <p>Encargado del <b>análisis, diseño e implementación</b> de nuevas features y sistemas. Desde el estado inicial de la idea hasta la subida a producción.</p>
+    </div>
+    <div class="crowmie__link">
+      <a href="#">Ver más</a>
+    </div>
+  </div>
+</article>
+<article>
+  <Image width={300} src={cantastik} alt="Cantastik" />
+</article>
+<article>
+  <Image width={300} src={quiz} alt="GameQuiz" />
+</article>
+<article class="typescary">
+  <div class="typescary__info">
+    <h2>TypeScary</h2>
+    <span>Coming soon</span>
+  </div>
+  <Image width={800} src={typescary} alt="TypeScary" />
+</article>
+
+
+<style lang="scss">
+
+  article{
+    position: relative;
+    padding: 1.6rem;
+    box-shadow: #00000070 0px 5px 13px 0px;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    >img{
+      z-index: 1;
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .typescary{
+    grid-column: span 2;
+    .typescary__info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      width: 50%;
+      height: 100%;
+      >*{
+        color: white;
+      }
+      h2{
+        font-size: 4rem;
+        font-weight: 800;
+      }
+      span{
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .crowmie{
+    grid-row: span 2;
+    .crowmie__info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      color: white;
+      .crowmie__header{
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >h2{
+          font-size: 4rem;
+          font-weight: 800;
+          font-style: italic;
+        }
+      }
+      .crowmie__desc{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        >*{
+          font-size: 1rem;
+        }
+        >h3{
+          color:#B7B5B5;
+        }
+      }
+      >.crowmie__link{
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        >a{
+          text-decoration: none;
+          color:white;
+        }
+      }
+    }
+    
+  }
+</style>
