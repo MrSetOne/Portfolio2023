@@ -20,14 +20,30 @@ import Experiences from '../components/Experiences.astro';
 			<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
 				<Experiences/>
 			</MainSection>
-
-
-
-
-
 		</main>
-
-
-
 	</main>
 </Layout>
+<script is:inline>
+	
+	const articles = document.querySelectorAll('.mainArticle');
+
+	const handleOnMouseMove = (e) => {
+		const {currentTarget:target} = e;
+		const rect = target.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		console.log(target.style.background);
+		target.style.background = `radial-gradient(circle at ${x}px ${y}px,  #6A85BC73 0%, #334a7963 100%)`;
+	}
+
+	const handleOnMouseLeave = (e) => {
+		const {currentTarget:target} = e;
+		target.style.background = '#334a7963';
+	}
+
+	articles.forEach((article, index) => {
+		article.onmousemove = e => handleOnMouseMove(e);
+		article.onmouseleave = e => handleOnMouseLeave(e);
+	});
+
+</script>
