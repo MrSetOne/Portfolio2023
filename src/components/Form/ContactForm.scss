@@ -1,0 +1,30 @@
+.form__container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  >textarea{
+    grid-column: span 2;
+  }
+  >input, >textarea{
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #B1B3B6;
+    color: white;
+  }
+  >textarea{
+    background-color: #192132;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: .5rem;
+    border-bottom: none;
+  }
+  >div{
+    display: flex;
+    justify-content: flex-end;
+  }
+  input:focus-visible, textarea:focus-visible{
+    outline:none;
+  }
+}

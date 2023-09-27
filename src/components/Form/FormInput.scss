@@ -1,0 +1,16 @@
+.FormInput{
+  width: 100%;
+  border-bottom: 1px solid #B1B3B6;
+  position: relative;
+  >input{
+    width: 100%;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+  }
+  >input:focus-visible, textarea:focus-visible{
+    outline:none;
+  }
+}

@@ -7,6 +7,7 @@ import MainSection from '../layouts/MainSection.astro';
 import Experiencie from '../components/Experiencie/Experiencie';
 import Experiences from '../components/Experiences.astro';
 import Contact from '../components/Contact.astro';
+import ContactForm from '../components/Form/ContactForm';
 
 ---
 
@@ -21,7 +22,7 @@ import Contact from '../components/Contact.astro';
 			<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
 				<Experiences/>
 				<Contact>
-					
+					<ContactForm client:load />
 				</Contact>
 			</MainSection>
 		</main>
@@ -50,4 +51,4 @@ import Contact from '../components/Contact.astro';
 		article.onmouseleave = e => handleOnMouseLeave(e);
 	});
 
-</script>
+</script>../components/Form/ContactForm
