@@ -26,8 +26,6 @@ export type inputState = {
 }
 
 const ContactForm = () => {
-
-
   const { current: inputInitialState} = useRef<inputState>({
     isValid: false,
     value: '',
@@ -41,7 +39,6 @@ const ContactForm = () => {
   const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setAlertVisible(true)
-    console.log({name, email, message})
   },[name, email, message])
   
   return (

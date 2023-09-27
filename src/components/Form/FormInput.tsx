@@ -24,9 +24,6 @@ const FormInput = ({placeholder, setState, type, state, alertVisible}:Props) => 
     setState((prev) => ({...prev, isValid, value }))
   }
 
-  useEffect(() => console.log(alertVisible),[alertVisible])
-
-
   return (
     <div className='FormInput'>
       <input 

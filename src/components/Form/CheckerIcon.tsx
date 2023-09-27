@@ -47,8 +47,6 @@ interface Props {
 }
 
 const CheckerIcon = ({isValid:parentIsValid, alertVisible}:Props) => {
-
-  useEffect(() => console.log(alertVisible),[alertVisible])
   
   const variants = {
     container:{

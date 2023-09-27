@@ -19,8 +19,6 @@ const Experiencie = () => {
 
   const { current:knowledge } = useRef(json)
 
-  console.log(knowledge.length);
-
   return (
     <div
       ref={ref}

@@ -37,7 +37,6 @@ import ContactForm from '../components/Form/ContactForm';
 		const rect = target.getBoundingClientRect();
 		const x = e.clientX - rect.left;
 		const y = e.clientY - rect.top;
-		console.log(target.style.background);
 		target.style.background = `radial-gradient(circle at ${x}px ${y}px,  #6A85BC73 0%, #334a7963 100%)`;
 	}
 
