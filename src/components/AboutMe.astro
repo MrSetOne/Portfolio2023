@@ -14,6 +14,7 @@ import Camera from "./icons/Camera";
 ---
 <StandardArticle span={{col:2}} >
   <div class="aboutMe">
+    <Image src={me} alt="Michael Lara Sánchez" class="aboutMe__image" width={500} />
     <div class="aboutMe__text">
       <h2>Sobre mi</h2>
       <p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
@@ -32,7 +33,6 @@ import Camera from "./icons/Camera";
         }/>
       </div>
       </div>
-    <Image src={me} alt="Michael Lara Sánchez" class="aboutMe__image" width={500} />
   </div>
 </StandardArticle>
 <StandardArticle isBtn>
@@ -68,12 +68,12 @@ import Camera from "./icons/Camera";
     </a>
   </StandardArticle>
 </div>
-<StandardArticle span={{col:2,row:2}} >
+<article class="mainArticle training__container" >
   <div class="training">
     <h2>Formación</h2>
     <Training/>
   </div>
-</StandardArticle>
+</article>
 <StandardArticle isBtn>
   <a href="https://github.com/MrSetOne" target="_blank" class="linkedIn">
     <Linkedin client:load />
@@ -86,29 +86,62 @@ import Camera from "./icons/Camera";
 
   .aboutMe{
     position: relative;
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+      
+    
     .aboutMe__text{
       width: calc(100% - 20rem);
       display: flex;
       flex-direction: column;
       gap:1.3rem;
+      @media screen and (max-width: 800px){
+        width: 100%;
+      }
       h2{
         color:#FCA311;
         font-size: 2.5rem;
         font-weight: 700;
         margin: 0;
+        @media screen and (max-width: 800px){
+          text-align: center;
+        }
       }
     }
     .aboutMe__image{
+      z-index: -1;
       height: 37rem;
       width: auto;
       position: absolute;
       right: -21%;
       top:-10%;
+      @media screen and (max-width: 1210px) {
+        right: -37%;
+      }
+      @media screen and (max-width: 1100px) {
+        right: -21%;
+      }
+      @media screen and (max-width: 800px) {
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 65%;
+        height: 65%;
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        border-radius: 50%;
+      }
     }
     .aboutMe__chips{
       display: flex;
       flex-wrap: wrap;
       gap: .5rem;
+      @media screen and (max-width: 800px){
+        justify-content: space-around;
+      }
     }
   }
 
@@ -147,21 +180,43 @@ import Camera from "./icons/Camera";
     }
   }
 
-  .training{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0rem 2rem;
-    h2{
-      font-size: 4rem;
-      padding: 1.2rem .6rem;
-      border: .7rem solid white;
-      text-transform: uppercase;
-      color:#FCA311;
+  .training__container{
+    grid-column: span 2;
+    grid-row: span 2;
+    padding:1.9rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: #334a7963;
+    border: 1px solid #62769F;
+    color: white;
+    backdrop-filter: blur(4px);
+    box-shadow: #00000070 0px 5px 13px 0px;
+    transition: all 1s;
+    @media screen and (max-width: 1100px) {
+      grid-row: 2;
+    }
+    .training{
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0rem 2rem;
+      @media screen and (max-width: 1100px) {
+        grid-row: 2;
+        padding: 0;
+      }
+      h2{
+        font-size: min(4rem, 10vw);
+        padding: 1.2rem .6rem;
+        border: .7rem solid white;
+        text-transform: uppercase;
+        color:#FCA311;
+      }
     }
   }
+
+
 
 </style>
