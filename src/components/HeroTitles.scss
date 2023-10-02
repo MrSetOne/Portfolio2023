@@ -1,5 +1,25 @@
+.hero__titles{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  position: relative;
+}
+
 .hero__work{
   color:#717171;
   font-weight: 500;
-  font-size: 3.55rem;
+  font-size: clamp( 1.5rem, 3vw, 3.55rem);
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 800px){
+  .hero__titles{
+    justify-content: center;
+  }
+  .hero__work{
+    position: absolute;
+    right: 50%;
+    font-size: 5vw;
+  }
 }

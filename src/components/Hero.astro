@@ -19,7 +19,16 @@ import me from '../assets/meHero.png'
     </h1>
     <HeroTitles client:visible />
   </div>
-  <div class="hero__deco" />
+  <!-- <div class="hero__deco" /> -->
+	<svg
+		class="hero__deco"
+		xmlns="http://www.w3.org/2000/svg"
+		width="100%"
+		fill="none"
+		viewBox="0 0 1440 312"
+	>
+		<path fill="#000" d="M0 312V0l1440 219.968V312H0z"></path>
+	</svg>
   <Image src={me} alt='Me' />
 </header>
 
@@ -28,6 +37,7 @@ import me from '../assets/meHero.png'
 		height: 100vh;
 		position: relative;
 		overflow: hidden;
+		background-color: #d2d4d3;
 		
 		.hello__text{
 			z-index: 1;
@@ -45,21 +55,17 @@ import me from '../assets/meHero.png'
 			}
 			.hero__hello{
 				font-weight: 500;
-				font-size: 2.5rem;
+				font-size: clamp( 1rem, 2vw, 2.5rem);
 			}
 			h1{
-				font-size: 8rem;
+				font-size: clamp( 3rem, 6vw, 8rem);
 				font-weight: 700;
-			}
-			.hero__work{
-				font-weight: 500;
-				font-size: 3.55rem;
 			}
 		}
 		img{
 			z-index: 0;
-			width: auto;
-			height: 100%;
+			width: 100vh;
+			height: auto;
 			bottom: 0;
 			right: 0;
 			position: absolute;
@@ -68,12 +74,9 @@ import me from '../assets/meHero.png'
 		.hero__deco{
 			z-index: 2;
 			position: absolute;
-			bottom: 0;
-			right: 50%;
-			background-color: black;
-			width: 150%;
-			height: 50rem;
-			transform:rotate(11deg) translate(50%, 8rem);
+			bottom: -5px;
+			left: 0;
+			width: 100%;
 		}
 		.hero__arrow{
 			z-index: 3;
@@ -82,4 +85,52 @@ import me from '../assets/meHero.png'
 			left: 0;
 		}
 	}
+	@media (max-width: 1800px){
+		header{
+			img{
+				right: -20%;
+			}
+		}
+	}
+
+	@media (max-width: 1400px){
+		header{
+			.hello__text{
+				padding-left: 3.5rem;
+			}
+		}
+	}
+
+	@media (max-width: 1050px){
+		header{
+			img{
+				right: -40%;
+			}
+		}
+	}
+
+	@media (max-width: 800px){
+		header{
+			.hello__text{
+				justify-content: flex-start;
+				align-items: center;
+				width: 100%;
+				padding: 4rem 0;
+				gap: .5rem;
+				h1{
+					font-size: 10vw;
+				}
+				.hero__hello{
+					font-size: 4vw;
+				}
+			}
+			img{
+				width: auto;
+				height: calc(100vh - 4rem);
+			}
+		}
+	}
+
+
+
 </style>

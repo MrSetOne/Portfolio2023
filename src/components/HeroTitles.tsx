@@ -1,11 +1,13 @@
 import React, {useMemo, useState, useCallback} from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useInterval } from 'usehooks-ts'
+import { useInterval, useWindowSize } from 'usehooks-ts'
 import './HeroTitles.scss'
 
 const HeroTitles = () => {
 
   const [step, setStep] = useState(0)
+
+  const { width } = useWindowSize()
 
   const changeStep = useCallback(
     () => {
@@ -35,24 +37,17 @@ const HeroTitles = () => {
   },[step])
 
   return (
-    <div style={{display:'flex', width:'100%', justifyContent:'flex-end', position:'relative'}}>
-      {/* {titles.map((item)=>{
-        return(
-          <motion.span animate={{opacity:item.opacity, display:item.display, x:motion.x}}>
-            {item.title}
-          </motion.span>
-        )
-      })} */}
+    <div className="hero__titles">
       <AnimatePresence>
         {step === 0 && (
           <motion.span
             className="hero__work"
             key="Frontend Developer"
-            style={{position:'absolute', right:'0'}}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-            >
+
+            initial={{ opacity: 0, x: width<=800?'calc(50% - 100)':100 }}
+            animate={{ opacity: 1, x: width<=800? '50%':0 }}
+            exit={{ opacity: 0, x:width<=800?'calc(50% + 100)':-100 }}
+          >
             Frontend Developer
           </motion.span>
         )}
@@ -60,10 +55,9 @@ const HeroTitles = () => {
           <motion.span
           className="hero__work"
           key="UI/UX Designer"
-          style={{position:'absolute', right:'0'}}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: width<=800?'calc(50% - 100)':100 }}
+            animate={{ opacity: 1, x: width<=800? '50%':0 }}
+            exit={{ opacity: 0, x:width<=800?'calc(50% + 100)':-100 }}
           
           >
             UI/UX Designer
@@ -72,18 +66,16 @@ const HeroTitles = () => {
         {step === 2 && (
           <motion.span
           className="hero__work"
-          style={{position:'absolute', right:'0'}}
           key="BackEnd Developer"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: width<=800?'calc(50% - 100)':100 }}
+            animate={{ opacity: 1, x: width<=800? '50%':0 }}
+            exit={{ opacity: 0, x:width<=800?'calc(50% + 100)':-100 }}
           >
             BackEnd Developer
           </motion.span>
         )}
       </AnimatePresence>
     </div>
-    // hero__work
   )
 }
 
