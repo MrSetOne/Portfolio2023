@@ -37,33 +37,36 @@ import Camera from "./icons/Camera";
 </StandardArticle>
 <StandardArticle isBtn>
   <a href="https://github.com/MrSetOne" target="_blank" class="gitHub">
-    <Github client:load />
-    <span>Visita mi perfil de</span>
-    <h2>GitHub</h2>
+    <div>
+      <Github client:load size="40%" />
+      <span>Visita mi perfil de</span>
+      <h2>GitHub</h2>
+    </div>
   </a>
 </StandardArticle>
 <div class="hobbies">
+  <h1>Mis aficiones</h1>
   <StandardArticle isBtn isSquare isCircle>
     <a href="#">
-      <Controller size="8rem" client:load />
+      <Controller size="50%" client:load />
       <span>Videojuegos</span>
     </a>
   </StandardArticle>
   <StandardArticle isBtn isSquare isCircle>
     <a href="#">
-      <FatCap size="8rem" client:load />
+      <FatCap size="50%" client:load />
       <span>Arte urbano</span>
     </a>
   </StandardArticle>
   <StandardArticle isBtn isSquare isCircle>
     <a href="#">
-      <Gpu size="8rem" client:load />
+      <Gpu size="50%" client:load />
       <span>Hardware</span>
     </a>
   </StandardArticle>
   <StandardArticle isBtn isSquare isCircle>
     <a href="#">
-      <Camera size="8rem" client:load />
+      <Camera size="50%" client:load />
       <span>Fotografia</span>
     </a>
   </StandardArticle>
@@ -76,9 +79,11 @@ import Camera from "./icons/Camera";
 </article>
 <StandardArticle isBtn>
   <a href="https://github.com/MrSetOne" target="_blank" class="linkedIn">
-    <Linkedin client:load />
-    <span>Conecta conmigo en</span>
-    <h2>Linkedin</h2>
+    <div>
+      <Linkedin client:load size="40%" />
+      <span>Conecta conmigo en</span>
+      <h2>Linkedin</h2>
+    </div>
   </a>
 </StandardArticle>
 
@@ -147,26 +152,50 @@ import Camera from "./icons/Camera";
 
   .gitHub, .linkedIn{
     height: 100%;
+    width: 100%;
     text-decoration: none;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    >div{
+      height: 100%;
+      color:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 1100px) {
+        aspect-ratio: 1/1 ;
+        padding: 1rem;
+        height: auto;
+      }
+    }
     span{
       margin-top: 1rem;
+      text-align: center;
     }
     h2{
       color:#FCA311;
-      font-size: 2.25rem;
+      font-size: min(2.25rem, 6vw);
     }
   }
 
   .hobbies{
+    >h1{
+      display: none;
+    }
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap:1rem;
+    align-items: center;
+    @media screen and (max-width: 1100px) {
+      >h1{
+        display: block;
+        grid-column: span 4;
+      }
+      grid-column: span 2;
+      grid-row: 4;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(auto, min-content);
+    }
     a{
       color: white;
       text-decoration: none;
