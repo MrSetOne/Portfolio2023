@@ -4,6 +4,8 @@ import windMill from '../assets/windmillBgSm.jpg'
 import cantastik from '../assets/cantastik.webp'
 import quiz from '../assets/quiz.webp'
 import typescary from '../assets/typescary.png'
+import ShortArrow from "./icons/ShortArrow.astro";
+import PlusIcon from "./icons/PlusIcon.astro";
   
 ---
 <article class="crowmie">
@@ -18,20 +20,29 @@ import typescary from '../assets/typescary.png'
       <p>Encargado del <b>análisis, diseño e implementación</b> de nuevas features y sistemas. Desde el estado inicial de la idea hasta la subida a producción.</p>
     </div>
     <div class="crowmie__link">
-      <a href="#">Ver más</a>
+      <a href="#">
+        <span>Ver más</span>
+        <ShortArrow/>
+      </a>
     </div>
   </div>
 </article>
-<article>
+<article class="cantastik">
+  <div>
+    <ShortArrow/>
+  </div>
   <Image width={300} src={cantastik} alt="Cantastik" />
 </article>
-<article>
+<article class="gameQuiz">
+  <div>
+    <ShortArrow/>
+  </div>
   <Image width={300} src={quiz} alt="GameQuiz" />
 </article>
 <article class="typescary">
   <div class="typescary__info">
     <h2>TypeScary</h2>
-    <span>Coming soon</span>
+    <span>Póximamente</span>
   </div>
   <Image width={800} src={typescary} alt="TypeScary" />
 </article>
@@ -56,8 +67,35 @@ import typescary from '../assets/typescary.png'
     }
   }
 
+  .cantastik, .gameQuiz{
+    @media screen and (max-width: 1100px) {
+      // min-height: 25rem;      
+      aspect-ratio: 1/1;
+    }
+    >div{
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 5px;
+      bottom:5px;
+      z-index: 2;
+    }
+  }
+
   .typescary{
     grid-column: span 2;
+    @media screen and (max-width: 1100px) {
+      grid-column: span 2;
+      min-height: 25rem;
+    }
+    @media screen and (max-width: 777px){
+        >img{ filter: brightness(.5); }
+      }
     .typescary__info{
       display: flex;
       flex-direction: column;
@@ -71,17 +109,24 @@ import typescary from '../assets/typescary.png'
         color: white;
       }
       h2{
-        font-size: 4rem;
+        font-size: min(4rem, 14vw);
         font-weight: 800;
       }
       span{
-        font-size: 2rem;
+        font-size: min(2rem, 7vw);
+      }
+      @media screen and (max-width: 777px){
+        width: 100%;
       }
     }
   }
 
   .crowmie{
     grid-row: span 2;
+    @media screen and (max-width: 1100px) {
+      grid-column: span 2;
+      min-height: 25rem;
+    }
     .crowmie__info{
       display: flex;
       flex-direction: column;
@@ -96,15 +141,17 @@ import typescary from '../assets/typescary.png'
         flex-direction: column;
         align-items: center;
         >h2{
-          font-size: 4rem;
+          font-size: min(4rem, 13vw);
           font-weight: 800;
           font-style: italic;
+          line-height: .8;
         }
       }
       .crowmie__desc{
         position: relative;
         z-index: 2;
         display: flex;
+        gap: .5rem;
         flex-direction: column;
         >*{
           font-size: 1rem;
@@ -120,8 +167,15 @@ import typescary from '../assets/typescary.png'
         display: flex;
         justify-content: center;
         >a{
+          background: black;
           text-decoration: none;
-          color:white;
+          color: #fca311;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: .5rem;
+          padding: .5rem 1rem;
+          border-radius: 20rem;
         }
       }
     }
