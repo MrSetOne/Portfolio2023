@@ -10,6 +10,9 @@ import Controller from "./icons/Controller";
 import FatCap from "./icons/FatCap";
 import Gpu from "./icons/Gpu";
 import Camera from "./icons/Camera";
+import { ScrollContainer} from "react-indiana-drag-scroll";
+import 'react-indiana-drag-scroll/dist/style.css';
+
 
 ---
 <StandardArticle span={{col:2}} >
@@ -46,30 +49,41 @@ import Camera from "./icons/Camera";
 </StandardArticle>
 <div class="hobbies">
   <h1>Mis aficiones</h1>
-  <StandardArticle isBtn isSquare isCircle>
-    <a href="#">
-      <Controller size="50%" client:load />
-      <span>Videojuegos</span>
-    </a>
-  </StandardArticle>
-  <StandardArticle isBtn isSquare isCircle>
-    <a href="#">
-      <FatCap size="50%" client:load />
-      <span>Arte urbano</span>
-    </a>
-  </StandardArticle>
-  <StandardArticle isBtn isSquare isCircle>
-    <a href="#">
-      <Gpu size="50%" client:load />
-      <span>Hardware</span>
-    </a>
-  </StandardArticle>
-  <StandardArticle isBtn isSquare isCircle>
-    <a href="#">
-      <Camera size="50%" client:load />
-      <span>Fotografia</span>
-    </a>
-  </StandardArticle>
+  <ScrollContainer 
+    client:load 
+    className="scroll-container" 
+    style={{
+      width:'100%', 
+      cursor:'default'
+    }} 
+  >
+    <div class="hobbies__content" >
+      <StandardArticle isBtn isSquare isCircle>
+        <a href="#">
+          <Controller size="50%" client:load />
+          <span>Videojuegos</span>
+        </a>
+      </StandardArticle>
+      <StandardArticle isBtn isSquare isCircle>
+        <a href="#">
+          <FatCap size="50%" client:load />
+          <span>Arte urbano</span>
+        </a>
+      </StandardArticle>
+      <StandardArticle isBtn isSquare isCircle>
+        <a href="#">
+          <Gpu size="50%" client:load />
+          <span>Hardware</span>
+        </a>
+      </StandardArticle>
+      <StandardArticle isBtn isSquare isCircle>
+        <a href="#">
+          <Camera size="50%" client:load />
+          <span>Fotografia</span>
+        </a>
+      </StandardArticle>
+    </div>
+  </ScrollContainer>
 </div>
 <article class="mainArticle training__container" >
   <div class="training">
@@ -187,23 +201,49 @@ import Camera from "./icons/Camera";
   }
 
   .hobbies{
-    >h1{
-      display: none;
-    }
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap:1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     @media screen and (max-width: 1100px) {
-      >h1{
-        display: block;
-        grid-column: span 4;
-      }
       grid-column: span 2;
       grid-row: 4;
-      grid-template-columns: repeat(4,1fr);
-      grid-template-rows: repeat(auto, min-content);
+    }
+    .scroll-container{
+      width: 100%;
+      overflow: hidden;
+      .hobbies__content{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        gap:1rem;
+        @media screen and (max-width: 1100px) {
+          display: flex;
+          align-items: center;
+        }
+        @media screen and (max-width: 700px) {
+          width: 150vw;
+          span{
+            display: none;
+          }
+        }
+      }
+    }   
+    h1{
+      display: none;
+      @media screen and (max-width: 1100px) {
+        display: block;
+        grid-column: span 4;
+        color: #FCA311;
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+        padding-bottom: 0;
+      }
     }
     a{
       color: white;
