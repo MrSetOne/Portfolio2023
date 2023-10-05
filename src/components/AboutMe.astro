@@ -10,6 +10,7 @@ import Controller from "./icons/Controller";
 import FatCap from "./icons/FatCap";
 import Gpu from "./icons/Gpu";
 import Camera from "./icons/Camera";
+import RightArrow from "./icons/RightArrow.astro";
 import { ScrollContainer} from "react-indiana-drag-scroll";
 import 'react-indiana-drag-scroll/dist/style.css';
 
@@ -48,7 +49,10 @@ import 'react-indiana-drag-scroll/dist/style.css';
   </a>
 </StandardArticle>
 <div class="hobbies">
-  <h1>Mis aficiones</h1>
+  <div class="hobbies__title">
+    <h2>Mis aficiones</h2>
+    <RightArrow/>
+  </div>
   <ScrollContainer 
     client:load 
     className="scroll-container" 
@@ -203,12 +207,16 @@ import 'react-indiana-drag-scroll/dist/style.css';
   .hobbies{
     height: 100%;
     display: flex;
+    gap: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     @media screen and (max-width: 1100px) {
       grid-column: span 2;
       grid-row: 4;
+    }
+    @media screen and (max-width: 700px) {
+      gap: 1rem;
     }
     .scroll-container{
       width: 100%;
@@ -232,17 +240,32 @@ import 'react-indiana-drag-scroll/dist/style.css';
         }
       }
     }   
-    h1{
+    >.hobbies__title{
       display: none;
+      h2{
+        @media screen and (max-width: 1100px) {
+          display: block;
+          grid-column: span 4;
+          color: #FCA311;
+          color: white;
+          text-align: center;
+          font-size: 2.5rem;
+          padding: 1rem 0;
+          padding-bottom: 0;
+        }
+      }
       @media screen and (max-width: 1100px) {
-        display: block;
-        grid-column: span 4;
-        color: #FCA311;
-        color: white;
-        text-align: center;
-        font-size: 2.5rem;
-        padding: 1rem 0;
-        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      @media screen and (max-width: 700px) {
+        align-items: flex-start;
+      }
+      @media screen and (max-width: 500px){
+        h2{
+          color:#FCA311 ;
+        }
       }
     }
     a{
