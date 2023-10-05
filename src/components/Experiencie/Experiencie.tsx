@@ -54,12 +54,12 @@ const Experiencie = () => {
         >
         <h2
           style={{
-            fontSize:'8vw',
+            fontSize:'min(12vw, 11rem)',
           }}
         >
           Experiencia
         </h2>
-        <button>Saber más</button>
+        {/* <button>Saber más</button> */}
       </div>
       <ExperiencieRow screenWidth={screenWidth} knowledge={knowledge} scrollRef={scrollRef} scrollYProgress={scrollYProgress} dir='right' />
       <ExperiencieRow screenWidth={screenWidth} knowledge={knowledge} scrollRef={scrollRef} scrollYProgress={scrollYProgress} dir='left' />
