@@ -15,6 +15,9 @@
       display: flex;
       justify-content: flex-end;
       gap:1rem;
+      @media screen and (max-width: 400px) {
+        flex-direction: column-reverse;
+      }
       >button{
         background-color: #fca311;
         font-size: 1rem;
