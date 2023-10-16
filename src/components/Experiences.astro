@@ -6,6 +6,7 @@ import quiz from '../assets/quiz.webp'
 import typescary from '../assets/typescary.png'
 import ShortArrow from "./icons/ShortArrow.astro";
 import PlusIcon from "./icons/PlusIcon.astro";
+import ModalBtn from "./ModalBtn";
   
 ---
 <article class="crowmie">
@@ -20,10 +21,12 @@ import PlusIcon from "./icons/PlusIcon.astro";
       <p>Encargado del <b>análisis, diseño e implementación</b> de nuevas features y sistemas. Desde el estado inicial de la idea hasta la subida a producción.</p>
     </div>
     <div class="crowmie__link">
-      <a href="#">
-        <span>Ver más</span>
-        <ShortArrow/>
-      </a>
+      <ModalBtn client:visible>
+        <div>
+          <span>Ver más</span>
+          <ShortArrow/>
+        </div>
+      </ModalBtn>
     </div>
   </div>
 </article>
@@ -166,7 +169,7 @@ import PlusIcon from "./icons/PlusIcon.astro";
         width: 100%;
         display: flex;
         justify-content: center;
-        >a{
+        div{
           background: black;
           text-decoration: none;
           color: #fca311;

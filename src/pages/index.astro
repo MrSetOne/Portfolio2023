@@ -12,21 +12,20 @@ import ContactForm from '../components/Form/ContactForm';
 ---
 
 <Layout title="Welcome to Astro.">
+	<Hero/>
 	<main>
-		<Hero/>
-		<main>
-			<MainSection gradient='radial-gradient(closest-side, rgba(51,74,121,1) 0%, rgba(0,0,0,1) 100%)'>
-				<AboutMe/>
-			</MainSection>
-			<Experiencie client:load />
-			<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
-				<Experiences/>
-				<Contact>
-					<ContactForm client:load />
-				</Contact>
-			</MainSection>
-		</main>
+		<MainSection gradient='radial-gradient(closest-side, rgba(51,74,121,1) 0%, rgba(0,0,0,1) 100%)'>
+			<AboutMe/>
+		</MainSection>
+		<Experiencie client:load />
+		<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
+			<Experiences/>
+			<Contact>
+				<ContactForm client:load />
+			</Contact>
+		</MainSection>
 	</main>
+	<div id="modalPortal"/>
 </Layout>
 <script is:inline>
 	
@@ -51,3 +50,12 @@ import ContactForm from '../components/Form/ContactForm';
 	});
 
 </script>
+<style lang="scss">
+	#modalPortal{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+</style>
