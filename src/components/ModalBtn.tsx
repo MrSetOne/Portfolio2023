@@ -15,10 +15,10 @@ const ModalBtn = ({ children }:Props) => {
   const imperativeClose = () => {
     setOpen(false)
     document.body.style.overflow = 'auto';
-    const modalBg = document.getElementsByClassName('modalBg')[0] as HTMLElement
-    modalBg.classList.remove('modalBg--active')
+    const modalExternalBg = document.getElementsByClassName('modalExternalBg')[0] as HTMLElement
+    modalExternalBg.classList.remove('modalExternalBg--active')
     setTimeout(() => {
-      modalBg.remove()
+      modalExternalBg.remove()
     }, 300);
   }
   
@@ -27,16 +27,16 @@ const ModalBtn = ({ children }:Props) => {
   useEffect(() => {
     if(open){
       document.body.style.overflow = 'hidden';
-      document.body.appendChild(document.createElement('div')).className = 'modalBg'
-      const modalBg = document.getElementsByClassName('modalBg')[0] as HTMLElement
-      modalBg.style.height = document.body.clientHeight + 'px'
-      modalBg.classList.add('modalBg--active')
-      modalBg.addEventListener('click', () => {
+      document.body.appendChild(document.createElement('div')).className = 'modalExternalBg'
+      const modalExternalBg = document.getElementsByClassName('modalExternalBg')[0] as HTMLElement
+      modalExternalBg.style.height = document.body.clientHeight + 'px'
+      modalExternalBg.classList.add('modalExternalBg--active')
+      modalExternalBg.addEventListener('click', () => {
         setOpen(false)
         document.body.style.overflow = 'auto';
-        modalBg.classList.remove('modalBg--active')
+        modalExternalBg.classList.remove('modalExternalBg--active')
         setTimeout(() => {
-          modalBg.remove()
+          modalExternalBg.remove()
         }, 300);
       })
     }
