@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback, useMemo } from 'react'
 import { createPortal } from 'react-dom'
 import Modal from './Modal'
+import CCrowmie from './Cards/CCrowmie'
 
+type Cards = 'Crowmie' | 'Cantastik'
 
 interface Props {
   children: React.ReactNode
+  target: Cards
 }
 
-const ModalBtn = ({ children }:Props) => {
+const ModalBtn = ({ children, target }:Props) => {
 
   const [open, setOpen] = useState(false)
 
@@ -22,7 +25,27 @@ const ModalBtn = ({ children }:Props) => {
     }, 300);
   }
   
-  const prueba = <Modal open={open} imperativeClose={imperativeClose}/>
+  const toRender = useMemo(() => {
+    const getContent = (target:Cards) => {
+      switch(target){
+        case 'Crowmie':
+          return <CCrowmie/>
+        case 'Cantastik':
+          return <div>Cantastik</div>
+        default:
+          return <div>default</div>
+      }
+    }
+    
+    const content = getContent(target) 
+    
+    
+    return (
+      <Modal open={open} imperativeClose={imperativeClose} >
+        {content}
+      </Modal>)
+    }
+  , [target])
   
   useEffect(() => {
     if(open){
@@ -48,13 +71,14 @@ const ModalBtn = ({ children }:Props) => {
       <button 
         onClick={()=>setOpen(true)}
         style={{
+          cursor:'pointer',
           border:'none', 
           backgroundColor:'transparent'
         }} 
       >
         {children}
       </button>
-      {open && createPortal(prueba, document.getElementById('modalPortal') as HTMLElement)}
+      {open && createPortal(toRender, document.getElementById('modalPortal') as HTMLElement)}
     </>
   )
 }

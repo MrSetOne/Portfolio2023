@@ -12,9 +12,8 @@ interface Props {
 
 const Modal = ({children, imperativeClose}:Props) => {
 
-  const y = motionValue(0)
   const { width, height } = useWindowSize()
-
+  
   const [closing, setClosing] = useState(false)
   const isDesktop = useMemo(() => width > 600 , [width])
 
@@ -29,17 +28,18 @@ const Modal = ({children, imperativeClose}:Props) => {
       opacity:0
     }
   }),[])
-
+  
   const closeCard = () => {
     setClosing(true)
     setTimeout(() => {
       return imperativeClose()
     }, 100);
   }
-
-  useEffect(() => y.onChange(latest => {
+  
+  const y = motionValue(0)
+  y.on('change', latest => {
     if(latest >= 100) return closeCard()
-  }), [])
+  })
 
   return (
     <motion.div 
@@ -64,94 +64,7 @@ const Modal = ({children, imperativeClose}:Props) => {
       </motion.div>
       <motion.div className='Modal__bg' style={{y}}/>
       <motion.div className='Modal__content' style={{y}}>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>Pruebita Sexy</h2>
-        <h2>3</h2>
-        <h2>2</h2>
-        <h2>1</h2>
+        {children}
       </motion.div>
     </motion.div>
   )
