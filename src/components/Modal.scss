@@ -8,12 +8,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1rem 0;
-    >div{
+    cursor: pointer;
+    height: 51px;
+    >.Modal__closeLine{
       width: 8rem;
       height: .3rem;
       background-color: rgb(173, 173, 173);
       border-radius: 0.5rem;
+    }
+    >.Modal__closeLine--desktop{
+      display: none;
     }
   }
   >.Modal__bg{
@@ -27,9 +31,30 @@
     border-radius: 2rem 2rem 0 0;
   }
   >.Modal__content{
-    height: 100%;
+    height: calc(100% - 51px);
     overflow: auto;
     padding: 0 2rem;
+  }
+}
+
+.Modal--desktop{
+  left: unset;
+  right: 0;
+  width: 550px;
+  >.Modal__head{
+    >.Modal__closeLine--desktop{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-left: 1.5rem;
+      gap: .5rem;
+    }
+    >.Modal__closeLine{
+      display: none;
+    }
+  }
+  >.Modal__bg{
+    border-radius: 0;
   }
 }
 
