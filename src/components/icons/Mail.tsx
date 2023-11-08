@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 interface Props {
-  size?: string
-  color?: string
+  size?: string;
+  color?: string;
 }
 
-const Mail = ({size='1rem', color='white'}:Props) => {
+const Mail = ({ size = "1rem", color = "white" }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const Mail = ({size='1rem', color='white'}:Props) => {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default Mail
+export default Mail;

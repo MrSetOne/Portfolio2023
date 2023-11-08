@@ -1,17 +1,13 @@
-import React from 'react'
+import React from "react";
 
 interface Props {
   color?: string;
   size?: string;
 }
 
-const Html5 = ({ color='white', size='1rem' }:Props) => {
+const Html5 = ({ color = "white", size = "1rem" }: Props) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      viewBox="-1 0 20 20"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} viewBox="-1 0 20 20">
       <g fill="none" fillRule="evenodd" stroke="none" strokeWidth="1">
         <g fill={color} transform="translate(-61 -7639)">
           <g transform="translate(56 160)">
@@ -20,7 +16,7 @@ const Html5 = ({ color='white', size='1rem' }:Props) => {
         </g>
       </g>
     </svg>
-  )
-}
+  );
+};
 
-export default Html5
+export default Html5;

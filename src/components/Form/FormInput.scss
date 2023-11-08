@@ -1,16 +1,16 @@
-.FormInput{
+.FormInput {
   width: 100%;
-  border-bottom: 1px solid #B1B3B6;
+  border-bottom: 1px solid #b1b3b6;
   position: relative;
-  >input{
+  > input {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: transparent;
     border: none;
     color: white;
-
   }
-  >input:focus-visible, textarea:focus-visible{
-    outline:none;
+  > input:focus-visible,
+  textarea:focus-visible {
+    outline: none;
   }
 }

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 interface Props {
   color?: string;
   size?: string;
 }
-const Figma = ({ color='white', size='1rem' }:Props) => {
+const Figma = ({ color = "white", size = "1rem" }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const Figma = ({ color='white', size='1rem' }:Props) => {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default Figma
+export default Figma;

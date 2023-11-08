@@ -1,41 +1,41 @@
-.form__container{
+.form__container {
   width: 100%;
   position: relative;
-  form{
+  form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
-    >div{
+    > div {
       display: flex;
       justify-content: flex-end;
     }
-    >.form__btns{
+    > .form__btns {
       grid-column: span 2;
       display: flex;
       justify-content: flex-end;
-      gap:1rem;
+      gap: 1rem;
       @media screen and (max-width: 400px) {
         flex-direction: column-reverse;
       }
-      >button{
+      > button {
         background-color: #fca311;
         font-size: 1rem;
-        padding: .5rem 1rem;
-        border-radius: .5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
         color: white;
         font-weight: 700;
         cursor: pointer;
         border: none;
       }
-      >.form__btns--cv{
+      > .form__btns--cv {
         background-color: transparent;
         border: #fca311 1px solid;
         color: #fca311;
       }
     }
   }
-  .form__end{
+  .form__end {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,17 +48,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    >svg{
+    > svg {
       margin-bottom: 1rem;
     }
-    >.form__btns--cv{
+    > .form__btns--cv {
       margin-top: 1rem;
       background-color: transparent;
       border: #fca311 1px solid;
       color: #fca311;
       font-size: 1rem;
-      padding: .5rem 1rem;
-      border-radius: .5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
       font-weight: 700;
       cursor: pointer;
     }

@@ -1,123 +1,122 @@
 [
-  
   {
-    "title":"HTML5",
-    "color":"#e5532d"
+    "title": "HTML5",
+    "color": "#e5532d"
   },
   {
-    "title":"CSS3",
-    "color":"#3d9dd7"
+    "title": "CSS3",
+    "color": "#3d9dd7"
   },
   {
-    "title":"Sass",
-    "color":"#cc6699"
+    "title": "Sass",
+    "color": "#cc6699"
   },
   {
-    "title":"Tailwindcss",
-    "color":"#44a8b3"
+    "title": "Tailwindcss",
+    "color": "#44a8b3"
   },
   {
-    "title":"Bootstap",
-    "color":"#7e18f9"
+    "title": "Bootstap",
+    "color": "#7e18f9"
   },
   {
-    "title":"JavaScript",
-    "color":"#f0dc55"
+    "title": "JavaScript",
+    "color": "#f0dc55"
   },
   {
-    "title":"TypeScript",
-    "color":"#377cc8"
+    "title": "TypeScript",
+    "color": "#377cc8"
   },
   {
-    "title":"React",
-    "color":"#1ba1cc"
+    "title": "React",
+    "color": "#1ba1cc"
   },
   {
-    "title":"Redux",
-    "color":"#7a50be"
+    "title": "Redux",
+    "color": "#7a50be"
   },
   {
-    "title":"Astro",
-    "color":"#fc5d03"
+    "title": "Astro",
+    "color": "#fc5d03"
   },
   {
-    "title":"AntDesign",
-    "color":"#1874f7"
+    "title": "AntDesign",
+    "color": "#1874f7"
   },
   {
-    "title":"MaterialUI",
-    "color":"#08b2ff"
+    "title": "MaterialUI",
+    "color": "#08b2ff"
   },
   {
-    "title":"FramerMotion",
-    "color":"#6455ff"
+    "title": "FramerMotion",
+    "color": "#6455ff"
   },
   {
-    "title":"Figma",
-    "color":"#12d086"
+    "title": "Figma",
+    "color": "#12d086"
   },
   {
-    "title":"NodeJs",
-    "color":"#93c745"
+    "title": "NodeJs",
+    "color": "#93c745"
   },
   {
-    "title":"Express",
-    "color":"#4c4c4c"
+    "title": "Express",
+    "color": "#4c4c4c"
   },
   {
-    "title":"i18n",
-    "color":"#7986cb"
+    "title": "i18n",
+    "color": "#7986cb"
   },
   {
-    "title":"JsonWebToken",
-    "color":"#00b3e9"
+    "title": "JsonWebToken",
+    "color": "#00b3e9"
   },
   {
-    "title":"MySQL",
-    "color":"#08668e"
+    "title": "MySQL",
+    "color": "#08668e"
   },
   {
-    "title":"MongoDB",
-    "color":"#579c4f"
+    "title": "MongoDB",
+    "color": "#579c4f"
   },
   {
-    "title":"Heroku",
-    "color":"#430098"
+    "title": "Heroku",
+    "color": "#430098"
   },
   {
-    "title":"Vercel",
-    "color":"#4c4c4c"
+    "title": "Vercel",
+    "color": "#4c4c4c"
   },
   {
-    "title":"AWS",
-    "color":"#ff9c08"
+    "title": "AWS",
+    "color": "#ff9c08"
   },
   {
-    "title":"Git",
-    "color":"#f05639"
+    "title": "Git",
+    "color": "#f05639"
   },
   {
-    "title":"GitHub",
-    "color":"#3b375d"
+    "title": "GitHub",
+    "color": "#3b375d"
   },
   {
-    "title":"Copilot",
-    "color":"#24c9d5"
+    "title": "Copilot",
+    "color": "#24c9d5"
   },
   {
-    "title":"Markdown",
-    "color":"#4c4c4c"
+    "title": "Markdown",
+    "color": "#4c4c4c"
   },
   {
-    "title":"Jira",
-    "color":"#2684ff"
+    "title": "Jira",
+    "color": "#2684ff"
   },
   {
-    "title":"Clickup",
-    "color":"#7b68ee"
+    "title": "Clickup",
+    "color": "#7b68ee"
   },
   {
-    "title":"Notion",
-    "color":"#4c4c4c"
+    "title": "Notion",
+    "color": "#4c4c4c"
   }
 ]

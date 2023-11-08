@@ -1,37 +1,37 @@
-.FormTextArea{
+.FormTextArea {
   grid-column: span 2;
-    background-color: #192132;
-    border-radius: .5rem;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  >textarea{
+  background-color: #192132;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  > textarea {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     border: none;
     color: white;
     resize: none;
     background-color: transparent;
   }
-  >textarea:focus-visible{
+  > textarea:focus-visible {
     outline: none;
   }
-  >textarea::-webkit-scrollbar {
-    width: .1rem;
+  > textarea::-webkit-scrollbar {
+    width: 0.1rem;
   }
-  >textarea::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  > textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
-  >textarea::-webkit-scrollbar-thumb {
+  > textarea::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
   }
-  >span{
+  > span {
     display: block;
     text-align: end;
-    color:white;
-    opacity: .2;
-    font-size: .8rem;
+    color: white;
+    opacity: 0.2;
+    font-size: 0.8rem;
   }
 }

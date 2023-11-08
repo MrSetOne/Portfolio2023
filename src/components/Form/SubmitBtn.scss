@@ -1,7 +1,7 @@
-.Spinner{
+.Spinner {
   width: 100%;
-  position:relative;
-  >.Spinner__gavel{
+  position: relative;
+  > .Spinner__gavel {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,7 +9,7 @@
     background-color: white;
     border-radius: 50%;
   }
-  >.Spinner__wave{
+  > .Spinner__wave {
     position: absolute;
     top: 50%;
     left: 50%;

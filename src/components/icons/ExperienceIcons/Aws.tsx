@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 interface Props {
   color?: string;
   size?: string;
 }
-const Aws = ({ color='white', size='1rem' }:Props) => {
+const Aws = ({ color = "white", size = "1rem" }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Aws = ({ color='white', size='1rem' }:Props) => {
         data-name="primary"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default Aws
+export default Aws;
