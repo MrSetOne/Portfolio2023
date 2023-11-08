@@ -2,60 +2,45 @@ import React from "react";
 
 const CCrowmie = () => {
   return (
-    <article>
-      <h2>Mi paso por Crowmie</h2>
-      <div>
+    <article className="CCrowmie CCard">
+      <h2 className="CCrowmie__mainTitle">Mi paso por<br/> <span>Crowmie</span></h2>
+      <div className="CCard__Toc">
         <h3>Indice:</h3>
         <ul>
           <li>
-            <a href="#">Ocupación</a>
+            <a href="#"><span>1</span>¿Que es Crowmie?</a>
           </li>
           <li>
-            <a href="#">Tecnología</a>
+            <a href="#"><span>2</span>Ocupación</a>
           </li>
           <li>
-            <a href="#">Logros</a>
+            <a href="#"><span>3</span>Tecnología</a>
+          </li>
+          <li>
+            <a href="#"><span>4</span>Logros</a>
           </li>
           <li>
             <ul>
               <li>
-                <a href="#">Migración a Astro con SSR</a>
+                <a href="#"><span>4.1</span>Migración a Astro con SSR</a>
               </li>
               <li>
-                <a href="#">Nuevo formulario de KYC</a>
+                <a href="#"><span>4.2</span>Nuevo formulario de KYC</a>
               </li>
               <li>
-                <a href="#">Mercado P2P</a>
+                <a href="#"><span>4.3</span>Mercado P2P</a>
               </li>
               <li>
-                <a href="#">Sistema de referidos</a>
+                <a href="#"><span>4.4</span>Sistema de referidos</a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-      <h3>Ocupación</h3>
-      <p>
-        Como frontend developer, mi objetivo era mejorar la experiencia de
-        usuario de la web y la aplicación de la compañía. En la aplicación,
-        implementé nuevas features como un nuevo formulario de KYC, un mercado
-        P2P y un sistema de referidos. Además, refactoricé parte del código para
-        mejorar la performance, legibilidad y mantenimiento, implementando hooks
-        como useMemo, useCallback y useRef.
-        <br />
-        En la web, cambié completamente la arquitectura haciendo la migración
-        desde WordPress a Astro. Esto permitió mejorar la velocidad de carga de
-        la web y la facilidad de mantenimiento. Además, optimicé las etiquetas
-        del head incluyendo schemas para mejorar la indexación de la web por los
-        motores de búsqueda.
-      </p>
-      <h3>Tecnología</h3>
-      <ul>
-        <li>
-          <h3>¿Que es Crowmie?</h3>
-          <p>Crowmie es una plataforma de inversión en energía renovable que permite a cualquier persona, sin importar su ubicación o su nivel de inversión, participar en proyectos de energía solar y fotovoltaica. La plataforma tokeniza los proyectos de energía renovable, lo que los convierte en activos digitales que se pueden comprar y vender a través de la plataforma.</p>
-        </li>
-        <li>
+      <h3>¿Que es Crowmie?</h3>
+      <p>Crowmie es una plataforma de inversión en energía renovable que permite a cualquier persona, sin importar su ubicación o su nivel de inversión, participar en proyectos de energía solar y fotovoltaica. La plataforma tokeniza los proyectos de energía renovable, lo que los convierte en activos digitales que se pueden comprar y vender a través de la plataforma.</p>
+      
+        
           <h3>Ocupación</h3>
           <p>En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el ciclo de vida de las nuevas funcionalidades de la web y la aplicación de la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo y el despliegue.</p>
           <p>En concreto, mis principales responsabilidades eran:</p>
@@ -65,10 +50,10 @@ const CCrowmie = () => {
             <li>Desarrollar nuevas funcionalidades: Utilizaba TypeScript con tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para implementar las funcionalidades diseñadas.</li>
             <li>Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba las funcionalidades en producción y probaba su correcto funcionamiento.</li>
           </ul>
-        </li>
+        
         <p>Además de desarrollar nuevas funcionalidades, también refactoricé parte del código para mejorar su legibilidad y performance. Para ello, utilicé buenas prácticas, algunos principios SOLID y hooks como useMemo, useCallback y useRef.</p>
-        <li>
           <h3>Tecnología</h3>
+          <h4>Frontend</h4>
           <ul>
             <li>NodeJs</li>
             <li>TypeScript</li>
@@ -85,8 +70,6 @@ const CCrowmie = () => {
             <li>GIT</li>
             <li>Github</li>
           </ul>
-        </li>
-        <li>
           <h4>UX/UI</h4>
           <ul>
             <li>Figma</li>
@@ -94,9 +77,6 @@ const CCrowmie = () => {
             <li>Illustrator</li>
             <li>Photoshop</li>
           </ul>
-        </li>
-      </ul>
-
       <h3>Logros</h3>
       <ul>
         <li>
