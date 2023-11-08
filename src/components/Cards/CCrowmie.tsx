@@ -52,7 +52,27 @@ const CCrowmie = () => {
       <h3>Tecnología</h3>
       <ul>
         <li>
+<<<<<<< HEAD
           <h4>Frontend</h4>
+=======
+          <h3>¿Que es Crowmie?</h3>
+          <p>Crowmie es una plataforma de inversión en energía renovable que permite a cualquier persona, sin importar su ubicación o su nivel de inversión, participar en proyectos de energía solar y fotovoltaica. La plataforma tokeniza los proyectos de energía renovable, lo que los convierte en activos digitales que se pueden comprar y vender a través de la plataforma.</p>
+        </li>
+        <li>
+          <h3>Ocupación</h3>
+          <p>En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el ciclo de vida de las nuevas funcionalidades de la web y la aplicación de la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo y el despliegue.</p>
+          <p>En concreto, mis principales responsabilidades eran:</p>
+          <ul>
+            <li>Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba técnicas como el análisis de usuarios, la investigación de la competencia y la creación de prototipos de bajo nivel.</li>
+            <li>Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha colaboración con el equipo de marketing para crear diseños de alto nivel que fueran intuitivos, usables y atractivos.</li>
+            <li>Desarrollar nuevas funcionalidades: Utilizaba TypeScript con tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para implementar las funcionalidades diseñadas.</li>
+            <li>Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba las funcionalidades en producción y probaba su correcto funcionamiento.</li>
+          </ul>
+        </li>
+        <p>Además de desarrollar nuevas funcionalidades, también refactoricé parte del código para mejorar su legibilidad y performance. Para ello, utilicé buenas prácticas, algunos principios SOLID y hooks como useMemo, useCallback y useRef.</p>
+        <li>
+          <h3>Tecnología</h3>
+>>>>>>> 215a9d5cdb26adb9404727a9188dbed00eb7c6af
           <ul>
             <li>NodeJs</li>
             <li>TypeScript</li>
