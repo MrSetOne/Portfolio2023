@@ -94,37 +94,37 @@ const CCrowmie = () => {
         En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el
         ciclo de vida de las nuevas funcionalidades de la web y la aplicación de
         la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo
-        y el despliegue.
-      </p>
-      <p>En concreto, mis principales responsabilidades eran:</p>
-      <ul>
-        <li>
-          Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
-          técnicas como el análisis de usuarios, la investigación de la
-          competencia y la creación de prototipos de bajo nivel.
-        </li>
-        <li>
-          Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha
-          colaboración con el equipo de marketing para crear diseños de alto
-          nivel que fueran intuitivos, usables y atractivos.
-        </li>
-        <li>
-          Desarrollar nuevas funcionalidades: Utilizaba TypeScript con
-          tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para
-          implementar las funcionalidades diseñadas.
-        </li>
-        <li>
-          Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba
-          las funcionalidades en producción y probaba su correcto
-          funcionamiento.
-        </li>
-      </ul>
-      <p>
+        y el despliegue.<br /><br />En concreto, mis principales responsabilidades eran:
+        <ul>
+          <li>
+            Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
+            técnicas como el análisis de usuarios, la investigación de la
+            competencia y la creación de prototipos de bajo nivel.
+          </li>
+          <li>
+            Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha
+            colaboración con el equipo de marketing para crear diseños de alto
+            nivel que fueran intuitivos, usables y atractivos.
+          </li>
+          <li>
+            Desarrollar nuevas funcionalidades: Utilizaba TypeScript con
+            tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para
+            implementar las funcionalidades diseñadas.
+          </li>
+          <li>
+            Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba
+            las funcionalidades en producción y probaba su correcto
+            funcionamiento.
+          </li>
+        </ul>
+        <br/>
         Además de desarrollar nuevas funcionalidades, también refactoricé parte
         del código para mejorar su legibilidad y performance. Para ello, utilicé
         buenas prácticas, algunos principios SOLID y hooks como useMemo,
         useCallback y useRef.
+
       </p>
+      
       <h3>Tecnología</h3>
       <h4>Frontend</h4>
       <ul>
