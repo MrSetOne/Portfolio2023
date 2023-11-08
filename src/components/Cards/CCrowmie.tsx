@@ -52,9 +52,6 @@ const CCrowmie = () => {
       <h3>Tecnología</h3>
       <ul>
         <li>
-<<<<<<< HEAD
-          <h4>Frontend</h4>
-=======
           <h3>¿Que es Crowmie?</h3>
           <p>Crowmie es una plataforma de inversión en energía renovable que permite a cualquier persona, sin importar su ubicación o su nivel de inversión, participar en proyectos de energía solar y fotovoltaica. La plataforma tokeniza los proyectos de energía renovable, lo que los convierte en activos digitales que se pueden comprar y vender a través de la plataforma.</p>
         </li>
@@ -72,7 +69,6 @@ const CCrowmie = () => {
         <p>Además de desarrollar nuevas funcionalidades, también refactoricé parte del código para mejorar su legibilidad y performance. Para ello, utilicé buenas prácticas, algunos principios SOLID y hooks como useMemo, useCallback y useRef.</p>
         <li>
           <h3>Tecnología</h3>
->>>>>>> 215a9d5cdb26adb9404727a9188dbed00eb7c6af
           <ul>
             <li>NodeJs</li>
             <li>TypeScript</li>
