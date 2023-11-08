@@ -11,7 +11,7 @@ const Code = ({size='1rem', strokeWidth=1}:Props) => {
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       fill="none"
-      viewBox="1 2 22 20"
+      viewBox="2 3 20 18"
     >
       <path
         stroke="#fff"

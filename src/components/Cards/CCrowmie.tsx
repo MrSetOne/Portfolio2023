@@ -74,7 +74,7 @@ const CCrowmie = () => {
       <h3>Ocupación</h3>
       <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundPosition:'bottom -115px center'}}>
         <div>
-          <Experience size="2.8rem" strokeWidth={3}/>
+          <Experience size="2.8rem" strokeWidth={3.5}/>
           <span>Analisis</span>
         </div>
         <div>
@@ -86,8 +86,8 @@ const CCrowmie = () => {
           <span>Desarrollo</span>
         </div>
         <div>
-          <Cloud size="2.8rem" strokeWidth={1} />
-          <span>xdxd</span>
+          <Cloud size="2.8rem" strokeWidth={1.4} />
+          <span>Cloud</span>
         </div>
       </div>
       <p>

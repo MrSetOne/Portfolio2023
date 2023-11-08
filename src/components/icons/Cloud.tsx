@@ -11,8 +11,7 @@ const Cloud = ({ size, strokeWidth }:Props) => {
     xmlns="http://www.w3.org/2000/svg"
     height={size}
     fill="none"
-    viewBox="0 3 24 18"
-    style={{aspectRatio:'43/31'}}
+    viewBox="0 4 24 16"
   >
     <g>
       <path

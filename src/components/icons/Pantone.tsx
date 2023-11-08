@@ -10,7 +10,7 @@ const Pantone = ({size='1rem'}:Props) => {
       xmlns="http://www.w3.org/2000/svg"
       height={size}
       fill="none"
-      viewBox="0 0 24 24"
+      viewBox="1.25 1.25 21.5 21.5"
     >
       <path
         fill="white"
