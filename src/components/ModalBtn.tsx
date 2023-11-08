@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback, useMemo } from "react";
 import { createPortal } from "react-dom";
 import Modal from "./Modal";
 import CCrowmie from "./Cards/CCrowmie";
-import "./Cards/Cards.scss"
+import "./Cards/Cards.scss";
 
 type Cards = "Crowmie" | "Cantastik";
 

@@ -1,82 +1,155 @@
 import React from "react";
+import windmill from "../../assets/windmillSunset.jpg";
+import Experience from "../icons/Experience";
+import Pantone from "../icons/Pantone";
+import Code from "../icons/Code";
+import Cloud from "../icons/Cloud";
 
 const CCrowmie = () => {
+  console.log(windmill);
   return (
     <article className="CCrowmie CCard">
-      <h2 className="CCrowmie__mainTitle">Mi paso por<br/> <span>Crowmie</span></h2>
+      <h2 className="CCrowmie__mainTitle">
+        Mi paso por
+        <br /> <span>Crowmie</span>
+      </h2>
       <div className="CCard__Toc">
         <h3>Indice:</h3>
         <ul>
           <li>
-            <a href="#"><span>1</span>¿Que es Crowmie?</a>
+            <a href="#">
+              <span>1</span>¿Que es Crowmie?
+            </a>
           </li>
           <li>
-            <a href="#"><span>2</span>Ocupación</a>
+            <a href="#">
+              <span>2</span>Ocupación
+            </a>
           </li>
           <li>
-            <a href="#"><span>3</span>Tecnología</a>
+            <a href="#">
+              <span>3</span>Tecnología
+            </a>
           </li>
           <li>
-            <a href="#"><span>4</span>Logros</a>
+            <a href="#">
+              <span>4</span>Logros
+            </a>
           </li>
           <li>
             <ul>
               <li>
-                <a href="#"><span>4.1</span>Migración a Astro con SSR</a>
+                <a href="#">
+                  <span>4.1</span>Migración a Astro con SSR
+                </a>
               </li>
               <li>
-                <a href="#"><span>4.2</span>Nuevo formulario de KYC</a>
+                <a href="#">
+                  <span>4.2</span>Nuevo formulario de KYC
+                </a>
               </li>
               <li>
-                <a href="#"><span>4.3</span>Mercado P2P</a>
+                <a href="#">
+                  <span>4.3</span>Mercado P2P
+                </a>
               </li>
               <li>
-                <a href="#"><span>4.4</span>Sistema de referidos</a>
+                <a href="#">
+                  <span>4.4</span>Sistema de referidos
+                </a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
       <h3>¿Que es Crowmie?</h3>
-      <p>Crowmie es una plataforma de inversión en energía renovable que permite a cualquier persona, sin importar su ubicación o su nivel de inversión, participar en proyectos de energía solar y fotovoltaica. La plataforma tokeniza los proyectos de energía renovable, lo que los convierte en activos digitales que se pueden comprar y vender a través de la plataforma.</p>
-      
-        
-          <h3>Ocupación</h3>
-          <p>En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el ciclo de vida de las nuevas funcionalidades de la web y la aplicación de la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo y el despliegue.</p>
-          <p>En concreto, mis principales responsabilidades eran:</p>
-          <ul>
-            <li>Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba técnicas como el análisis de usuarios, la investigación de la competencia y la creación de prototipos de bajo nivel.</li>
-            <li>Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha colaboración con el equipo de marketing para crear diseños de alto nivel que fueran intuitivos, usables y atractivos.</li>
-            <li>Desarrollar nuevas funcionalidades: Utilizaba TypeScript con tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para implementar las funcionalidades diseñadas.</li>
-            <li>Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba las funcionalidades en producción y probaba su correcto funcionamiento.</li>
-          </ul>
-        
-        <p>Además de desarrollar nuevas funcionalidades, también refactoricé parte del código para mejorar su legibilidad y performance. Para ello, utilicé buenas prácticas, algunos principios SOLID y hooks como useMemo, useCallback y useRef.</p>
-          <h3>Tecnología</h3>
-          <h4>Frontend</h4>
-          <ul>
-            <li>NodeJs</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Astro</li>
-            <li>Redux</li>
-            <li>i18n</li>
-            <li>MateriaUI</li>
-            <li>Framer-motion</li>
-            <li>Tailwind</li>
-            <li>Sass</li>
-            <li>Chart.js</li>
-            <li>Leaflet</li>
-            <li>GIT</li>
-            <li>Github</li>
-          </ul>
-          <h4>UX/UI</h4>
-          <ul>
-            <li>Figma</li>
-            <li>Miro</li>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-          </ul>
+      <p>
+        Crowmie es una plataforma de inversión en energía renovable que permite
+        a cualquier persona, sin importar su ubicación o su nivel de inversión,
+        participar en proyectos de energía solar y fotovoltaica. La plataforma
+        tokeniza los proyectos de energía renovable, lo que los convierte en
+        activos digitales que se pueden comprar y vender a través de la
+        plataforma.
+      </p>
+      <h3>Ocupación</h3>
+      <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundPosition:'bottom -115px center'}}>
+        <div>
+          <Experience size="2.8rem" strokeWidth={3}/>
+          <span>Analisis</span>
+        </div>
+        <div>
+          <Pantone size="2.8rem" />
+          <span>Diseño</span>
+        </div>
+        <div>
+          <Code size="2.8rem" strokeWidth={1.8} />
+          <span>Desarrollo</span>
+        </div>
+        <div>
+          <Cloud size="2.8rem" strokeWidth={1} />
+          <span>xdxd</span>
+        </div>
+      </div>
+      <p>
+        En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el
+        ciclo de vida de las nuevas funcionalidades de la web y la aplicación de
+        la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo
+        y el despliegue.
+      </p>
+      <p>En concreto, mis principales responsabilidades eran:</p>
+      <ul>
+        <li>
+          Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
+          técnicas como el análisis de usuarios, la investigación de la
+          competencia y la creación de prototipos de bajo nivel.
+        </li>
+        <li>
+          Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha
+          colaboración con el equipo de marketing para crear diseños de alto
+          nivel que fueran intuitivos, usables y atractivos.
+        </li>
+        <li>
+          Desarrollar nuevas funcionalidades: Utilizaba TypeScript con
+          tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para
+          implementar las funcionalidades diseñadas.
+        </li>
+        <li>
+          Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba
+          las funcionalidades en producción y probaba su correcto
+          funcionamiento.
+        </li>
+      </ul>
+      <p>
+        Además de desarrollar nuevas funcionalidades, también refactoricé parte
+        del código para mejorar su legibilidad y performance. Para ello, utilicé
+        buenas prácticas, algunos principios SOLID y hooks como useMemo,
+        useCallback y useRef.
+      </p>
+      <h3>Tecnología</h3>
+      <h4>Frontend</h4>
+      <ul>
+        <li>NodeJs</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Astro</li>
+        <li>Redux</li>
+        <li>i18n</li>
+        <li>MateriaUI</li>
+        <li>Framer-motion</li>
+        <li>Tailwind</li>
+        <li>Sass</li>
+        <li>Chart.js</li>
+        <li>Leaflet</li>
+        <li>GIT</li>
+        <li>Github</li>
+      </ul>
+      <h4>UX/UI</h4>
+      <ul>
+        <li>Figma</li>
+        <li>Miro</li>
+        <li>Illustrator</li>
+        <li>Photoshop</li>
+      </ul>
       <h3>Logros</h3>
       <ul>
         <li>
