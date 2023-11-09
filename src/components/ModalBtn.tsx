@@ -20,6 +20,7 @@ const ModalBtn = ({ children, target }: Props) => {
     const modalExternalBg = document.getElementsByClassName(
       "modalExternalBg"
     )[0] as HTMLElement;
+    if(!modalExternalBg) return;
     modalExternalBg.classList.remove("modalExternalBg--active");
     setTimeout(() => {
       modalExternalBg.remove();
