@@ -5,6 +5,7 @@ import Pantone from "../icons/Pantone";
 import Code from "../icons/Code";
 import Cloud from "../icons/Cloud";
 import reactCode from '../../assets/reactCode.jpg';
+import rocket from '../../assets/rocket.jpg';
 
 const CCrowmie = () => {
   console.log(windmill);
@@ -170,8 +171,11 @@ const CCrowmie = () => {
       <h3>Logros</h3>
       <ul className="Ccard__goals">
         <li>
-          <h4>Migración a Astro con SSR</h4>
-          <h5>El problema</h5>
+          <h4 style={{marginTop:'.5rem'}} >Migración a Astro con SSR</h4>
+          <div className="CCard__banner" id="BannerCrowmieRocket">
+            <div style={{backgroundImage:`url(${rocket.src})`}}/>
+          </div>
+          <h5>Problema</h5>
           <p>La web de la empresa tenía un tiempo de carga lento (llegando hasta los 7seg), no era completamente responsive y carecía de contenido dinámico, lo que afectaba negativamente a su rendimiento, usabilidad y atractivo.</p>
           <h5>Solución</h5>
           <ul>
