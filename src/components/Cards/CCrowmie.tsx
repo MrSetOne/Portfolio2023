@@ -168,37 +168,17 @@ const CCrowmie = () => {
         </ul>
       </div>
       <h3>Logros</h3>
-      <ul>
+      <ul className="Ccard__goals">
         <li>
           <h4>Migración a Astro con SSR</h4>
           <h5>El problema</h5>
-          <ul>
-            <li>
-              El tiempo de carga de la web era muy lento, llegando a tardar
-              hasta 10 segundos en cargar.
-            </li>
-            <li>
-              La web no era responsive, lo que provocaba que la experiencia de
-              usuario fuera deficiente en dispositivos móviles y tablets.
-            </li>
-            <li>
-              La web carecía de contenido dinámico e interactivo, lo que
-              limitaba su potencial para ofrecer una experiencia de usuario
-              atractiva.
-            </li>
-          </ul>
+          <p>La web de la empresa tenía un tiempo de carga lento (llegando hasta los 7seg), no era completamente responsive y carecía de contenido dinámico, lo que afectaba negativamente a su rendimiento, usabilidad y atractivo.</p>
           <h5>Solución</h5>
-          <p>
-            En primer lugar, se decidió usar WordPress solo como un CMS, ya que
-            la API de WordPress funcionaba a buena velocidad.
-            <br />
-            En segundo lugar, se realizó un estudio de viabilidad para
-            determinar el framework de desarrollo web más adecuado para
-            encargarse de los renderizados. Tras el estudio, se determinó que
-            Astro era la mejor opción por su flexibilidad, facilidad de uso y
-            mantenimiento. También se decidió usar Tailwind por su agilidad de
-            desarrollo.
-          </p>
+          <ul>
+            <li>WordPress se utilizará solo como CMS, ya que su API funciona a buena velocidad y ahí es donde se alojaba todo el sistema del blog.</li>
+            <li>Astro será el framework de desarrollo web encargado de los renderizados, por su velocidad, flexibilidad, facilidad de uso y mantenimiento.</li>
+            <li>Como librerías adicionales se usarán React para los componentes dinamicos y Tailwind para mejorar los tiempos de desarrollo.</li>
+          </ul>
           <h5>Resultado</h5>
           <p>
             El tiempo de carga se redujo de 7 segundos a 0,3 segundos gracias a
@@ -221,28 +201,15 @@ const CCrowmie = () => {
             pero puede ser un proceso largo y tedioso para los clientes.
           </p>
           <h5>El problema</h5>
-          <li>
-            <ul>Formulario extenso y aburrido</ul>
-            <ul>
-              Solo una pequeña parte finalizaba el formulario y la gran mayoria
-              siquiera lo iniciaba
-            </ul>
-          </li>
+          <p>El formulario de KYC de nuestra empresa era demasiado extenso, aburrido y difícil de encontrar. Esto ocasionaba que muy pocos usuarios terminaras completándolo.</p>
           <h5>Solución</h5>
-          <p>
-            El nuevo formulario se muestra en un modal que aparece nada más
-            acceder a la aplicación. Esto garantiza que los clientes no olviden
-            completar el formulario y que puedan recuperar fácilmente su
-            progreso en caso de que lo dejen a medias. También se envía una
-            notificación a los clientes para recordarles que deben completar el
-            formulario.
-            <br />
-            El formulario se divide en vistas de máximo 3 inputs cada una. Esto
-            permite a los clientes completar el formulario de forma más rápida y
-            sencilla. Además, el formulario está gamificado con elementos como
-            un indicador de progreso. Esto ayuda a los clientes a mantenerse
-            motivados y conseguir un porcentaje menor de abandono.
-          </p>
+          <ul>
+            <li>Visibilidad: El formulario se muestra en un modal que aparece nada más acceder a la aplicación. Esto garantiza que los clientes no olviden completarlo.</li>
+            <li>Notificación: Al usuario se le muestra una notificación de forma permanente en el caso de que no haya completado el formulario.</li>
+            <li>Facilidad de uso: El formulario se divide en vistas de máximo 3 inputs cada una. Esto permite a los clientes completar el formulario de forma más rápida, amigable y sencilla.</li>
+            <li>Autoguardado: Para evitar que el usuario tenga que volver a empezar el formulario desde cero tendrá un sistema de autoguardado, en cualquier momento puede retomarlo donde lo dejó.</li>
+            <li>Motivación: El formulario está gamificado con elementos como un indicador de progreso. Esto ayuda a los clientes a mantenerse motivados y conseguir un porcentaje menor de abandono.</li>
+          </ul>
           <h5>Resultado</h5>
           <p>
             El nuevo formulario de KYC es una mejora significativa sobre el
@@ -261,7 +228,7 @@ const CCrowmie = () => {
           <p>
             Para dar respuesta a las necesidades de los clientes que querían
             salirse de la inversión o adquirir tokens de inversiones ya
-            completamente distribuidas, se creó un mercado P2P donde los
+            completamente distribuidas, se requería un mercado P2P donde los
             usuarios pueden comprar y vender tokens.
           </p>
           <h5>La solución</h5>
