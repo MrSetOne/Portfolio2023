@@ -33,14 +33,14 @@
   }
   >p{
     line-height: 1.6;
-    >ul >li{
-      margin-left: 1.5rem;
-      list-style: disc;
-      margin-bottom: .5rem;
-    }
-    >ul>li:last-child{
-      margin-bottom: 0;
-    }
+  }
+  >ul >li{
+    margin-left: 1.5rem;
+    list-style: disc;
+    margin-bottom: .5rem;
+  }
+  >ul>li:last-child{
+    margin-bottom: 0;
   }
   .CCard__Technologies{
     padding: .6rem 0;
@@ -77,6 +77,11 @@
     }
     *{
       line-height: 1.6;
+    }
+    >li{
+      list-style: none;
+      margin-left: 0rem;
+      margin-bottom: 0;
     }
     ul{
       margin-left: 1.5rem;

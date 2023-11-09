@@ -97,6 +97,8 @@ const CCrowmie = () => {
         ciclo de vida de las nuevas funcionalidades de la web y la aplicación de
         la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo
         y el despliegue.<br /><br />En concreto, mis principales responsabilidades eran:
+        </p>
+
         <ul>
           <li>
             Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
@@ -120,12 +122,13 @@ const CCrowmie = () => {
           </li>
         </ul>
         <br/>
+        <p>
         Además de desarrollar nuevas funcionalidades, también refactoricé parte
         del código para mejorar su legibilidad y performance. Para ello, utilicé
         buenas prácticas, algunos principios SOLID y hooks como useMemo,
         useCallback y useRef.
+        </p>
 
-      </p>
       
       <h3>Tecnología</h3>
       <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundPosition:'bottom -115px center'}}>
