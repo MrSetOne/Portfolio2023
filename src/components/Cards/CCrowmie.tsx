@@ -4,6 +4,7 @@ import Experience from "../icons/Experience";
 import Pantone from "../icons/Pantone";
 import Code from "../icons/Code";
 import Cloud from "../icons/Cloud";
+import reactCode from '../../assets/reactCode.jpg';
 
 const CCrowmie = () => {
   console.log(windmill);
@@ -126,30 +127,46 @@ const CCrowmie = () => {
       </p>
       
       <h3>Tecnología</h3>
-      <h4>Frontend</h4>
-      <ul>
-        <li>NodeJs</li>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Astro</li>
-        <li>Redux</li>
-        <li>i18n</li>
-        <li>MateriaUI</li>
-        <li>Framer-motion</li>
-        <li>Tailwind</li>
-        <li>Sass</li>
-        <li>Chart.js</li>
-        <li>Leaflet</li>
-        <li>GIT</li>
-        <li>Github</li>
-      </ul>
-      <h4>UX/UI</h4>
-      <ul>
-        <li>Figma</li>
-        <li>Miro</li>
-        <li>Illustrator</li>
-        <li>Photoshop</li>
-      </ul>
+      <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundPosition:'bottom -115px center'}}>
+        <span>M</span><span>E</span><span>R</span><span>N</span>
+      </div>
+      <div className="CCard__Technologies">
+        <h4>Frontend</h4>
+        <ul>
+          <li>NodeJs</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Astro</li>
+          <li>Redux</li>
+          <li>i18n</li>
+          <li>MateriaUI</li>
+          <li>Framer-motion</li>
+          <li>Tailwind</li>
+          <li>Sass</li>
+          <li>Chart.js</li>
+          <li>Leaflet</li>
+          <li>GIT</li>
+          <li>Github</li>
+        </ul>
+      </div>
+      <div className="CCard__Technologies">
+        <h4>UX/UI</h4>
+        <ul>
+          <li>Figma</li>
+          <li>Miro</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+        </ul>
+      </div>
+      <div className="CCard__Technologies">
+        <h4>Backend</h4>
+        <ul>
+          <li>NodeJs</li>
+          <li>TypeScript</li>
+          <li>MongoDb</li>
+          <li>Mongoose</li>
+        </ul>
+      </div>
       <h3>Logros</h3>
       <ul>
         <li>
