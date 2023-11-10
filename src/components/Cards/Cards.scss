@@ -1,5 +1,6 @@
 // General styles
 .CCard {
+  padding-bottom: 3rem;
   .CCard__Toc {
     padding: 4rem 0;
     > h3 {
@@ -16,6 +17,9 @@
         span {
           margin-right: 0.5rem;
           font-size: 1.5rem;
+        }
+        >ul{
+          margin-left: 1.5rem;
         }
       }
     }
@@ -142,15 +146,27 @@
     height: 8.5rem;
     overflow: hidden;
     position: relative;
-  >div{
+    >div{
+      position: absolute;
+      height: 200%;
+      width: 200%;
+      top: -50%;
+      left: -50%;
+      transform: rotate(-16deg);
+      background-size: cover;
+      background-position: center;
+      background-position: top 45% right 48px;
+    }
+  }
+  
+#BannerCrowmieHandshake, #BannerCrowmieMarket, #BannerCrowmieReferral{
+  overflow: hidden;
+  height: 8.5rem;
+  position: relative;
+  img{
     position: absolute;
-    height: 200%;
-    width: 200%;
-    top: -50%;
-    left: -50%;
-    transform: rotate(-16deg);
-    background-size: cover;
-    background-position: center;
-    background-position: top 45% right 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

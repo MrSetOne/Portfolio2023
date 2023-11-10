@@ -6,6 +6,9 @@ import Code from "../icons/Code";
 import Cloud from "../icons/Cloud";
 import reactCode from '../../assets/reactCode.jpg';
 import rocket from '../../assets/rocket.jpg';
+import handshake from '../../assets/handshake.jpg';
+import market from '../../assets/market.jpg';
+import friends from '../../assets/friends.jpg';
 
 const CCrowmie = () => {
   console.log(windmill);
@@ -19,22 +22,22 @@ const CCrowmie = () => {
         <h3>Indice:</h3>
         <ul>
           <li>
-            <a href="#">
+            <a href="#whatIsCrowmie">
               <span>1</span>¿Que es Crowmie?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#tasksInCrowmie">
               <span>2</span>Ocupación
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#CrowmieTechnologies">
               <span>3</span>Tecnología
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#CrowmieGoals">
               <span>4</span>Logros
             </a>
           </li>
@@ -64,7 +67,7 @@ const CCrowmie = () => {
           </li>
         </ul>
       </div>
-      <h3>¿Que es Crowmie?</h3>
+      <h3 id="whatIsCrowmie">¿Que es Crowmie?</h3>
       <p>
         Crowmie es una plataforma de inversión en energía renovable que permite
         a cualquier persona, sin importar su ubicación o su nivel de inversión,
@@ -73,7 +76,7 @@ const CCrowmie = () => {
         activos digitales que se pueden comprar y vender a través de la
         plataforma.
       </p>
-      <h3>Ocupación</h3>
+      <h3 id="tasksInCrowmie" >Ocupación</h3>
       <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundPosition:'bottom -115px center'}}>
         <div>
           <Experience size="2.8rem" strokeWidth={3.5}/>
@@ -128,9 +131,7 @@ const CCrowmie = () => {
         buenas prácticas, algunos principios SOLID y hooks como useMemo,
         useCallback y useRef.
         </p>
-
-      
-      <h3>Tecnología</h3>
+      <h3 id="CrowmieTechnologies">Tecnología</h3>
       <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundPosition:'bottom -115px center'}}>
         <span>M</span><span>E</span><span>R</span><span>N</span>
       </div>
@@ -171,7 +172,7 @@ const CCrowmie = () => {
           <li>Mongoose</li>
         </ul>
       </div>
-      <h3>Logros</h3>
+      <h3 id="CrowmieGoals">Logros</h3>
       <ul className="Ccard__goals">
         <li>
           <h4 style={{marginTop:'.5rem'}} >Migración a Astro con SSR</h4>
@@ -203,11 +204,14 @@ const CCrowmie = () => {
         </li>
         <li>
           <h4>Nuevo formulario de KYC</h4>
-          <p>
-            El formulario de KYC es un requisito legal para muchas empresas,
+          <div className="CCard__banner" id="BannerCrowmieHandshake">
+            <img src={handshake.src} alt="handshake" />
+          </div>
+          <p style={{fontSize:'.8rem'}} >
+            Un formulario KYC es un requisito legal para muchas empresas,
             pero puede ser un proceso largo y tedioso para los clientes.
           </p>
-          <h5>El problema</h5>
+          <h5>Problema</h5>
           <p>El formulario de KYC de nuestra empresa era demasiado extenso, aburrido y difícil de encontrar. Esto ocasionaba que muy pocos usuarios terminaras completándolo.</p>
           <h5>Solución</h5>
           <ul>
@@ -231,7 +235,10 @@ const CCrowmie = () => {
         </li>
         <li>
           <h4>Mercado P2P</h4>
-          <h5>El problema</h5>
+          <div className="CCard__banner" id="BannerCrowmieMarket">
+            <img src={market.src} alt="market" />
+          </div>
+          <h5>Problema</h5>
           <p>
             Para dar respuesta a las necesidades de los clientes que querían
             salirse de la inversión o adquirir tokens de inversiones ya
@@ -282,7 +289,10 @@ const CCrowmie = () => {
         </li>
         <li>
           <h4>Sistema de referidos</h4>
-          <h5>El problema</h5>
+          <div className="CCard__banner" id="BannerCrowmieReferral">
+            <img src={friends.src} alt="friends" />
+          </div>
+          <h5>Problema</h5>
           <p>
             Algunos usuarios que querían un sistema de referidos con el cual
             traer gente y sacar beneficio con ello.
