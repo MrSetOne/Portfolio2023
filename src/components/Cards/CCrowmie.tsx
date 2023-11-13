@@ -1,14 +1,14 @@
 import React from "react";
-import windmill from "../../assets/windmillSunset.jpg";
+import windmill from "../../assets/windmillSunset.webp";
 import Experience from "../icons/Experience";
 import Pantone from "../icons/Pantone";
 import Code from "../icons/Code";
 import Cloud from "../icons/Cloud";
-import reactCode from '../../assets/reactCode.jpg';
-import rocket from '../../assets/rocket.jpg';
-import handshake from '../../assets/handshake.jpg';
-import market from '../../assets/market.jpg';
-import friends from '../../assets/friends.jpg';
+import reactCode from '../../assets/reactCode.webp';
+import rocket from '../../assets/rocket.webp';
+import handshake from '../../assets/handshake.webp';
+import market from '../../assets/market.webp';
+import friends from '../../assets/friends.webp';
 
 const CCrowmie = () => {
   console.log(windmill);
