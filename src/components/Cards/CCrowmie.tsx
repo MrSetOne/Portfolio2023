@@ -44,22 +44,22 @@ const CCrowmie = () => {
           <li>
             <ul>
               <li>
-                <a href="#">
+                <a href="#CrowmieSSR">
                   <span>4.1</span>Migración a Astro con SSR
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#CrowmieKYC">
                   <span>4.2</span>Nuevo formulario de KYC
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#CrowmieP2P">
                   <span>4.3</span>Mercado P2P
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#CrowmieReferral">
                   <span>4.4</span>Sistema de referidos
                 </a>
               </li>
@@ -174,7 +174,7 @@ const CCrowmie = () => {
       </div>
       <h3 id="CrowmieGoals">Logros</h3>
       <ul className="Ccard__goals">
-        <li>
+        <li id="CrowmieSSR">
           <h4 style={{marginTop:'.5rem'}} >Migración a Astro con SSR</h4>
           <div className="CCard__banner" id="BannerCrowmieRocket">
             <div style={{backgroundImage:`url(${rocket.src})`}}/>
@@ -202,7 +202,7 @@ const CCrowmie = () => {
             dispositivo que utilicen.
           </p>
         </li>
-        <li>
+        <li id="CrowmieKYC">
           <h4>Nuevo formulario de KYC</h4>
           <div className="CCard__banner" id="BannerCrowmieHandshake">
             <img src={handshake.src} alt="handshake" />
@@ -233,7 +233,7 @@ const CCrowmie = () => {
             mucho más positiva.
           </p>
         </li>
-        <li>
+        <li id="CrowmieP2P">
           <h4>Mercado P2P</h4>
           <div className="CCard__banner" id="BannerCrowmieMarket">
             <img src={market.src} alt="market" />
@@ -287,7 +287,7 @@ const CCrowmie = () => {
             mercado es sencillo y práctico de usar.
           </p>
         </li>
-        <li>
+        <li id="CrowmieReferral">
           <h4>Sistema de referidos</h4>
           <div className="CCard__banner" id="BannerCrowmieReferral">
             <img src={friends.src} alt="friends" />
