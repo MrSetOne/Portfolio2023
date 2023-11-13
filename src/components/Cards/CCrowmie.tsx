@@ -77,7 +77,7 @@ const CCrowmie = () => {
         plataforma.
       </p>
       <h3 id="tasksInCrowmie" >Ocupación</h3>
-      <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundPosition:'bottom -115px center'}}>
+      <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundSize:'cover'}}>
         <div>
           <Experience size="2.8rem" strokeWidth={3.5}/>
           <span>Analisis</span>
@@ -132,7 +132,7 @@ const CCrowmie = () => {
         useCallback y useRef.
         </p>
       <h3 id="CrowmieTechnologies">Tecnología</h3>
-      <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundPosition:'bottom -115px center'}}>
+      <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundSize:'cover'}}>
         <span>M</span><span>E</span><span>R</span><span>N</span>
       </div>
       <div className="CCard__Technologies">
