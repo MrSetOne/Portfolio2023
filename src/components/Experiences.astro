@@ -8,6 +8,10 @@ import ShortArrow from "./icons/ShortArrow.astro";
 import PlusIcon from "./icons/PlusIcon.astro";
 import ModalBtn from "./ModalBtn";
   
+const arrowButtonStyles:React.CSSProperties = {
+  position:'absolute', right:'5px', bottom:'5px', zIndex:2
+}
+
 ---
 <article class="crowmie">
   <Image  src={windMill} width={300} alt={'Crowmie'} />
@@ -31,7 +35,7 @@ import ModalBtn from "./ModalBtn";
   </div>
 </article>
 <article class="cantastik">
-  <ModalBtn client:visible target="Cantastik" >
+  <ModalBtn client:visible target="Cantastik" customStyles={arrowButtonStyles} >
     <div>
       <ShortArrow/>
     </div>
@@ -39,7 +43,7 @@ import ModalBtn from "./ModalBtn";
   <Image width={300} src={cantastik} alt="Cantastik" />
 </article>
 <article class="gameQuiz">
-  <ModalBtn client:visible target="GameQuiz" >
+  <ModalBtn client:visible target="GameQuiz" customStyles={arrowButtonStyles} >
     <div>
       <ShortArrow/>
     </div>
@@ -87,10 +91,6 @@ import ModalBtn from "./ModalBtn";
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      right: 5px;
-      bottom:5px;
-      z-index: 2;
     }
   }
 

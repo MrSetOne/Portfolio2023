@@ -11,9 +11,10 @@ type Cards = "Crowmie" | "Cantastik" | "GameQuiz";
 interface Props {
   children: React.ReactNode;
   target: Cards;
+  customStyles?: React.CSSProperties;
 }
 
-const ModalBtn = ({ children, target }: Props) => {
+const ModalBtn = ({ children, target, customStyles }: Props) => {
   const [open, setOpen] = useState(false);
 
   const imperativeClose = () => {
@@ -81,6 +82,7 @@ const ModalBtn = ({ children, target }: Props) => {
           cursor: "pointer",
           border: "none",
           backgroundColor: "transparent",
+          ...customStyles,
         }}
       >
         {children}
