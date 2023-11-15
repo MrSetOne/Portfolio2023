@@ -11,14 +11,13 @@ import market from "../../assets/market.webp";
 import friends from "../../assets/friends.webp";
 
 const CCrowmie = () => {
-  console.log(windmill);
   return (
-    <article className="CCrowmie CCard">
+    <article className="CCrowmie Card">
       <h2 className="CCrowmie__mainTitle">
         Mi paso por
         <br /> <span>Crowmie</span>
       </h2>
-      <div className="CCard__Toc">
+      <div className="Card__Toc">
         <h3>Indice:</h3>
         <ul>
           <li>
@@ -79,7 +78,7 @@ const CCrowmie = () => {
       <h3 id="tasksInCrowmie">Ocupación</h3>
       <div
         id="BannerCrowmieTasks"
-        className="CCard__banner"
+        className="Card__banner"
         style={{
           backgroundImage: `url(${windmill.src})`,
           backgroundSize: "cover",
@@ -143,7 +142,7 @@ const CCrowmie = () => {
       </p>
       <h3 id="CrowmieTechnologies">Tecnología</h3>
       <div
-        className="CCard__banner"
+        className="Card__banner"
         id="BannerCrowmieTechs"
         style={{
           backgroundImage: `url(${reactCode.src})`,
@@ -155,7 +154,7 @@ const CCrowmie = () => {
         <span>R</span>
         <span>N</span>
       </div>
-      <div className="CCard__Technologies">
+      <div className="Card__Technologies">
         <h4>Frontend</h4>
         <ul>
           <li>NodeJs</li>
@@ -174,7 +173,7 @@ const CCrowmie = () => {
           <li>Github</li>
         </ul>
       </div>
-      <div className="CCard__Technologies">
+      <div className="Card__Technologies">
         <h4>UX/UI</h4>
         <ul>
           <li>Figma</li>
@@ -183,7 +182,7 @@ const CCrowmie = () => {
           <li>Photoshop</li>
         </ul>
       </div>
-      <div className="CCard__Technologies">
+      <div className="Card__Technologies">
         <h4>Backend</h4>
         <ul>
           <li>NodeJs</li>
@@ -193,10 +192,10 @@ const CCrowmie = () => {
         </ul>
       </div>
       <h3 id="CrowmieGoals">Logros</h3>
-      <ul className="Ccard__goals">
+      <ul className="Card__goals">
         <li id="CrowmieSSR">
           <h4 style={{ marginTop: ".5rem" }}>Migración a Astro con SSR</h4>
-          <div className="CCard__banner" id="BannerCrowmieRocket">
+          <div className="Card__banner" id="BannerCrowmieRocket">
             <div style={{ backgroundImage: `url(${rocket.src})` }} />
           </div>
           <h5>Problema</h5>
@@ -240,7 +239,7 @@ const CCrowmie = () => {
         </li>
         <li id="CrowmieKYC">
           <h4>Nuevo formulario de KYC</h4>
-          <div className="CCard__banner" id="BannerCrowmieHandshake">
+          <div className="Card__banner" id="BannerCrowmieHandshake">
             <img src={handshake.src} alt="handshake" />
           </div>
           <p style={{ fontSize: ".8rem" }}>
@@ -294,7 +293,7 @@ const CCrowmie = () => {
         </li>
         <li id="CrowmieP2P">
           <h4>Mercado P2P</h4>
-          <div className="CCard__banner" id="BannerCrowmieMarket">
+          <div className="Card__banner" id="BannerCrowmieMarket">
             <img src={market.src} alt="market" />
           </div>
           <h5>Problema</h5>
@@ -348,7 +347,7 @@ const CCrowmie = () => {
         </li>
         <li id="CrowmieReferral">
           <h4>Sistema de referidos</h4>
-          <div className="CCard__banner" id="BannerCrowmieReferral">
+          <div className="Card__banner" id="BannerCrowmieReferral">
             <img src={friends.src} alt="friends" />
           </div>
           <h5>Problema</h5>
