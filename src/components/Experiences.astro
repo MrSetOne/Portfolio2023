@@ -31,15 +31,19 @@ import ModalBtn from "./ModalBtn";
   </div>
 </article>
 <article class="cantastik">
-  <div>
-    <ShortArrow/>
-  </div>
+  <ModalBtn client:visible target="Cantastik" >
+    <div>
+      <ShortArrow/>
+    </div>
+  </ModalBtn>
   <Image width={300} src={cantastik} alt="Cantastik" />
 </article>
 <article class="gameQuiz">
-  <div>
-    <ShortArrow/>
-  </div>
+  <ModalBtn client:visible target="GameQuiz" >
+    <div>
+      <ShortArrow/>
+    </div>
+  </ModalBtn>
   <Image width={300} src={quiz} alt="GameQuiz" />
 </article>
 <article class="typescary">
@@ -75,7 +79,7 @@ import ModalBtn from "./ModalBtn";
       // min-height: 25rem;      
       aspect-ratio: 1/1;
     }
-    >div{
+    div{
       width: 2rem;
       height: 2rem;
       border-radius: 50%;

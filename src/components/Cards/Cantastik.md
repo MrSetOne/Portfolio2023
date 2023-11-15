@@ -9,6 +9,7 @@ El proyecto nace como reto durante mi formación en The bridge y fue construido 
 **Capturas / Mockups**
 
 ## Aprendizaje
+
 Desarrollo de API REST
 Uso de MongoDB
 Mejora de habilidades de diseño
@@ -18,15 +19,8 @@ Control de estados globales y locales
 Routing
 Sass
 
-
-
-
-
-
-
-
-
 ## Stack tecnológico
+
 Frontend
 Javascript
 React
@@ -46,6 +40,7 @@ Multer
 Firebase storage
 
 ## Enlaces
+
 App https://cantastik.vercel.app/
 Frontend https://github.com/MrSetOne/cantastik-frontend
 Backend https://github.com/MrSetOne/SocialNetwork_MongoDB

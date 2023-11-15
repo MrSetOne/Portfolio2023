@@ -4,11 +4,11 @@ import Experience from "../icons/Experience";
 import Pantone from "../icons/Pantone";
 import Code from "../icons/Code";
 import Cloud from "../icons/Cloud";
-import reactCode from '../../assets/reactCode.webp';
-import rocket from '../../assets/rocket.webp';
-import handshake from '../../assets/handshake.webp';
-import market from '../../assets/market.webp';
-import friends from '../../assets/friends.webp';
+import reactCode from "../../assets/reactCode.webp";
+import rocket from "../../assets/rocket.webp";
+import handshake from "../../assets/handshake.webp";
+import market from "../../assets/market.webp";
+import friends from "../../assets/friends.webp";
 
 const CCrowmie = () => {
   console.log(windmill);
@@ -76,10 +76,17 @@ const CCrowmie = () => {
         activos digitales que se pueden comprar y vender a través de la
         plataforma.
       </p>
-      <h3 id="tasksInCrowmie" >Ocupación</h3>
-      <div id="BannerCrowmieTasks" className="CCard__banner" style={{backgroundImage:`url(${windmill.src})`, backgroundSize:'cover'}}>
+      <h3 id="tasksInCrowmie">Ocupación</h3>
+      <div
+        id="BannerCrowmieTasks"
+        className="CCard__banner"
+        style={{
+          backgroundImage: `url(${windmill.src})`,
+          backgroundSize: "cover",
+        }}
+      >
         <div>
-          <Experience size="2.8rem" strokeWidth={3.5}/>
+          <Experience size="2.8rem" strokeWidth={3.5} />
           <span>Analisis</span>
         </div>
         <div>
@@ -99,41 +106,54 @@ const CCrowmie = () => {
         En mi puesto de desarrollador frontend y UX/UI, me encargaba de todo el
         ciclo de vida de las nuevas funcionalidades de la web y la aplicación de
         la compañía. Desde el estudio de la viabilidad, el diseño, el desarrollo
-        y el despliegue.<br /><br />En concreto, mis principales responsabilidades eran:
-        </p>
+        y el despliegue.
+        <br />
+        <br />
+        En concreto, mis principales responsabilidades eran:
+      </p>
 
-        <ul>
-          <li>
-            Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
-            técnicas como el análisis de usuarios, la investigación de la
-            competencia y la creación de prototipos de bajo nivel.
-          </li>
-          <li>
-            Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha
-            colaboración con el equipo de marketing para crear diseños de alto
-            nivel que fueran intuitivos, usables y atractivos.
-          </li>
-          <li>
-            Desarrollar nuevas funcionalidades: Utilizaba TypeScript con
-            tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para
-            implementar las funcionalidades diseñadas.
-          </li>
-          <li>
-            Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba
-            las funcionalidades en producción y probaba su correcto
-            funcionamiento.
-          </li>
-        </ul>
-        <br/>
-        <p>
+      <ul>
+        <li>
+          Estudiar la viabilidad de nuevas funcionalidades: Para ello, utilizaba
+          técnicas como el análisis de usuarios, la investigación de la
+          competencia y la creación de prototipos de bajo nivel.
+        </li>
+        <li>
+          Diseñar nuevas funcionalidades: En esta fase, trabajaba en estrecha
+          colaboración con el equipo de marketing para crear diseños de alto
+          nivel que fueran intuitivos, usables y atractivos.
+        </li>
+        <li>
+          Desarrollar nuevas funcionalidades: Utilizaba TypeScript con
+          tecnologías como React, Sass, Framer-motion, nodeJs y MongoDB para
+          implementar las funcionalidades diseñadas.
+        </li>
+        <li>
+          Desplegar nuevas funcionalidades: Una vez desarrolladas, desplegaba
+          las funcionalidades en producción y probaba su correcto
+          funcionamiento.
+        </li>
+      </ul>
+      <br />
+      <p>
         Además de desarrollar nuevas funcionalidades, también refactoricé parte
         del código para mejorar su legibilidad y performance. Para ello, utilicé
         buenas prácticas, algunos principios SOLID y hooks como useMemo,
         useCallback y useRef.
-        </p>
+      </p>
       <h3 id="CrowmieTechnologies">Tecnología</h3>
-      <div className="CCard__banner" id="BannerCrowmieTechs" style={{backgroundImage:`url(${reactCode.src})`, backgroundSize:'cover'}}>
-        <span>M</span><span>E</span><span>R</span><span>N</span>
+      <div
+        className="CCard__banner"
+        id="BannerCrowmieTechs"
+        style={{
+          backgroundImage: `url(${reactCode.src})`,
+          backgroundSize: "cover",
+        }}
+      >
+        <span>M</span>
+        <span>E</span>
+        <span>R</span>
+        <span>N</span>
       </div>
       <div className="CCard__Technologies">
         <h4>Frontend</h4>
@@ -175,17 +195,33 @@ const CCrowmie = () => {
       <h3 id="CrowmieGoals">Logros</h3>
       <ul className="Ccard__goals">
         <li id="CrowmieSSR">
-          <h4 style={{marginTop:'.5rem'}} >Migración a Astro con SSR</h4>
+          <h4 style={{ marginTop: ".5rem" }}>Migración a Astro con SSR</h4>
           <div className="CCard__banner" id="BannerCrowmieRocket">
-            <div style={{backgroundImage:`url(${rocket.src})`}}/>
+            <div style={{ backgroundImage: `url(${rocket.src})` }} />
           </div>
           <h5>Problema</h5>
-          <p>La web de la empresa tenía un tiempo de carga lento (llegando hasta los 7seg), no era completamente responsive y carecía de contenido dinámico, lo que afectaba negativamente a su rendimiento, usabilidad y atractivo.</p>
+          <p>
+            La web de la empresa tenía un tiempo de carga lento (llegando hasta
+            los 7seg), no era completamente responsive y carecía de contenido
+            dinámico, lo que afectaba negativamente a su rendimiento, usabilidad
+            y atractivo.
+          </p>
           <h5>Solución</h5>
           <ul>
-            <li>WordPress se utilizará solo como CMS, ya que su API funciona a buena velocidad y ahí es donde se alojaba todo el sistema del blog.</li>
-            <li>Astro será el framework de desarrollo web encargado de los renderizados, por su velocidad, flexibilidad, facilidad de uso y mantenimiento.</li>
-            <li>Como librerías adicionales se usarán React para los componentes dinamicos y Tailwind para mejorar los tiempos de desarrollo.</li>
+            <li>
+              WordPress se utilizará solo como CMS, ya que su API funciona a
+              buena velocidad y ahí es donde se alojaba todo el sistema del
+              blog.
+            </li>
+            <li>
+              Astro será el framework de desarrollo web encargado de los
+              renderizados, por su velocidad, flexibilidad, facilidad de uso y
+              mantenimiento.
+            </li>
+            <li>
+              Como librerías adicionales se usarán React para los componentes
+              dinamicos y Tailwind para mejorar los tiempos de desarrollo.
+            </li>
           </ul>
           <h5>Resultado</h5>
           <p>
@@ -207,19 +243,42 @@ const CCrowmie = () => {
           <div className="CCard__banner" id="BannerCrowmieHandshake">
             <img src={handshake.src} alt="handshake" />
           </div>
-          <p style={{fontSize:'.8rem'}} >
-            Un formulario KYC es un requisito legal para muchas empresas,
-            pero puede ser un proceso largo y tedioso para los clientes.
+          <p style={{ fontSize: ".8rem" }}>
+            Un formulario KYC es un requisito legal para muchas empresas, pero
+            puede ser un proceso largo y tedioso para los clientes.
           </p>
           <h5>Problema</h5>
-          <p>El formulario de KYC de nuestra empresa era demasiado extenso, aburrido y difícil de encontrar. Esto ocasionaba que muy pocos usuarios terminaras completándolo.</p>
+          <p>
+            El formulario de KYC de nuestra empresa era demasiado extenso,
+            aburrido y difícil de encontrar. Esto ocasionaba que muy pocos
+            usuarios terminaras completándolo.
+          </p>
           <h5>Solución</h5>
           <ul>
-            <li>Visibilidad: El formulario se muestra en un modal que aparece nada más acceder a la aplicación. Esto garantiza que los clientes no olviden completarlo.</li>
-            <li>Notificación: Al usuario se le muestra una notificación de forma permanente en el caso de que no haya completado el formulario.</li>
-            <li>Facilidad de uso: El formulario se divide en vistas de máximo 3 inputs cada una. Esto permite a los clientes completar el formulario de forma más rápida, amigable y sencilla.</li>
-            <li>Autoguardado: Para evitar que el usuario tenga que volver a empezar el formulario desde cero tendrá un sistema de autoguardado, en cualquier momento puede retomarlo donde lo dejó.</li>
-            <li>Motivación: El formulario está gamificado con elementos como un indicador de progreso. Esto ayuda a los clientes a mantenerse motivados y conseguir un porcentaje menor de abandono.</li>
+            <li>
+              Visibilidad: El formulario se muestra en un modal que aparece nada
+              más acceder a la aplicación. Esto garantiza que los clientes no
+              olviden completarlo.
+            </li>
+            <li>
+              Notificación: Al usuario se le muestra una notificación de forma
+              permanente en el caso de que no haya completado el formulario.
+            </li>
+            <li>
+              Facilidad de uso: El formulario se divide en vistas de máximo 3
+              inputs cada una. Esto permite a los clientes completar el
+              formulario de forma más rápida, amigable y sencilla.
+            </li>
+            <li>
+              Autoguardado: Para evitar que el usuario tenga que volver a
+              empezar el formulario desde cero tendrá un sistema de
+              autoguardado, en cualquier momento puede retomarlo donde lo dejó.
+            </li>
+            <li>
+              Motivación: El formulario está gamificado con elementos como un
+              indicador de progreso. Esto ayuda a los clientes a mantenerse
+              motivados y conseguir un porcentaje menor de abandono.
+            </li>
           </ul>
           <h5>Resultado</h5>
           <p>

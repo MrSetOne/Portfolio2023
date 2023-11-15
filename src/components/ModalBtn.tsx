@@ -3,8 +3,10 @@ import { createPortal } from "react-dom";
 import Modal from "./Modal";
 import CCrowmie from "./Cards/CCrowmie";
 import "./Cards/Cards.scss";
+import CCantastik from "./Cards/CCantastik";
+import CGameQuiz from "./Cards/CGameQuiz";
 
-type Cards = "Crowmie" | "Cantastik";
+type Cards = "Crowmie" | "Cantastik" | "GameQuiz";
 
 interface Props {
   children: React.ReactNode;
@@ -20,7 +22,7 @@ const ModalBtn = ({ children, target }: Props) => {
     const modalExternalBg = document.getElementsByClassName(
       "modalExternalBg"
     )[0] as HTMLElement;
-    if(!modalExternalBg) return;
+    if (!modalExternalBg) return;
     modalExternalBg.classList.remove("modalExternalBg--active");
     setTimeout(() => {
       modalExternalBg.remove();
@@ -33,7 +35,9 @@ const ModalBtn = ({ children, target }: Props) => {
         case "Crowmie":
           return <CCrowmie />;
         case "Cantastik":
-          return <div>Cantastik</div>;
+          return <CCantastik />;
+        case "GameQuiz":
+          return <CGameQuiz />;
         default:
           return <div>default</div>;
       }

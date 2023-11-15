@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-interface Props{
-  size?:string
-  strokeWidth?:number
+interface Props {
+  size?: string;
+  strokeWidth?: number;
 }
 
-const Code = ({size='1rem', strokeWidth=1}:Props) => {
+const Code = ({ size = "1rem", strokeWidth = 1 }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const Code = ({size='1rem', strokeWidth=1}:Props) => {
         d="M7 8l-4 3.692L7 16m10-8l4 3.692L17 16M14 4l-4 16"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default Code
+export default Code;

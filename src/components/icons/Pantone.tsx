@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-interface Props{
-  size?:string
+interface Props {
+  size?: string;
 }
 
-const Pantone = ({size='1rem'}:Props) => {
+const Pantone = ({ size = "1rem" }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const Pantone = ({size='1rem'}:Props) => {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default Pantone
+export default Pantone;

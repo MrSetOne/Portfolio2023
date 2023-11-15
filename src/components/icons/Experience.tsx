@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-interface Props{
-  size?:string
-  strokeWidth?:number
+interface Props {
+  size?: string;
+  strokeWidth?: number;
 }
 
-const Experience = ({size='1rem', strokeWidth=1}:Props) => {
+const Experience = ({ size = "1rem", strokeWidth = 1 }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ const Experience = ({size='1rem', strokeWidth=1}:Props) => {
         <path d="M41.905 35.771a2.818 2.818 0 105.636 0 2.818 2.818 0 00-5.636 0zM2.46 13.231a2.817 2.817 0 105.635 0 2.817 2.817 0 00-5.635 0zM16.547 24.5a8.453 8.453 0 1016.906 0 8.453 8.453 0 00-16.906 0z"></path>
       </g>
     </svg>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
