@@ -1,6 +1,7 @@
 import React from "react";
 import cantastik from "../../assets/cantastik.webp";
 import reactCode from "../../assets/reactCode.webp";
+import Github from "../icons/Github";
 
 const CCantastik = () => {
   return (
@@ -180,6 +181,20 @@ const CCantastik = () => {
           </p>
         </li>
       </ul>
+      <h3>Enlaces</h3>
+      <div className="Card__Links Card__Links--odd">
+        <a href="" target='_blank'>
+          <Github size="1.7rem" color="#0095f6"/>
+          <span>Frontend</span>
+        </a>
+        <a href="" target='_blank'>
+          <Github size="1.7rem" color="#0095f6"/>
+         <span>Backend</span>
+        </a>
+        <a href="" target='_blank' className="Card__Links--itemFill">
+          Visita el sitio
+        </a>
+      </div>
     </article>
   );
 };
