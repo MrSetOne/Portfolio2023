@@ -67,9 +67,19 @@
       }
     }
   }
-  .Card__Learning{
-    li{
-      list-style-image: url('../../assets/checkSVG.svg');
+  .Card__Learning {
+    li {
+      list-style-image: url("../../assets/checkSVG.svg");
+      line-height: 1.6;
+      padding: 0.5rem 0;
+      p {
+        color: #494949;
+        br {
+          content: "";
+          margin: 0.5rem;
+          display: block;
+        }
+      }
     }
   }
   .Card__goals {
@@ -191,8 +201,8 @@
   }
 }
 
-#CantastikTitle{
-  img{
+#CantastikTitle {
+  img {
     width: 100%;
     object-fit: cover;
     height: 16.5rem;
