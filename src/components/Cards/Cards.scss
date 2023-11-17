@@ -117,6 +117,10 @@
     grid-template-columns: 1fr 1fr;
     gap: .4rem;
     margin-top: 1rem;
+    @media screen and (max-width: 400px){
+      display: flex;
+      flex-direction: column;
+    }
     >a{
       font-size: 1rem;
       display: flex;
@@ -152,25 +156,6 @@
     }
   }
 }
-
-
-
-
-// > button {
-//   background-color: #fca311;
-//   font-size: 1rem;
-//   padding: 0.5rem 1rem;
-//   border-radius: 0.5rem;
-//   color: white;
-//   font-weight: 700;
-//   cursor: pointer;
-//   border: none;
-// }
-// > .form__btns--cv {
-//   background-color: transparent;
-//   border: #fca311 1px solid;
-//   color: #fca311;
-// }
 
 
 // Specific styles
