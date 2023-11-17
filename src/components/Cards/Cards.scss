@@ -149,6 +149,11 @@
       color: white;
       border: none;
     }
+    .Card__Links--GitHub{
+      background: rgb(20,23,39);
+      background: linear-gradient(128deg, rgba(20,23,39,1) 0%, rgba(53,59,101,1) 100%);
+      color: white;
+    }
   } 
   .Card__Links--odd{
     :last-child{

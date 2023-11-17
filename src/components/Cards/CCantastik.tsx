@@ -13,28 +13,28 @@ const CCantastik = () => {
         <h3>Indice:</h3>
         <ul>
           <li>
-            <a href="#">
+            <a href="#whatIsCantastik">
               <span>1</span>¿Que es Cantastik?
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#CantastikTechnologies">
               <span>2</span>Tecnologias
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#CantastikLearning">
               <span>3</span>Aprendizaje
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#CantastikLinks">
               <span>4</span>Enlaces
             </a>
           </li>
         </ul>
       </div>
-      <h3>¿Que es Cantastik?</h3>
+      <h3 id="whatIsCantastik">¿Que es Cantastik?</h3>
       <p>
         Es un proyecto fullstack que consiste en una red social hibrida entre
         Instagram y Twitter, puedes crear posts con o sin imagen como en Twitter
@@ -44,7 +44,7 @@ const CCantastik = () => {
         El proyecto nace como reto durante mi formación en The bridge y fue
         construido en dos semanas, una dedicada al backend y otra al frontend.
       </p>
-      <h3>Tecnologias</h3>
+      <h3 id="CantastikTechnologies">Tecnologias</h3>
       <div
         className="Card__banner"
         id="BannerCrowmieTechs"
@@ -82,7 +82,7 @@ const CCantastik = () => {
           <li>Firebase storage</li>
         </ul>
       </div>
-      <h3>Aprendizaje</h3>
+      <h3 id="CantastikLearning">Aprendizaje</h3>
       <ul className="Card__Learning">
         <li>
           <h4>Desarrollo de API REST</h4>
@@ -181,17 +181,17 @@ const CCantastik = () => {
           </p>
         </li>
       </ul>
-      <h3>Enlaces</h3>
+      <h3 id="CantastikLinks">Enlaces</h3>
       <div className="Card__Links Card__Links--odd">
-        <a href="" target='_blank'>
-          <Github size="1.7rem" color="#0095f6"/>
+        <a href="https://github.com/MrSetOne/cantastik-frontend" target='_blank' className="Card__Links--GitHub">
+          <Github size="1.5rem" color="white"/>
           <span>Frontend</span>
         </a>
-        <a href="" target='_blank'>
-          <Github size="1.7rem" color="#0095f6"/>
+        <a href="https://github.com/MrSetOne/SocialNetwork_MongoDB" target='_blank' className="Card__Links--GitHub">
+          <Github size="1.5rem" color="white"/>
          <span>Backend</span>
         </a>
-        <a href="" target='_blank' className="Card__Links--itemFill">
+        <a href="https://cantastik.vercel.app/" target='_blank' className="Card__Links--itemFill">
           Visita el sitio
         </a>
       </div>
