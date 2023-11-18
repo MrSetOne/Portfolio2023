@@ -36,30 +36,35 @@ const CCrowmie = () => {
             </a>
           </li>
           <li>
+            <a href="#">
+              <span>4</span>Aprendizaje
+            </a>
+          </li>
+          <li>
             <a href="#CrowmieGoals">
-              <span>4</span>Logros
+              <span>5</span>Logros
             </a>
           </li>
           <li>
             <ul>
               <li>
                 <a href="#CrowmieSSR">
-                  <span>4.1</span>Migración a Astro con SSR
+                  <span>5.1</span>Migración a Astro con SSR
                 </a>
               </li>
               <li>
                 <a href="#CrowmieKYC">
-                  <span>4.2</span>Nuevo formulario de KYC
+                  <span>5.2</span>Nuevo formulario de KYC
                 </a>
               </li>
               <li>
                 <a href="#CrowmieP2P">
-                  <span>4.3</span>Mercado P2P
+                  <span>5.3</span>Mercado P2P
                 </a>
               </li>
               <li>
                 <a href="#CrowmieReferral">
-                  <span>4.4</span>Sistema de referidos
+                  <span>5.4</span>Sistema de referidos
                 </a>
               </li>
             </ul>
@@ -191,6 +196,73 @@ const CCrowmie = () => {
           <li>Mongoose</li>
         </ul>
       </div>
+      <h3>Aprendizaje</h3>
+      <ul className="Card__Learning">
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+        <li>
+          <h4></h4>
+          <p></p>
+        </li>
+      </ul>
+
+
+
+
       <h3 id="CrowmieGoals">Logros</h3>
       <ul className="Card__goals">
         <li id="CrowmieSSR">

@@ -37,27 +37,36 @@ Backend https://github.com/MrSetOne/SocialNetwork_MongoDB
 
 # APRENDIZAJE CROWMIE
 
-- Funciones recursivas
-- Control de fetching y errores
-- Arquitectura de datos y estados
-- Formateo de datos
-- Estudio de librearias y frameworks desde 0
-- Blockchain
-- Desarrollo de experiencias e interfaces
 - Tabajo en equipo y colaboración
+  - Con tech y marketing
+
 - Planificación
-- Despligue en producción de apps complejas
+
+- TypeScript y tipados
+
+- Cultura del feedback
+  - Aceptación de errores y aprendizaje de los mismos
+
+- Principios SOLID y buenas prácticas
+  - Hasta donde se pudo, es una startup y no hay tiempo para mucho más
+
 - Server side rendering
-- Hooks y custom hooks
+  - Explicar bravemente Astro
+
+- Funciones recursivas
+  - Explicar uso para modificar strings de objetos anidados
+
 - Analisis y mejora de performance
-- Principios SOLID
-- Trabajar con feedback
-- Analisis de APIs con escasa documentación
+  - Explicar uso de `useMemo` y `useCallback`
+
+- Estudio de librearias y frameworks desde 0
+  - Poner ejemplo de Astro
+
+- Blockchain
+  - (TEORIA) Conceptos basicos y funcionamiento
+
 - Gamificación
-- Aceptación de errores y aprendizaje de los mismos
-- Sistamas de filtrado y busqueda
-- Control de formularios
-- Tipado
-- No dar nada por seguro
-- Investigación
+  - Explicar beneficios
+
 - Archivos Blob
+  - Explicar uso para descarga de archivos
