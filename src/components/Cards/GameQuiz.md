@@ -34,39 +34,3 @@ ChartJs
 App https://cantastik.vercel.app/
 Frontend https://github.com/MrSetOne/cantastik-frontend
 Backend https://github.com/MrSetOne/SocialNetwork_MongoDB
-
-# APRENDIZAJE CROWMIE
-
-- Tabajo en equipo y colaboración
-  - Con tech y marketing
-
-- Planificación
-
-- TypeScript y tipados
-
-- Cultura del feedback
-  - Aceptación de errores y aprendizaje de los mismos
-
-- Principios SOLID y buenas prácticas
-  - Hasta donde se pudo, es una startup y no hay tiempo para mucho más
-
-- Server side rendering
-  - Explicar bravemente Astro
-
-- Funciones recursivas
-  - Explicar uso para modificar strings de objetos anidados
-
-- Analisis y mejora de performance
-  - Explicar uso de `useMemo` y `useCallback`
-
-- Estudio de librearias y frameworks desde 0
-  - Poner ejemplo de Astro
-
-- Blockchain
-  - (TEORIA) Conceptos basicos y funcionamiento
-
-- Gamificación
-  - Explicar beneficios
-
-- Archivos Blob
-  - Explicar uso para descarga de archivos
