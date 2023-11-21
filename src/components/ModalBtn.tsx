@@ -21,7 +21,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
     setOpen(false);
     document.body.style.overflow = "auto";
     const modalExternalBg = document.getElementsByClassName(
-      "modalExternalBg"
+      "modalExternalBg",
     )[0] as HTMLElement;
     if (!modalExternalBg) return;
     modalExternalBg.classList.remove("modalExternalBg--active");
@@ -59,7 +59,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
       document.body.appendChild(document.createElement("div")).className =
         "modalExternalBg";
       const modalExternalBg = document.getElementsByClassName(
-        "modalExternalBg"
+        "modalExternalBg",
       )[0] as HTMLElement;
       modalExternalBg.style.height = document.body.clientHeight + "px";
       modalExternalBg.classList.add("modalExternalBg--active");
@@ -90,7 +90,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
       {open &&
         createPortal(
           toRender,
-          document.getElementById("modalPortal") as HTMLElement
+          document.getElementById("modalPortal") as HTMLElement,
         )}
     </>
   );

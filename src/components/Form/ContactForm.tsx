@@ -80,7 +80,7 @@ const ContactForm = () => {
         }, 2000);
       }
     },
-    [name, email, message, canSubmit]
+    [name, email, message, canSubmit],
   );
 
   return (

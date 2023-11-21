@@ -27,7 +27,7 @@ const ExperiencieRow = ({
   knowledge,
 }: Props) => {
   const { current: unsortedArray } = useRef(
-    knowledge.sort(() => Math.random() - 0.5)
+    knowledge.sort(() => Math.random() - 0.5),
   );
 
   const cutedArray = useMemo(() => {

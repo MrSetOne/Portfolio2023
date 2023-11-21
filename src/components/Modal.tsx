@@ -27,7 +27,7 @@ const Modal = ({ children, imperativeClose }: Props) => {
         opacity: 0,
       },
     }),
-    []
+    [],
   );
 
   const closeCard = () => {

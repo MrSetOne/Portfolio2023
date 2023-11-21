@@ -183,15 +183,27 @@ const CCantastik = () => {
       </ul>
       <h3 id="CantastikLinks">Enlaces</h3>
       <div className="Card__Links Card__Links--odd">
-        <a href="https://github.com/MrSetOne/cantastik-frontend" target='_blank' className="Card__Links--GitHub">
-          <Github size="1.5rem" color="white"/>
+        <a
+          href="https://github.com/MrSetOne/cantastik-frontend"
+          target="_blank"
+          className="Card__Links--GitHub"
+        >
+          <Github size="1.5rem" color="white" />
           <span>Frontend</span>
         </a>
-        <a href="https://github.com/MrSetOne/SocialNetwork_MongoDB" target='_blank' className="Card__Links--GitHub">
-          <Github size="1.5rem" color="white"/>
-         <span>Backend</span>
+        <a
+          href="https://github.com/MrSetOne/SocialNetwork_MongoDB"
+          target="_blank"
+          className="Card__Links--GitHub"
+        >
+          <Github size="1.5rem" color="white" />
+          <span>Backend</span>
         </a>
-        <a href="https://cantastik.vercel.app/" target='_blank' className="Card__Links--itemFill">
+        <a
+          href="https://cantastik.vercel.app/"
+          target="_blank"
+          className="Card__Links--itemFill"
+        >
           Visita el sitio
         </a>
       </div>

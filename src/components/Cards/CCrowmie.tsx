@@ -196,35 +196,128 @@ const CCrowmie = () => {
           <li>Mongoose</li>
         </ul>
       </div>
-      <h3 id="CrowmieLearning" >Aprendizaje</h3>
+      <h3 id="CrowmieLearning">Aprendizaje</h3>
       <ul className="Card__Learning">
         <li>
           <h4>Trabajo en equipo y colaboración</h4>
-          <p>En mi experiencia en Crowmie, tuve la oportunidad de trabajar en un equipo multidisciplinar de profesionales con diferentes habilidades y conocimientos. Esto me permitió mejorar mi capacidad de comunicación, escuchar y respetar las opiniones de los demás, y trabajar de forma coordinada para alcanzar objetivos comunes.<br/>Por ejemplo, trabajé con el equipo de backend para acordar cómo iban a funcionar los distintos endpoints y comprender la lógica de los servidores. También trabajé con el equipo de marketing para trabajar sobre los aspectos de la UI y que se lograra tanto el mensaje, como la estética deseada.</p>
+          <p>
+            En mi experiencia en Crowmie, tuve la oportunidad de trabajar en un
+            equipo multidisciplinar de profesionales con diferentes habilidades
+            y conocimientos. Esto me permitió mejorar mi capacidad de
+            comunicación, escuchar y respetar las opiniones de los demás, y
+            trabajar de forma coordinada para alcanzar objetivos comunes.
+            <br />
+            Por ejemplo, trabajé con el equipo de backend para acordar cómo iban
+            a funcionar los distintos endpoints y comprender la lógica de los
+            servidores. También trabajé con el equipo de marketing para trabajar
+            sobre los aspectos de la UI y que se lograra tanto el mensaje, como
+            la estética deseada.
+          </p>
         </li>
         <li>
           <h4>Planificación</h4>
-          <p>Aprendí la importancia de la planificación y la gestión del tiempo. En este sentido, tuve la oportunidad de trabajar con la metodología Scrum, basada en sprints de dos semanas. Esto me permitió aprender a dividir el trabajo en pequeñas tareas, priorizarlas y estimar su duración.<br/>En este proceso, pude conocer mejor mi potencial y limitaciones. Por ejemplo, aprendí que soy capaz de trabajar de forma eficiente y organizada, pero que también necesito aprender a gestionar mejor mi tiempo en situaciones de estrés o tareas muy extensas.</p>
+          <p>
+            Aprendí la importancia de la planificación y la gestión del tiempo.
+            En este sentido, tuve la oportunidad de trabajar con la metodología
+            Scrum, basada en sprints de dos semanas. Esto me permitió aprender a
+            dividir el trabajo en pequeñas tareas, priorizarlas y estimar su
+            duración.
+            <br />
+            En este proceso, pude conocer mejor mi potencial y limitaciones. Por
+            ejemplo, aprendí que soy capaz de trabajar de forma eficiente y
+            organizada, pero que también necesito aprender a gestionar mejor mi
+            tiempo en situaciones de estrés o tareas muy extensas.
+          </p>
         </li>
         <li>
           <h4>Cultura del feedback</h4>
-          <p>En Crowmie, aprendí la importancia de la cultura del feedback. En esta empresa, el feedback es un proceso continuo y abierto, que se ofrece y se recibe de forma constructiva. Esto me permitió aprender a aceptar mis errores de forma positiva y verlos como una oportunidad de mejora.</p>
+          <p>
+            En Crowmie, aprendí la importancia de la cultura del feedback. En
+            esta empresa, el feedback es un proceso continuo y abierto, que se
+            ofrece y se recibe de forma constructiva. Esto me permitió aprender
+            a aceptar mis errores de forma positiva y verlos como una
+            oportunidad de mejora.
+          </p>
         </li>
         <li>
           <h4>TypeScript y tipados</h4>
-          <p>Aprendí que el tipado fuerte es una herramienta esencial para el desarrollo de aplicaciones de software seguras, fiables y legibles.<br/>El tipado fuerte asocia un tipo de dato a cada variable, función y expresión de un programa. Esto permite al compilador de TypeScript realizar verificaciones de tipo en tiempo de compilación, lo que ayuda a prevenir errores y mejorar la seguridad, la fiabilidad y la legibilidad del código.<br/>El compilador de TypeScript puede verificar que los tipos de datos coinciden, gracias a esto es menos probable que se produzcan errores en tiempo de ejecución. Esto puede ayudar a reducir el tiempo de depuración y el coste de mantenimiento de las aplicaciones.<br/>También ayuda a la legibilidad del código. Cuando el tipo de dato de cada variable y expresión está claramente definido, es más fácil entender el funcionamiento del código. Esto puede ayudar a los desarrolladores a colaborar más eficazmente y a reducir el tiempo de aprendizaje de nuevas aplicaciones.<br/>En resumen, el tipado fuerte es una herramienta poderosa que puede ayudar a los desarrolladores a crear aplicaciones de software de alta calidad.</p>
+          <p>
+            Aprendí que el tipado fuerte es una herramienta esencial para el
+            desarrollo de aplicaciones de software seguras, fiables y legibles.
+            <br />
+            El tipado fuerte asocia un tipo de dato a cada variable, función y
+            expresión de un programa. Esto permite al compilador de TypeScript
+            realizar verificaciones de tipo en tiempo de compilación, lo que
+            ayuda a prevenir errores y mejorar la seguridad, la fiabilidad y la
+            legibilidad del código.
+            <br />
+            El compilador de TypeScript puede verificar que los tipos de datos
+            coinciden, gracias a esto es menos probable que se produzcan errores
+            en tiempo de ejecución. Esto puede ayudar a reducir el tiempo de
+            depuración y el coste de mantenimiento de las aplicaciones.
+            <br />
+            También ayuda a la legibilidad del código. Cuando el tipo de dato de
+            cada variable y expresión está claramente definido, es más fácil
+            entender el funcionamiento del código. Esto puede ayudar a los
+            desarrolladores a colaborar más eficazmente y a reducir el tiempo de
+            aprendizaje de nuevas aplicaciones.
+            <br />
+            En resumen, el tipado fuerte es una herramienta poderosa que puede
+            ayudar a los desarrolladores a crear aplicaciones de software de
+            alta calidad.
+          </p>
         </li>
         <li>
           <h4>Principios SOLID y buenas prácticas</h4>
-          <p>En mi experiencia en Crowmie, tuve la oportunidad de trabajar en un entorno de desarrollo ágil, con plazos de entrega ajustados. Esto supuso un reto a la hora de implementar los principios SOLID y las buenas prácticas de desarrollo de software.<br/>A pesar de las limitaciones, pude aprender a aplicar los principios SOLID en mi trabajo de forma progresiva. Por ejemplo, aprendí a separar responsabilidades. También aprendí a escribir código más legible y mantenible, utilizando convenciones de nomenclatura y comentarios claros.<br/>En algunos casos, no fue posible implementar los principios SOLID al 100%. Por ejemplo, en algunas ocasiones fue necesario hacer cambios rápidos al código para atender a nuevas necesidades del negocio. En estos casos, intenté aplicar los principios SOLID siempre que fuera posible, pero también tuve que ser flexible y priorizar la entrega del producto.<br/>En general, creo que mi experiencia en Crowmie me ha ayudado a comprender la importancia de los principios SOLID y las buenas prácticas de desarrollo de software. He aprendido a aplicar estos principios de forma progresiva, incluso en entornos de desarrollo ágil con plazos ajustados.</p>
+          <p>
+            En mi experiencia en Crowmie, tuve la oportunidad de trabajar en un
+            entorno de desarrollo ágil, con plazos de entrega ajustados. Esto
+            supuso un reto a la hora de implementar los principios SOLID y las
+            buenas prácticas de desarrollo de software.
+            <br />A pesar de las limitaciones, pude aprender a aplicar los
+            principios SOLID en mi trabajo de forma progresiva. Por ejemplo,
+            aprendí a separar responsabilidades. También aprendí a escribir
+            código más legible y mantenible, utilizando convenciones de
+            nomenclatura y comentarios claros.
+            <br />
+            En algunos casos, no fue posible implementar los principios SOLID al
+            100%. Por ejemplo, en algunas ocasiones fue necesario hacer cambios
+            rápidos al código para atender a nuevas necesidades del negocio. En
+            estos casos, intenté aplicar los principios SOLID siempre que fuera
+            posible, pero también tuve que ser flexible y priorizar la entrega
+            del producto.
+            <br />
+            En general, creo que mi experiencia en Crowmie me ha ayudado a
+            comprender la importancia de los principios SOLID y las buenas
+            prácticas de desarrollo de software. He aprendido a aplicar estos
+            principios de forma progresiva, incluso en entornos de desarrollo
+            ágil con plazos ajustados.
+          </p>
         </li>
         <li>
           <h4>Server side rendering</h4>
-          <p>Tuve la oportunidad de aprender sobre server side rendering (SSR) con Astro. SSR consiste en renderizar el contenido de una página web en el servidor, en lugar de en el cliente.<br/>Algunas de sus ventajas son la mejora de SEO ya que al renderizarse el contenido en el servidor el documento se descarga con todos los metadatos necesarios. También se aligera la carga en el cliente, consiguiendo así una mejor experiencia de usuario y un menor consumo de datos.</p>
+          <p>
+            Tuve la oportunidad de aprender sobre server side rendering (SSR)
+            con Astro. SSR consiste en renderizar el contenido de una página web
+            en el servidor, en lugar de en el cliente.
+            <br />
+            Algunas de sus ventajas son la mejora de SEO ya que al renderizarse
+            el contenido en el servidor el documento se descarga con todos los
+            metadatos necesarios. También se aligera la carga en el cliente,
+            consiguiendo así una mejor experiencia de usuario y un menor consumo
+            de datos.
+          </p>
         </li>
         <li>
           <h4>Analisis y mejora de performance</h4>
-          <p>En mi experiencia en Crowmie, tuve la oportunidad de aprender sobre el análisis y la mejora de la performance en React. Aprendí el uso de hooks como useMemo, useCallback y useRef, que pueden ayudar a evitar la rerenderización innecesaria de los componentes. Esto puede ayudar a mejorar el rendimiento de la aplicación, mejorando la experiencia del usuario.</p>
+          <p>
+            En mi experiencia en Crowmie, tuve la oportunidad de aprender sobre
+            el análisis y la mejora de la performance en React. Aprendí el uso
+            de hooks como useMemo, useCallback y useRef, que pueden ayudar a
+            evitar la rerenderización innecesaria de los componentes. Esto puede
+            ayudar a mejorar el rendimiento de la aplicación, mejorando la
+            experiencia del usuario.
+          </p>
         </li>
       </ul>
       <h3 id="CrowmieGoals">Logros</h3>
