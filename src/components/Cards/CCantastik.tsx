@@ -35,7 +35,7 @@ const CCantastik = () => {
         </ul>
       </div>
       <h3 id="whatIsCantastik">¿Que es Cantastik?</h3>
-      <p>
+      <p style={{marginTop:'1rem'}}>
         Es un <b>proyecto fullstack</b> que consiste en una <b>red social</b>{" "}
         hibrida entre Instagram y Twitter, puedes crear posts con o sin imagen
         como en Twitter pero con la estetica minimalista y "user friendly" de

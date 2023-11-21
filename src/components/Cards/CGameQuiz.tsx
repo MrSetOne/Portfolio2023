@@ -36,7 +36,7 @@ const CGameQuiz = () => {
         </ul>
       </div>
       <h3 id="whatIsGameQuiz">¿Que es GameQuiz?</h3>
-      <p>
+      <p style={{marginTop:'1rem'}}>
         La idea de GameQuiz es desarrollar un{" "}
         <b>juego tipo Quiz estilo SPA con VanillaJS</b> utilizando la API{" "}
         <a href="https://opentdb.com/" target="_blank">
