@@ -37,12 +37,15 @@ const CGameQuiz = () => {
       </div>
       <h3 id="whatIsGameQuiz">¿Que es GameQuiz?</h3>
       <p>
-        La idea de GameQuiz es desarrollar un juego tipo Quiz estilo SPA con
-        VanillaJS utilizando la API OpenTrivia (https://opentdb.com/), la cual
-        nos proporciona una gran cantidad de preguntas de diferentes categorías
-        y dificultades.
-        <br />A modo de reto personal, decidí añadir más dificultad añadiendo un
-        contador de tiempo y un sistema de puntos basado en el mismo.
+        La idea de GameQuiz es desarrollar un{" "}
+        <b>juego tipo Quiz estilo SPA con VanillaJS</b> utilizando la API{" "}
+        <a href="https://opentdb.com/" target="_blank">
+          OpenTrivia
+        </a>
+        , la cual nos proporciona una gran cantidad de preguntas de diferentes
+        categorías y dificultades.
+        <br />A modo de reto personal, decidí añadir más dificultad añadiendo un{" "}
+        <b>contador de tiempo</b> y un sistema de puntos basado en el mismo.
         <br />
         Este fue mi primer proyecto en el que me enfrenté seriamente a
         JavaScript y me sirvió para afianzar conceptos como el uso de promesas,
@@ -78,8 +81,8 @@ const CGameQuiz = () => {
           <p>
             En el proyecto GameQuiz, aprendí a utilizar el fetching de datos
             para traer las preguntas de la API OpenTrivia. Gracias a este
-            aprendizaje, pude realizar peticiones HTTP a una API y procesar los
-            datos de la respuesta.
+            aprendizaje, pude realizar <b>peticiones HTTP</b> a una API y
+            procesar los datos de la respuesta.
           </p>
         </li>
         <li>
@@ -97,13 +100,13 @@ const CGameQuiz = () => {
         <li>
           <h4>Uso de intervalos</h4>
           <p>
-            Utilicé la función setInterval() para crear un cronometro que se
-            reiniciaba después de cada respuesta. Esto me permitió asignar una
-            puntuación adicional por velocidad de respuesta, en el caso de que
-            esta sea acertada. El uso de intervalos me permitió crear un sistema
-            de puntuación que recompensaba a los jugadores por no solo por
-            responder correctamente, si no también rápido, haciendo asi un juego
-            mucho más dinamico.
+            Utilicé la función <b>setInterval()</b> para crear un cronometro que
+            se reiniciaba después de cada respuesta. Esto me permitió asignar
+            una puntuación adicional por velocidad de respuesta, en el caso de
+            que esta sea acertada. El uso de intervalos me permitió crear un
+            sistema de puntuación que recompensaba a los jugadores por no solo
+            por responder correctamente, si no también rápido, haciendo asi un{" "}
+            <b>juego mucho más dinamico</b>.
           </p>
         </li>
         <li>
