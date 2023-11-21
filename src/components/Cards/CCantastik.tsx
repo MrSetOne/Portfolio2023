@@ -36,13 +36,17 @@ const CCantastik = () => {
       </div>
       <h3 id="whatIsCantastik">¿Que es Cantastik?</h3>
       <p>
-        Es un proyecto fullstack que consiste en una red social hibrida entre
-        Instagram y Twitter, puedes crear posts con o sin imagen como en Twitter
-        pero con la estetica minimalista y "user friendly" de instagram.
+        Es un <b>proyecto fullstack</b> que consiste en una <b>red social</b>{" "}
+        hibrida entre Instagram y Twitter, puedes crear posts con o sin imagen
+        como en Twitter pero con la estetica minimalista y "user friendly" de
+        instagram.
         <br />
-        <br />
-        El proyecto nace como reto durante mi formación en The bridge y fue
-        construido en dos semanas, una dedicada al backend y otra al frontend.
+        El proyecto nace como reto durante mi formación en{" "}
+        <a href="https://www.thebridge.tech/" target="_blank">
+          The Bridge
+        </a>{" "}
+        y fue construido en dos semanas, una dedicada al backend y otra al
+        frontend.
       </p>
       <h3 id="CantastikTechnologies">Tecnologias</h3>
       <div
@@ -87,9 +91,9 @@ const CCantastik = () => {
         <li>
           <h4>Desarrollo de API REST</h4>
           <p>
-            Desarrollo de un backend con NodeJs y Express basado en la
-            arquitectura MVC (Model-View-Controller) con uso de librerias,
-            middelware y autenticación.
+            Desarrollo de un backend con <b>NodeJs</b> y <b>Express</b> basado
+            en la arquitectura <b>MVC</b> (Model-View-Controller) con uso de
+            librerias, middelware y autenticación.
           </p>
         </li>
         <li>
@@ -97,8 +101,8 @@ const CCantastik = () => {
           <p>
             En este proyecto, utilicé MongoDB como base de datos para almacenar
             los datos de la API. MongoDB es una base de datos NoSQL de
-            documentos que es ideal para aplicaciones web y MVP por la
-            flexibilidad que ofrece.
+            documentos que es ideal para aplicaciones web y MVP por la{" "}
+            <b>flexibilidad</b> que ofrece.
             <br />
             Para interactuar con MongoDB, utilicé la librería Mongoose. Mongoose
             es una librería ODM (Object Data Modeling) que proporciona una capa
@@ -108,8 +112,8 @@ const CCantastik = () => {
         <li>
           <h4>Mejora de habilidades de diseño</h4>
           <p>
-            En este proyecto, tuve la oportunidad de planificar y diseñar la
-            UX/UI de una aplicación web inspirada en Instagram y Twitter.
+            En este proyecto, tuve la oportunidad de planificar y diseñar la{" "}
+            <b>UX/UI</b> de una aplicación web inspirada en Instagram y Twitter.
             <br />
             El diseño se realizó en un iPad con Procreate, utilizando una paleta
             de colores vibrantes para crear una apariencia moderna, atractiva y
@@ -120,7 +124,7 @@ const CCantastik = () => {
         <li>
           <h4>Uso de librerias frontend y UI</h4>
           <p>
-            En este proyecto, utilicé Ant Design como librería de UI para
+            En este proyecto, utilicé <b>Ant Design</b> como librería de UI para
             agilizar el desarrollo y facilitar la implementación de componentes
             y funcionalidades comunes. Ant Design es una librería de componentes
             UI de código abierto muy popular, que proporciona una amplia gama de
@@ -129,7 +133,7 @@ const CCantastik = () => {
             Para poder implementar Ant Design, aprendí a comprender la
             documentación de la librería.
             <br />
-            También aprendí a customizar Ant Design usando scss. Esto me
+            También aprendí a <b>customizar Ant Design</b> usando scss. Esto me
             permitió adaptar la librería a las necesidades específicas del
             proyecto.
             <br />
@@ -141,13 +145,13 @@ const CCantastik = () => {
         <li>
           <h4>Despliegue de apps complejas</h4>
           <p>
-            Desplegué la aplicación en la nube utilizando Vercel para el
-            frontend, Render para el backend, MongoAtlas para la base de datos y
-            Firebase Storage para los archivos multimedia. La dificultad fue
-            encontrar hostings gratuitos que cumplieran con los requisitos de la
-            aplicación. Durante la vida de la aplicación se ha migrado tanto el
-            frontend como el backend, ya que originalmente ambos se encontraban
-            en Heroku.
+            Desplegué la aplicación en la nube utilizando <b>Vercel</b> para el
+            frontend, <b>Render</b> para el backend, <b>MongoAtlas</b> para la
+            base de datos y<b>Firebase Storage</b> para los archivos multimedia.
+            La dificultad fue encontrar hostings gratuitos que cumplieran con
+            los requisitos de la aplicación. Durante la vida de la aplicación se
+            ha migrado tanto el frontend como el backend, ya que originalmente
+            ambos se encontraban en Heroku.
           </p>
         </li>
         <li>
@@ -156,24 +160,26 @@ const CCantastik = () => {
             En este proyecto, pude trabajar con estados de React de forma más
             compleja y aprender a controlar estados globales. Para los estados
             locales, utilicé los hooks de React, y para los estados globales,
-            utilicé Redux. Mi experiencia previa me ayudó a comprender los
-            conceptos básicos, pero el tamaño y la complejidad del proyecto me
-            obligaron a aprender nuevas habilidades y mejorar mis conocimientos.
+            utilicé <b>Redux</b>. Mi experiencia previa me ayudó a comprender
+            los conceptos básicos, pero el tamaño y la complejidad del proyecto
+            me obligaron a aprender nuevas habilidades y mejorar mis
+            conocimientos.
           </p>
         </li>
         <li>
           <h4>Routing</h4>
           <p>
-            Aprendí a usar React Router, una librería de enrutamiento para React
-            que me permitió crear aplicaciones web con navegación entre
-            diferentes rutas de forma sencilla y segura.
+            Aprendí a usar <b>React Router</b>, una librería de enrutamiento
+            para React que me permitió crear aplicaciones web con navegación
+            entre diferentes rutas de forma sencilla y segura.
           </p>
         </li>
         <li>
           <h4>Sass</h4>
           <p>
             Aprendí a usar Sass, un preprocesador de CSS que me pareció muy
-            interesante. Lo que más me gustó fue que el código queda más legible
+            interesante. Lo que más me gustó fue que el{" "}
+            <b>código queda más legible</b>
             gracias a su sintaxis. También me gustó el uso del nesting, que
             permite agrupar las propiedades CSS en un bloque, y las variables,
             que permiten almacenar valores que se pueden utilizar en varias
