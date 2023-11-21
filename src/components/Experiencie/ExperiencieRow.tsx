@@ -36,7 +36,7 @@ const ExperiencieRow = ({
     return items;
   }, [screenWidth, unsortedArray]);
 
-  const x = useSpring(0, { stiffness: 600, damping: 200 });
+  const x = useSpring(0, { stiffness: 5000, damping: 200 });
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const totalElementWidh =
