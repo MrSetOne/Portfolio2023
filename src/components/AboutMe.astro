@@ -13,6 +13,7 @@ import Camera from "./icons/Camera";
 import RightArrow from "./icons/RightArrow.astro";
 import { ScrollContainer} from "react-indiana-drag-scroll";
 import 'react-indiana-drag-scroll/dist/style.css';
+import SimpleCode from "./icons/SimpleCode.astro";
 
 
 ---
@@ -48,7 +49,23 @@ import 'react-indiana-drag-scroll/dist/style.css';
     </div>
   </a>
 </StandardArticle>
-<div class="hobbies">
+<StandardArticle cId="AboutmeExperience">
+  <a href="#experienceMainBanner" class="AboutmeExperience">
+    <div>
+      <SimpleCode/>
+      <div>
+        <h2>Conoce mi experiencia</h2>
+        <p>¿Buscas un desarrollador web con experiencia y talento? Conoce mis habilidades y logros como desarrollador web.</p>
+      </div>
+    </div>
+  </a>
+</StandardArticle>
+
+
+
+
+
+<!-- <div class="hobbies">
   <div class="hobbies__title">
     <h2>Mis aficiones</h2>
     <RightArrow/>
@@ -88,7 +105,7 @@ import 'react-indiana-drag-scroll/dist/style.css';
       </StandardArticle>
     </div>
   </ScrollContainer>
-</div>
+</div> -->
 <article class="mainArticle training__container" >
   <div class="training">
     <h2>Formación</h2>
@@ -175,7 +192,7 @@ import 'react-indiana-drag-scroll/dist/style.css';
     }
   }
 
-  .gitHub, .linkedIn{
+  .gitHub, .linkedIn,{
     height: 100%;
     width: 100%;
     text-decoration: none;
@@ -211,6 +228,38 @@ import 'react-indiana-drag-scroll/dist/style.css';
     }
   }
 
+  .AboutmeExperience{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    >div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      >div{
+        >h2{
+          color:#FCA311;
+          font-size: 1.2rem;
+          margin: 0;
+          margin-top: 1rem;
+        }
+        >p{
+          color: white;
+          font-size: 1rem;
+          margin: 0;
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        flex-direction: row;
+        align-items: center; 
+      }
+      @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
   .hobbies{
     height: 100%;
     display: flex;

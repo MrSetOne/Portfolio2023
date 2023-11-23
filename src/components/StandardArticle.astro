@@ -8,6 +8,7 @@ interface Props{
   isBtn?: boolean,
   isSquare?: boolean,
   isCircle?: boolean,
+  cId?: string,
 }
 
 const defaultSpan = {
@@ -15,10 +16,10 @@ const defaultSpan = {
   row: 1,
 }
 
-const { span=defaultSpan, isBtn=false, isSquare=false , isCircle=false} = Astro.props;
+const { span=defaultSpan, isBtn=false, isSquare=false , isCircle=false, cId} = Astro.props;
 const { col=1, row=1 } = span;
 
-const gridStyle = `grid-column: span ${col}; grid-row: span ${row};`
+const gridStyle = span.col !== 1 || span.row !== 1 ? `grid-column: span ${col}; grid-row: span ${row};`:"";
 const paddingStyle = !isBtn ? 'padding: 1.9rem;' : '';
 const squareStyle = isSquare ? 'aspect-ratio:1/1;' : '';
 const circleStyle = isCircle ? 'border-radius: 50%;' : 'border-radius: 1.25rem;';
@@ -26,7 +27,7 @@ const style = gridStyle + paddingStyle + squareStyle + circleStyle;
 
 ---
 
-<article style={style} class="mainArticle" >
+<article style={style} class="mainArticle" id={cId?cId:undefined} >
   <slot/>
 </article>
 <style lang="scss">
@@ -38,5 +39,10 @@ const style = gridStyle + paddingStyle + squareStyle + circleStyle;
     backdrop-filter: blur(4px);
     box-shadow: #00000070 0px 5px 13px 0px;
     transition: all 1s;
+  }
+  #AboutmeExperience{
+    @media screen and (max-width: 1100px) {
+      grid-column: span 2;
+    }
   }
 </style>

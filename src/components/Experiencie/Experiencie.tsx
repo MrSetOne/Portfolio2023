@@ -31,6 +31,7 @@ const Experiencie = () => {
 
   return (
     <div
+      id="experienceMainBanner"
       ref={ref}
       style={{
         width: "100%",
