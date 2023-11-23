@@ -14,7 +14,7 @@ const HeroArrow = () => {
         top: "1rem",
         left: "1rem",
         zIndex: 556,
-        height: "60vh",
+        height: "calc(100lvh - 10rem)",
       }}
     >
       <circle cx="13.5" cy="13.5" r="13" fill="#717171"></circle>
