@@ -39,9 +39,9 @@ const HeroTitles = () => {
           <motion.span
             className="hero__work"
             key="Frontend Developer"
-            initial={{ opacity: 0, x: width <= 800 ? "calc(50% - 100)" : 100 }}
-            animate={{ opacity: 1, x: width <= 800 ? "50%" : 0 }}
-            exit={{ opacity: 0, x: width <= 800 ? "calc(50% + 100)" : -100 }}
+            initial={{ opacity: 0, x: width <= 900 ? "calc(50% - 100)" : 100 }}
+            animate={{ opacity: 1, x: width <= 900 ? "50%" : 0 }}
+            exit={{ opacity: 0, x: width <= 900 ? "calc(50% + 100)" : -100 }}
           >
             Frontend Developer
           </motion.span>
@@ -50,9 +50,9 @@ const HeroTitles = () => {
           <motion.span
             className="hero__work"
             key="UI/UX Designer"
-            initial={{ opacity: 0, x: width <= 800 ? "calc(50% - 100)" : 100 }}
-            animate={{ opacity: 1, x: width <= 800 ? "50%" : 0 }}
-            exit={{ opacity: 0, x: width <= 800 ? "calc(50% + 100)" : -100 }}
+            initial={{ opacity: 0, x: width <= 900 ? "calc(50% - 100)" : 100 }}
+            animate={{ opacity: 1, x: width <= 900 ? "50%" : 0 }}
+            exit={{ opacity: 0, x: width <= 900 ? "calc(50% + 100)" : -100 }}
           >
             UI/UX Designer
           </motion.span>
@@ -61,9 +61,9 @@ const HeroTitles = () => {
           <motion.span
             className="hero__work"
             key="BackEnd Developer"
-            initial={{ opacity: 0, x: width <= 800 ? "calc(50% - 100)" : 100 }}
-            animate={{ opacity: 1, x: width <= 800 ? "50%" : 0 }}
-            exit={{ opacity: 0, x: width <= 800 ? "calc(50% + 100)" : -100 }}
+            initial={{ opacity: 0, x: width <= 900 ? "calc(50% - 100)" : 100 }}
+            animate={{ opacity: 1, x: width <= 900 ? "50%" : 0 }}
+            exit={{ opacity: 0, x: width <= 900 ? "calc(50% + 100)" : -100 }}
           >
             BackEnd Developer
           </motion.span>
