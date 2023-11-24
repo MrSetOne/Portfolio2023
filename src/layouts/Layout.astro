@@ -10,14 +10,34 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,800;1,800&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Michael Lara Sánchez</title>
+		<meta name="description" content="¡Visita mi nuevo portfolio! Espero que te guste :)">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#000">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+		<link rel="canonical" href="https://michaellara.es">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Michael Lara" />
+		<meta property="og:locale" content="es_ES">
+		<meta property="og:title" content="Michael Lara Sánchez">
+		<meta property="og:description" content="¡Visita mi nuevo portfolio! Espero que te guste :)">
+		<!-- RELLENA LA IMAGEN QUE FALTA -->
+		<meta property="og:image" content="https://michaellara.es/og-image.jpg" />
+		<meta property="og:image:alt" content="Michael Lara Sánchez" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:width" content="1200" />
+		<!--  -->
+		<meta property="og:url" content={Astro.url}>
 	</head>
 	<body>
 		<slot />
