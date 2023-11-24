@@ -3,6 +3,7 @@ import gameQuiz from "../../assets/quiz.webp";
 import Github from "../icons/Github";
 import reactCode from "../../assets/reactCode.webp";
 import JavaScriptBicolor from "../icons/ExperienceIcons/JavaScriptBicolor";
+import Mockup from "../../assets/gameQuizMockup.png";
 
 const CGameQuiz = () => {
   return (
@@ -36,6 +37,7 @@ const CGameQuiz = () => {
         </ul>
       </div>
       <h3 id="whatIsGameQuiz">¿Que es GameQuiz?</h3>
+      <img src={Mockup.src} alt="Mockup" className="Card__banner" />
       <p style={{ marginTop: "1rem" }}>
         La idea de GameQuiz es desarrollar un{" "}
         <b>juego tipo Quiz estilo SPA con VanillaJS</b> utilizando la API{" "}

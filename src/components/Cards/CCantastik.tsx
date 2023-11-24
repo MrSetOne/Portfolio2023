@@ -2,6 +2,7 @@ import React from "react";
 import cantastik from "../../assets/cantastik.webp";
 import reactCode from "../../assets/reactCode.webp";
 import Github from "../icons/Github";
+import Mockup from '../../assets/cantastikMockup.png'
 
 const CCantastik = () => {
   return (
@@ -35,6 +36,7 @@ const CCantastik = () => {
         </ul>
       </div>
       <h3 id="whatIsCantastik">¿Que es Cantastik?</h3>
+      <img src={Mockup.src} alt="Mockup" className="Card__banner" />
       <p style={{ marginTop: "1rem" }}>
         Es un <b>proyecto fullstack</b> que consiste en una <b>red social</b>{" "}
         hibrida entre Instagram y Twitter, puedes crear posts con o sin imagen

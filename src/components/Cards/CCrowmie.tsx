@@ -9,6 +9,7 @@ import rocket from "../../assets/rocket.webp";
 import handshake from "../../assets/handshake.webp";
 import market from "../../assets/market.webp";
 import friends from "../../assets/friends.webp";
+import crowmieMockup from "../../assets/CrowmieMockup.png";
 
 const CCrowmie = () => {
   return (
@@ -72,6 +73,7 @@ const CCrowmie = () => {
         </ul>
       </div>
       <h3 id="whatIsCrowmie">¿Que es Crowmie?</h3>
+      <img src={crowmieMockup.src} className="Card__banner" alt="Crowmie" />
       <p style={{ marginTop: "1rem" }}>
         Crowmie es una <b>plataforma de inversión en energía renovable</b> que
         permite a cualquier persona, sin importar su ubicación o su nivel de
