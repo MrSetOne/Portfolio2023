@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useMemo } from "react";
 import "./Modal.scss";
 import { motion, motionValue, useTransform } from "framer-motion";
-import { useWindowSize } from "usehooks-ts";
 import ShortArrow from "./icons/ShortArrow";
+import { useWindowSize } from "../hooks/useWindowsSize";
 
 interface Props {
   children?: React.ReactNode;

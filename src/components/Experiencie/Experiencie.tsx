@@ -11,10 +11,10 @@ import {
   useVelocity,
   wrap,
 } from "framer-motion";
-import { useScreen, useWindowSize } from "usehooks-ts";
 import ExperiencieRow from "./ExperiencieRow";
 import ExperienceIcons from "../icons/ExperienceIcons/ExperienceIcons";
 import json from "../../assets/knowledge.json";
+import { useWindowSize } from "../../hooks/useWindowsSize";
 
 const Experiencie = () => {
   const ref = useRef<HTMLDivElement>(null);

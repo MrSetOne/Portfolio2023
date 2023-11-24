@@ -1,7 +1,8 @@
 import React, { useMemo, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useInterval, useWindowSize } from "usehooks-ts";
 import "./HeroTitles.scss";
+import { useWindowSize } from "../hooks/useWindowsSize";
+import { useInterval } from "../hooks/useInterval";
 
 const HeroTitles = () => {
   const [step, setStep] = useState(0);

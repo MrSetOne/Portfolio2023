@@ -72,7 +72,7 @@ const CCrowmie = () => {
         </ul>
       </div>
       <h3 id="whatIsCrowmie">¿Que es Crowmie?</h3>
-      <p style={{marginTop:'1rem'}}>
+      <p style={{ marginTop: "1rem" }}>
         Crowmie es una <b>plataforma de inversión en energía renovable</b> que
         permite a cualquier persona, sin importar su ubicación o su nivel de
         inversión, participar en proyectos de energía solar y fotovoltaica. La
@@ -107,7 +107,7 @@ const CCrowmie = () => {
           <span>Cloud</span>
         </div>
       </div>
-      <p style={{marginTop:'1rem'}}>
+      <p style={{ marginTop: "1rem" }}>
         En mi puesto de desarrollador <b>frontend y UX/UI</b>, me encargaba de
         todo el ciclo de vida de las nuevas funcionalidades de la web y la
         aplicación de la compañía. Desde el estudio de la viabilidad, el diseño,
