@@ -16,6 +16,23 @@ const Modal = ({ children, imperativeClose }: Props) => {
   const [closing, setClosing] = useState(false);
   const isDesktop = useMemo(() => width > 600, [width]);
 
+    window.onhashchange = () => {
+      console.log("hashchange");
+      if (window.location.hash !== "") return
+      console.log('se ejecuta');
+      imperativeClose();
+    }
+    
+    // window.addEventListener("beforeunload", ()=>{
+    //   console.log("beforeunload");
+    //   imperativeClose();
+    // });
+    // return () => {
+    //   window.removeEventListener("beforeunload", () => {
+    //     imperativeClose();
+    //   }); 
+    // }  
+
   const variants = useMemo(
     () => ({
       open: {

@@ -74,10 +74,15 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
     }
   }, [open]);
 
+  const openCard = () => {
+    setOpen(true);
+    window.location.hash = `/${target}`;
+  }
+
   return (
     <>
       <button
-        onClick={() => setOpen(true)}
+        onClick={openCard}
         style={{
           cursor: "pointer",
           border: "none",
