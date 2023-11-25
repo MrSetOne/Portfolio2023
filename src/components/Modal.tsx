@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useRef } from "react";
 import "./Modal.scss";
 import { motion, motionValue, useTransform } from "framer-motion";
 import ShortArrow from "./icons/ShortArrow";
@@ -46,6 +46,27 @@ const Modal = ({ children, imperativeClose }: Props) => {
   y.on("change", (latest) => {
     if (latest >= 100) return closeCard();
   });
+
+  const start = useRef(0)
+
+  useEffect(() => {
+    const content = document.getElementsByClassName("Modal__content")[0] as HTMLElement;
+    if (!content) return;
+    const setStart = (e: TouchEvent) => {
+      start.current = e.touches[0].clientY
+    }
+    const calculateMove = (e: TouchEvent) => {
+      if(content.scrollTop > 0) return;
+      if((start.current - e.touches[0].clientY)*-1 >= 50) return closeCard();
+    }
+    content.addEventListener('touchstart', setStart)
+    content.addEventListener('touchmove', calculateMove)
+
+    return () => {
+      content.removeEventListener('touchstart', setStart)
+      content.removeEventListener('touchmove', calculateMove)
+    }
+  }, [])
 
   return (
     <motion.div

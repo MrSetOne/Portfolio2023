@@ -74,11 +74,6 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
     }
   }, [open]);
 
-  // const openCard = () => {
-  //   setOpen(true);
-  //   window.location.hash = `/${target}`;
-  // }
-
   const openCard = useCallback(() => {
     setOpen(true);
     window.location.hash = `/${target}`;
