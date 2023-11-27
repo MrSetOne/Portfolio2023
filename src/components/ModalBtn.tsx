@@ -12,11 +12,28 @@ interface Props {
   children: React.ReactNode;
   target: Cards;
   customStyles?: React.CSSProperties;
+  defaultOpen?: boolean;
 }
 
-const ModalBtn = ({ children, target, customStyles }: Props) => {
+const ModalBtn = ({ children, target, customStyles, defaultOpen=false }: Props) => {
   const [open, setOpen] = useState(false);
-
+  
+  useEffect(() => {
+    const changeState = async()=>{
+      setTimeout(() => {
+        setOpen(true);
+      }, 500);
+    }
+    if (defaultOpen) {
+      console.log('corre')
+      changeState();
+    }  
+  
+    return () => {
+      
+    }
+  }, [])
+  
   const imperativeClose = () => {
     setOpen(false);
     document.body.style.overflow = "auto";

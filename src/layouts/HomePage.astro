@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StandardArticle from '../components/StandardArticle.astro';
+import Hero from '../components/Hero.astro';
+import AboutMe from '../components/AboutMe.astro';
+import MainSection from '../layouts/MainSection.astro';
+import Experiencie from '../components/Experiencie/Experiencie';
+import Experiences from '../components/Experiences.astro';
+import Contact from '../components/Contact.astro';
+import ContactForm from '../components/Form/ContactForm';
+
+interface Props {
+  openCard?: "Crowmie" | "Cantastik" | "GameQuiz";
+}
+
+const { openCard } = Astro.props;
+
+---
+
+<Layout title="Welcome to Astro.">
+	<Hero/>
+	<main>
+		<MainSection gradient='radial-gradient(closest-side, rgba(51,74,121,1) 0%, rgba(0,0,0,1) 100%)'>
+			<AboutMe/>
+		</MainSection>
+		<Experiencie client:load />
+		<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
+			<Experiences openCard={openCard} />
+			<Contact>
+				<ContactForm client:load />
+			</Contact>
+		</MainSection>
+	</main>
+	<div id="modalPortal"/>
+</Layout>
+<script is:inline>
+	
+	const articles = document.querySelectorAll('.mainArticle');
+
+	const handleOnMouseMove = (e) => {
+		const {currentTarget:target} = e;
+		const rect = target.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		target.style.background = `radial-gradient(circle at ${x}px ${y}px,  #6A85BC73 0%, #334a7963 100%)`;
+	}
+
+	const handleOnMouseLeave = (e) => {
+		const {currentTarget:target} = e;
+		target.style.background = '#334a7963';
+	}
+
+	articles.forEach((article, index) => {
+		article.onmousemove = e => handleOnMouseMove(e);
+		article.onmouseleave = e => handleOnMouseLeave(e);
+	});
+
+</script>
+<style lang="scss">
+	#modalPortal{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1000;
+	}
+</style>

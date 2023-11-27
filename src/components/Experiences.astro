@@ -7,7 +7,13 @@ import typescary from '../assets/typescary.png'
 import ShortArrow from "./icons/ShortArrow.astro";
 import PlusIcon from "./icons/PlusIcon.astro";
 import ModalBtn from "./ModalBtn";
-  
+ 
+interface Props{
+  openCard?: "Crowmie" | "Cantastik" | "GameQuiz";
+}
+
+const { openCard } = Astro.props;
+
 const arrowButtonStyles:React.CSSProperties = {
   position:'absolute', right:'5px', bottom:'5px', zIndex:2
 }
@@ -25,7 +31,7 @@ const arrowButtonStyles:React.CSSProperties = {
       <p>Encargado del <b>análisis, diseño e implementación</b> de nuevas features y sistemas. Desde el estado inicial de la idea hasta la subida a producción.</p>
     </div>
     <div class="crowmie__link">
-      <ModalBtn client:visible target="Crowmie" >
+      <ModalBtn client:load target="Crowmie" defaultOpen={openCard === 'Crowmie'} >
         <div>
           <span>Ver más</span>
           <ShortArrow/>
@@ -35,7 +41,7 @@ const arrowButtonStyles:React.CSSProperties = {
   </div>
 </article>
 <article class="cantastik">
-  <ModalBtn client:visible target="Cantastik" customStyles={arrowButtonStyles} >
+  <ModalBtn client:load target="Cantastik" customStyles={arrowButtonStyles} >
     <div>
       <ShortArrow/>
     </div>
@@ -43,7 +49,7 @@ const arrowButtonStyles:React.CSSProperties = {
   <Image width={300} src={cantastik} alt="Cantastik" />
 </article>
 <article class="gameQuiz">
-  <ModalBtn client:visible target="GameQuiz" customStyles={arrowButtonStyles} >
+  <ModalBtn client:load target="GameQuiz" customStyles={arrowButtonStyles} >
     <div>
       <ShortArrow/>
     </div>
