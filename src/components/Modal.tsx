@@ -17,7 +17,7 @@ const Modal = ({ children, imperativeClose }: Props) => {
   const isDesktop = useMemo(() => width > 600, [width]);
 
   window.onpopstate = () => {
-    return imperativeClose();
+    if(window.location.pathname === "/") return imperativeClose()
   }
 
   const variants = useMemo(
