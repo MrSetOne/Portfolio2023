@@ -14,6 +14,7 @@ import RightArrow from "./icons/RightArrow.astro";
 import { ScrollContainer} from "react-indiana-drag-scroll";
 import 'react-indiana-drag-scroll/dist/style.css';
 import SimpleCode from "./icons/SimpleCode.astro";
+import TrainingAcordion from "./TrainingAccordion";
 
 
 ---
@@ -109,7 +110,7 @@ import SimpleCode from "./icons/SimpleCode.astro";
 <article class="mainArticle training__container" >
   <div class="training">
     <h2>Formación</h2>
-    <Training/>
+    <TrainingAcordion client:load />
   </div>
 </article>
 <StandardArticle isBtn>
