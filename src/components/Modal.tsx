@@ -16,9 +16,8 @@ const Modal = ({ children, imperativeClose }: Props) => {
   const [closing, setClosing] = useState(false);
   const isDesktop = useMemo(() => width > 600, [width]);
 
-  window.onhashchange = () => {
-    if (window.location.hash !== "") return
-    imperativeClose();
+  window.onpopstate = () => {
+    return imperativeClose();
   }
 
   const variants = useMemo(
@@ -41,7 +40,7 @@ const Modal = ({ children, imperativeClose }: Props) => {
       return imperativeClose();
     }, 100);
   };
-
+  
   const y = motionValue(0);
   y.on("change", (latest) => {
     if (latest >= 100) return closeCard();

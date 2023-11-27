@@ -25,6 +25,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
     )[0] as HTMLElement;
     if (!modalExternalBg) return;
     modalExternalBg.classList.remove("modalExternalBg--active");
+    history.replaceState(null, "", window.location.origin);
     setTimeout(() => {
       modalExternalBg.remove();
     }, 300);
@@ -68,6 +69,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
         document.body.style.overflow = "auto";
         modalExternalBg.classList.remove("modalExternalBg--active");
         setTimeout(() => {
+          history.replaceState(null, "", window.location.origin);
           modalExternalBg.remove();
         }, 300);
       });
@@ -76,7 +78,7 @@ const ModalBtn = ({ children, target, customStyles }: Props) => {
 
   const openCard = useCallback(() => {
     setOpen(true);
-    window.location.hash = `/${target}`;
+    history.pushState({ foo: "bar" }, "", `/${target}`);
   }, [target]);
 
   return (
