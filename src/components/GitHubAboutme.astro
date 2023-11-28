@@ -1,0 +1,113 @@
+---
+import { Image } from 'astro:assets';
+import bgImage from '../assets/gitScreenShot.jpeg'
+
+
+
+---
+<a href="https://github.com/MrSetOne" target="_blank" class="GitHubAboutme" id="GitHubAboutme">
+  <Image src={bgImage} alt="GitHubCode" />
+  <div>
+    <svg class="GithubIcon" id="GithubIcon" width="217" height="217" viewBox="0 0 217 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Group 5">
+        <circle class="GithubIcon__externalCircle" id="externalCircle" cx="108.5" cy="108.5" r="108" stroke="url(#paint0_linear_353_8)" />
+        <circle id="Ellipse 5" cx="108.153" cy="108.153" r="79.7284" fill="url(#paint1_linear_353_8)" />
+        <path id="github-[#142]" fill-rule="evenodd" clip-rule="evenodd" d="M107.807 50.6101C75.834 50.6101 49.9167 77.1811 49.9167 109.964C49.9167 136.182 66.4848 158.424 89.4728 166.279C92.4078 166.864 93.4498 165.01 93.4498 163.43C93.4498 161.473 93.3804 155.083 93.3804 147.14C93.3804 141.606 95.2328 137.994 97.3111 136.153C84.419 134.683 70.8728 129.663 70.8728 106.866C70.8728 100.382 73.1189 95.0915 76.8355 90.935C76.2334 89.4357 74.2478 83.3986 77.4028 75.2245C77.4028 75.2245 82.254 73.6341 93.3051 81.3103C97.9305 79.9962 102.886 79.335 107.807 79.3119C112.727 79.335 117.677 79.9962 122.296 81.3103C133.359 73.6341 138.222 75.2245 138.222 75.2245C141.365 83.3986 139.38 89.4357 138.783 90.935C142.482 95.0915 144.746 100.382 144.746 106.866C144.746 129.605 131.229 134.702 118.371 136.201C120.027 137.683 121.526 140.297 122.047 144.135C125.347 145.652 133.73 148.277 138.893 139.206C138.893 139.206 141.956 133.503 147.768 133.086C147.768 133.086 153.412 133.011 148.161 136.693C148.161 136.693 144.37 138.516 141.736 145.376C141.736 145.376 138.338 155.97 122.233 152.381C122.204 157.342 122.152 162.018 122.152 163.43C122.152 164.999 123.217 166.835 126.105 166.285C149.111 158.441 165.696 136.188 165.696 109.964C165.696 77.1811 139.773 50.6101 107.807 50.6101Z" fill="white" />
+      </g>
+      <defs>
+        <linearGradient id="paint0_linear_353_8" x1="108.847" y1="1.8076e-08" x2="108.5" y2="217" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FB7973" stop-opacity="0" />
+          <stop offset="0.516037" stop-color="#FB7973" />
+          <stop offset="1" stop-color="#FB7973" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_353_8" x1="108.153" y1="28.4248" x2="108.153" y2="187.882" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#878896" />
+          <stop offset="1" stop-color="#2A2350" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <span>Visita mi perfil de</span>
+    <h2>GitHub</h2>
+  </div>
+</a>
+<script is:inline>
+  const anchor = document.getElementById('GitHubAboutme');
+  const externalCircle = document.getElementById('externalCircle');
+  const GithubIcon = document.getElementById('GithubIcon');
+
+  anchor.addEventListener('mouseover', ()=>{
+    GithubIcon.classList.add('GithubIcon--hover');
+    externalCircle.classList.add('GithubIcon__externalCircle--hover');
+  })
+
+  anchor.addEventListener('mouseout', ()=>{
+    GithubIcon.classList.remove('GithubIcon--hover');
+    externalCircle.classList.remove('GithubIcon__externalCircle--hover');
+  })
+
+
+
+</script>
+<style lang="scss">
+  .GithubIcon, .GithubIcon__externalCircle{
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+  }
+
+  .GithubIcon--hover{
+    transform: scale(1.1);
+  }
+
+  .GithubIcon__externalCircle--hover{
+    transform: rotate(90deg);
+  }
+    .GitHubAboutme{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    position:relative;
+    >img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+      opacity: .2;
+    }
+    >div{
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      color:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 1100px) {
+        aspect-ratio: 1/1 ;
+        padding: 1rem;
+        height: auto;
+      }
+      @media screen and (max-width: 500px){
+        span{
+          display: none;
+        }
+        h2{
+          color: white;
+          margin-top: 1rem;
+        }
+      }
+    }
+    span{
+      margin-top: 1rem;
+      text-align: center;
+    }
+    h2{
+      color:#FCA311;
+      font-size: min(2.25rem, 6vw);
+    }
+  }
+</style>

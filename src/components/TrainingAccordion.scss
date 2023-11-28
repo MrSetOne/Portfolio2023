@@ -1,46 +1,46 @@
-.training__list{
+.training__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  .training__item{
+  .training__item {
     display: flex;
     flex-direction: column;
-    gap: .4rem;
-    >.trainingItem__header{
+    gap: 0.4rem;
+    > .trainingItem__header {
       display: flex;
       font-weight: 700;
-      .dotItem{
+      .dotItem {
         flex: none;
         width: 1rem;
         height: 1rem;
         border-radius: 50%;
         background-color: white;
-        margin-right: .5rem;
+        margin-right: 0.5rem;
         position: relative;
       }
-      span{
-        margin-right: .5rem;
+      span {
+        margin-right: 0.5rem;
       }
     }
-    .trainingItem__description{
+    .trainingItem__description {
       line-height: 1.7;
       font-weight: 300;
       margin-left: 68px;
-      @media screen and (max-width: 700px){
+      @media screen and (max-width: 700px) {
         line-height: 1.4;
-    }
+      }
     }
   }
 }
-#line{
+#line {
   position: absolute;
-  left: calc(.5rem - 2px);
-  top: .5rem;
+  left: calc(0.5rem - 2px);
+  top: 0.5rem;
   width: 4px;
   background-color: white;
 }
-.TrainingAccordion__Btn{
+.TrainingAccordion__Btn {
   margin-top: 1rem;
   width: 100%;
   background-color: transparent;
@@ -50,17 +50,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: .5rem;
-  span{
+  gap: 0.5rem;
+  span {
     color: white;
   }
-  >div{
+  > div {
     flex: 1;
     height: 1px;
     width: 100%;
     background-color: white;
   }
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 700px) {
     display: none;
   }
 }

@@ -17,8 +17,8 @@ const Modal = ({ children, imperativeClose }: Props) => {
   const isDesktop = useMemo(() => width > 600, [width]);
 
   window.onpopstate = () => {
-    if(window.location.pathname === "/") return imperativeClose()
-  }
+    if (window.location.pathname === "/") return imperativeClose();
+  };
 
   const variants = useMemo(
     () => ({
@@ -40,32 +40,34 @@ const Modal = ({ children, imperativeClose }: Props) => {
       return imperativeClose();
     }, 100);
   };
-  
+
   const y = motionValue(0);
   y.on("change", (latest) => {
     if (latest >= 100) return closeCard();
   });
 
-  const start = useRef(0)
+  const start = useRef(0);
 
   useEffect(() => {
-    const content = document.getElementsByClassName("Modal__content")[0] as HTMLElement;
+    const content = document.getElementsByClassName(
+      "Modal__content",
+    )[0] as HTMLElement;
     if (!content) return;
     const setStart = (e: TouchEvent) => {
-      start.current = e.touches[0].clientY
-    }
+      start.current = e.touches[0].clientY;
+    };
     const calculateMove = (e: TouchEvent) => {
-      if(content.scrollTop > 0) return;
-      if((start.current - e.touches[0].clientY)*-1 >= 50) return closeCard();
-    }
-    content.addEventListener('touchstart', setStart)
-    content.addEventListener('touchmove', calculateMove)
+      if (content.scrollTop > 0) return;
+      if ((start.current - e.touches[0].clientY) * -1 >= 50) return closeCard();
+    };
+    content.addEventListener("touchstart", setStart);
+    content.addEventListener("touchmove", calculateMove);
 
     return () => {
-      content.removeEventListener('touchstart', setStart)
-      content.removeEventListener('touchmove', calculateMove)
-    }
-  }, [])
+      content.removeEventListener("touchstart", setStart);
+      content.removeEventListener("touchmove", calculateMove);
+    };
+  }, []);
 
   return (
     <motion.div

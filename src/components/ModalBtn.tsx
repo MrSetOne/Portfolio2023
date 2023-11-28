@@ -15,25 +15,28 @@ interface Props {
   defaultOpen?: boolean;
 }
 
-const ModalBtn = ({ children, target, customStyles, defaultOpen=false }: Props) => {
+const ModalBtn = ({
+  children,
+  target,
+  customStyles,
+  defaultOpen = false,
+}: Props) => {
   const [open, setOpen] = useState(false);
-  
+
   useEffect(() => {
-    const changeState = async()=>{
+    const changeState = async () => {
       setTimeout(() => {
         setOpen(true);
       }, 500);
-    }
+    };
     if (defaultOpen) {
-      console.log('corre')
+      console.log("corre");
       changeState();
-    }  
-  
-    return () => {
-      
     }
-  }, [])
-  
+
+    return () => {};
+  }, []);
+
   const imperativeClose = () => {
     setOpen(false);
     document.body.style.overflow = "auto";

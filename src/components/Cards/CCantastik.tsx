@@ -2,7 +2,7 @@ import React from "react";
 import cantastik from "../../assets/cantastik.webp";
 import reactCode from "../../assets/reactCode.webp";
 import Github from "../icons/Github";
-import Mockup from '../../assets/cantastikMockup.png'
+import Mockup from "../../assets/cantastikMockup.png";
 
 const CCantastik = () => {
   return (
