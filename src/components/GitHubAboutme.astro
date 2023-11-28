@@ -6,7 +6,7 @@ import bgImage from '../assets/gitScreenShot.jpeg'
 
 ---
 <a href="https://github.com/MrSetOne" target="_blank" class="GitHubAboutme" id="GitHubAboutme">
-  <Image src={bgImage} alt="GitHubCode" />
+  <Image class='GitHubAboutme__bg' id='GitHubAboutmeBg' src={bgImage} alt="GitHubCode" />
   <div>
     <svg class="GithubIcon" id="GithubIcon" width="217" height="217" viewBox="0 0 217 217" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="Group 5">
@@ -34,28 +34,35 @@ import bgImage from '../assets/gitScreenShot.jpeg'
   const anchor = document.getElementById('GitHubAboutme');
   const externalCircle = document.getElementById('externalCircle');
   const GithubIcon = document.getElementById('GithubIcon');
+  const GitHubAboutmeBg = document.getElementById('GitHubAboutmeBg');
 
   anchor.addEventListener('mouseover', ()=>{
     GithubIcon.classList.add('GithubIcon--hover');
     externalCircle.classList.add('GithubIcon__externalCircle--hover');
+    GitHubAboutmeBg.classList.add('GitHubAboutme__bg--hover')
   })
 
   anchor.addEventListener('mouseout', ()=>{
     GithubIcon.classList.remove('GithubIcon--hover');
     externalCircle.classList.remove('GithubIcon__externalCircle--hover');
+    GitHubAboutmeBg.classList.remove('GitHubAboutme__bg--hover')
   })
 
 
 
 </script>
 <style lang="scss">
-  .GithubIcon, .GithubIcon__externalCircle{
-    transition: all 0.5s ease-in-out;
+  .GithubIcon, .GithubIcon__externalCircle, .GitHubAboutme__bg{
+    transition: transform 0.5s ease-in-out;
     transform-origin: center;
   }
 
   .GithubIcon--hover{
     transform: scale(1.1);
+  }
+
+  .GitHubAboutme__bg--hover{
+    transform: scale(1.03);
   }
 
   .GithubIcon__externalCircle--hover{
@@ -66,7 +73,7 @@ import bgImage from '../assets/gitScreenShot.jpeg'
     width: 100%;
     text-decoration: none;
     position:relative;
-    >img{
+    >.GitHubAboutme__bg{
       position: absolute;
       top: 0;
       left: 0;
@@ -76,6 +83,7 @@ import bgImage from '../assets/gitScreenShot.jpeg'
       object-position: center;
       z-index: 0;
       opacity: .2;
+      transition: all 0.5s ease-in-out;
     }
     >div{
       position: relative;
