@@ -11,19 +11,20 @@ import ContactForm from '../components/Form/ContactForm';
 
 interface Props {
   openCard?: "Crowmie" | "Cantastik" | "GameQuiz";
+	knowledge?: boolean;
 }
 
-const { openCard } = Astro.props;
+const { openCard, knowledge=false } = Astro.props;
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout>
 	<Hero/>
 	<main>
 		<MainSection gradient='radial-gradient(closest-side, rgba(51,74,121,1) 0%, rgba(0,0,0,1) 100%)'>
 			<AboutMe/>
 		</MainSection>
-		<Experiencie client:load />
+		<Experiencie client:load openCard={knowledge} />
 		<MainSection gradient='linear-gradient(0deg, rgba(106,133,188,1) 0%, rgba(51,74,121,1) 38%, rgba(0,0,0,1) 100%);'>
 			<Experiences openCard={openCard} />
 			<Contact>

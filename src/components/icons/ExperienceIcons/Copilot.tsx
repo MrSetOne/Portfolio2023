@@ -9,7 +9,7 @@ const Copilot = ({ color = "white", size = "1rem" }: Props) => {
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       fill="none"
-      stroke="currentColor"
+      stroke={color}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth="2"

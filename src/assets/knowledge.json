@@ -1,122 +1,258 @@
 [
   {
     "title": "HTML5",
-    "color": "#e5532d"
+    "color": "#e5532d",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "main"
   },
   {
     "title": "CSS3",
-    "color": "#3d9dd7"
+    "color": "#3d9dd7",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "main"
   },
   {
     "title": "Sass",
-    "color": "#cc6699"
+    "color": "#cc6699",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "Tailwindcss",
-    "color": "#44a8b3"
+    "color": "#44a8b3",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "Bootstap",
-    "color": "#7e18f9"
+    "color": "#7e18f9",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "JavaScript",
-    "color": "#f0dc55"
+    "color": "#f0dc55",
+    "visibleOnHome": true,
+    "sections": ["Front", "Back"],
+    "subsection": "main",
+    "invert": true
   },
   {
     "title": "TypeScript",
-    "color": "#377cc8"
+    "color": "#377cc8",
+    "visibleOnHome": true,
+    "sections": ["Front", "Back"],
+    "subsection": "main"
   },
   {
     "title": "React",
-    "color": "#1ba1cc"
+    "color": "#1ba1cc",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "main"
   },
   {
     "title": "Redux",
-    "color": "#7a50be"
+    "color": "#7a50be",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "Astro",
-    "color": "#fc5d03"
+    "color": "#fc5d03",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "main"
   },
   {
     "title": "AntDesign",
-    "color": "#1874f7"
+    "color": "#1874f7",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "MaterialUI",
-    "color": "#08b2ff"
+    "color": "#08b2ff",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib",
+    "invert": true
   },
   {
     "title": "FramerMotion",
-    "color": "#6455ff"
+    "color": "#6455ff",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "Figma",
-    "color": "#12d086"
+    "color": "#12d086",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "design",
+    "invert": true
   },
   {
     "title": "NodeJs",
-    "color": "#93c745"
+    "color": "#93c745",
+    "visibleOnHome": true,
+    "sections": ["Back"],
+    "subsection": "main",
+    "invert": true
   },
   {
     "title": "Express",
-    "color": "#4c4c4c"
+    "color": "#4c4c4c",
+    "visibleOnHome": true,
+    "sections": ["Back"],
+    "subsection": "main"
   },
   {
     "title": "i18n",
-    "color": "#7986cb"
+    "color": "#7986cb",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "frontLib"
   },
   {
     "title": "JsonWebToken",
-    "color": "#00b3e9"
+    "color": "#00b3e9",
+    "visibleOnHome": true,
+    "sections": ["Back"],
+    "subsection": "backLib"
   },
   {
     "title": "MySQL",
-    "color": "#08668e"
+    "color": "#08668e",
+    "visibleOnHome": true,
+    "sections": ["Back"],
+    "subsection": "backLib"
   },
   {
     "title": "MongoDB",
-    "color": "#579c4f"
+    "color": "#579c4f",
+    "visibleOnHome": true,
+    "sections": ["Back"],
+    "subsection": "main"
   },
   {
     "title": "Heroku",
-    "color": "#430098"
+    "color": "#430098",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "cloud"
   },
   {
     "title": "Vercel",
-    "color": "#4c4c4c"
+    "color": "#4c4c4c",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "cloud"
   },
   {
     "title": "AWS",
-    "color": "#ff9c08"
+    "color": "#ff9c08",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "cloud"
   },
   {
     "title": "Git",
-    "color": "#f05639"
+    "color": "#f05639",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "extra"
   },
   {
     "title": "GitHub",
-    "color": "#3b375d"
+    "color": "#3b375d",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "extra"
   },
   {
     "title": "Copilot",
-    "color": "#24c9d5"
+    "color": "#24c9d5",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "extra",
+    "invert": true
   },
   {
     "title": "Markdown",
-    "color": "#4c4c4c"
+    "color": "#4c4c4c",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "extra"
   },
   {
     "title": "Jira",
-    "color": "#2684ff"
+    "color": "#2684ff",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "scheduling"
   },
   {
     "title": "Clickup",
-    "color": "#7b68ee"
+    "color": "#7b68ee",
+    "visibleOnHome": true,
+    "sections": ["Others"],
+    "subsection": "scheduling"
   },
   {
     "title": "Notion",
-    "color": "#4c4c4c"
+    "color": "#4c4c4c",
+    "sections": ["Others"],
+    "subsection": "scheduling"
+  },
+  {
+    "title": "Multer",
+    "color": "#4c4c4c",
+    "sections": ["Back"],
+    "subsection": "backLib"
+  },
+  {
+    "title": "Mongoose",
+    "color": "#a03333",
+    "sections": ["Back"],
+    "subsection": "backLib"
+  },
+  {
+    "title": "Sequelize",
+    "color": "#3c76c3",
+    "sections": ["Back"],
+    "subsection": "backLib"
+  },
+  {
+    "title": "Photoshop",
+    "color": "#31a8ff",
+    "sections": ["Others"],
+    "subsection": "design"
+  },
+  {
+    "title": "Illustrator",
+    "color": "#f79500",
+    "sections": ["Others"],
+    "subsection": "design"
+  },
+  {
+    "title": "DigitalOcean",
+    "color": "#0069ff",
+    "sections": ["Others"],
+    "subsection": "cloud"
+  },
+  {
+    "title": "Trello",
+    "color": "#0078be",
+    "sections": ["Others"],
+    "subsection": "scheduling"
   }
 ]

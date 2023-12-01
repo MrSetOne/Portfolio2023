@@ -29,12 +29,20 @@ import Markdown from "./Markdown";
 import Jira from "./Jira";
 import Clickup from "./Clickup";
 import Notion from "./Notion";
+import Multer from "./Multer";
+import Mongoose from "./Mongoose";
+import Sequelize from "./Sequelize";
+import Photoshop from "./Photoshop";
+import Illustrator from "./Illustrator";
+import DigitalOcean from "./DigitalOcean";
+import Trello from "./Trello";
 
 interface Props {
   icon: string;
+  color?: string;
 }
 
-const ExperienceIcons = ({ icon }: Props) => {
+const ExperienceIcons = ({ icon, color = "white" }: Props) => {
   switch (icon) {
     case "HTML5":
       return <Html5 />;
@@ -47,7 +55,7 @@ const ExperienceIcons = ({ icon }: Props) => {
     case "Bootstap":
       return <Bootstrap />;
     case "JavaScript":
-      return <Javascript />;
+      return <Javascript color={color} />;
     case "TypeScript":
       return <TypeScript />;
     case "React":
@@ -59,13 +67,13 @@ const ExperienceIcons = ({ icon }: Props) => {
     case "AntDesign":
       return <AntDesign />;
     case "MaterialUI":
-      return <MateriaUI />;
+      return <MateriaUI color={color} />;
     case "FramerMotion":
       return <FramerMotion />;
     case "Figma":
-      return <Figma />;
+      return <Figma color={color} />;
     case "NodeJs":
-      return <NodeJs />;
+      return <NodeJs color={color} />;
     case "Express":
       return <Express />;
     case "i18n":
@@ -87,7 +95,7 @@ const ExperienceIcons = ({ icon }: Props) => {
     case "GitHub":
       return <Github size="1rem" />;
     case "Copilot":
-      return <Copilot />;
+      return <Copilot color={color} />;
     case "Markdown":
       return <Markdown />;
     case "Jira":
@@ -96,6 +104,20 @@ const ExperienceIcons = ({ icon }: Props) => {
       return <Clickup />;
     case "Notion":
       return <Notion />;
+    case "Multer":
+      return <Multer />;
+    case "Mongoose":
+      return <Mongoose />;
+    case "Sequelize":
+      return <Sequelize color={color} />;
+    case "Photoshop":
+      return <Photoshop color={color} />;
+    case "Illustrator":
+      return <Illustrator color={color} />;
+    case "DigitalOcean":
+      return <DigitalOcean color={color} />;
+    case "Trello":
+      return <Trello color={color} />;
     default:
       return <></>;
   }

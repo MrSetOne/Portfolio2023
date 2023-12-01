@@ -5,8 +5,9 @@ import CCrowmie from "./Cards/CCrowmie";
 import "./Cards/Cards.scss";
 import CCantastik from "./Cards/CCantastik";
 import CGameQuiz from "./Cards/CGameQuiz";
+import Knowledge from "./Knowledge";
 
-type Cards = "Crowmie" | "Cantastik" | "GameQuiz";
+type Cards = "Crowmie" | "Cantastik" | "GameQuiz" | "Knowledge";
 
 interface Props {
   children: React.ReactNode;
@@ -30,7 +31,6 @@ const ModalBtn = ({
       }, 500);
     };
     if (defaultOpen) {
-      console.log("corre");
       changeState();
     }
 
@@ -60,12 +60,16 @@ const ModalBtn = ({
           return <CCantastik />;
         case "GameQuiz":
           return <CGameQuiz />;
+        case "Knowledge":
+          return <Knowledge />;
         default:
           return <div>default</div>;
       }
     };
 
     const content = getContent(target);
+
+    if (target === "Knowledge") return content;
 
     return (
       <Modal open={open} imperativeClose={imperativeClose}>

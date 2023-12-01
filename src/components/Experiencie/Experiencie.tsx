@@ -15,8 +15,13 @@ import ExperiencieRow from "./ExperiencieRow";
 import ExperienceIcons from "../icons/ExperienceIcons/ExperienceIcons";
 import json from "../../assets/knowledge.json";
 import { useWindowSize } from "../../hooks/useWindowsSize";
+import ModalBtn from "../ModalBtn";
 
-const Experiencie = () => {
+interface Props {
+  openCard: boolean;
+}
+
+const Experiencie = ({openCard}:Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -27,7 +32,9 @@ const Experiencie = () => {
     offset: ["start end", "end start"],
   });
 
-  const { current: knowledge } = useRef(json);
+  const { current: knowledge } = useRef(
+    json.filter((item) => item.visibleOnHome),
+  );
 
   return (
     <div
@@ -70,7 +77,8 @@ const Experiencie = () => {
         >
           Experiencia
         </h2>
-        {/* <button>Saber más</button> */}
+        <button>Saber más</button>
+        <ModalBtn defaultOpen={openCard} target="Knowledge">Here</ModalBtn>
       </div>
       <ExperiencieRow
         screenWidth={screenWidth}
