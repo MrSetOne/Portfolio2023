@@ -25,7 +25,7 @@
     > button {
       background-color: transparent;
       border: none;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
       color: white;
       cursor: pointer;
@@ -56,16 +56,17 @@
     gap: 1rem;
     padding-left: 1rem;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow-y: auto;
     @media screen and (max-width: 650px) {
       padding-left: 0;
+      flex: 1;
     }
     > .knowledge__section {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-      > h1 {
+      > h3 {
         font-size: 2rem;
         font-weight: 600;
         color: white;
@@ -84,6 +85,36 @@
             // font-size: 1rem;
           }
         }
+      }
+    }
+  }
+  .knowledge__content--empty{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    >svg{
+      margin-bottom: 2rem;
+      max-width: 50%;
+    }
+    >h3{
+      font-size: min(2rem, 4vw);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    >p{
+      font-size: min(1.5rem, 2.5vw);
+      font-weight: 300;
+    }
+    @media screen and (max-width: 650px){
+      flex: 1;
+      >h3{
+        font-size: min(2rem, 6vw);
+      }
+      >p{
+        font-size: min(1.5rem, 3vw);
       }
     }
   }

@@ -1,18 +1,8 @@
-import React, { useRef, useEffect, useState, useMemo } from "react";
-import FatCap from "../icons/FatCap";
+import React, { useRef } from "react";
 import {
-  motion,
-  useAnimationFrame,
-  useMotionValue,
-  useMotionValueEvent,
   useScroll,
-  useSpring,
-  useTransform,
-  useVelocity,
-  wrap,
 } from "framer-motion";
 import ExperiencieRow from "./ExperiencieRow";
-import ExperienceIcons from "../icons/ExperienceIcons/ExperienceIcons";
 import json from "../../assets/knowledge.json";
 import { useWindowSize } from "../../hooks/useWindowsSize";
 import ModalBtn from "../ModalBtn";

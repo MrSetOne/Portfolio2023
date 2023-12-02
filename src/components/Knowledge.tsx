@@ -4,13 +4,20 @@ import json from "../assets/knowledge.json";
 import ExperienceIcons from "./icons/ExperienceIcons/ExperienceIcons";
 type clickOptions = "Front" | "Back" | "Others" | null;
 import { motion } from "framer-motion";
+import Screen from "./icons/Screen";
 
 const Knowledge = () => {
   const [selectedOption, setSelectedOption] = useState<clickOptions>(null);
 
   const cardContent = useMemo(() => {
-    if (!selectedOption) return null;
-
+    if (!selectedOption) return (
+      <div className="knowledge__content--empty">
+        <Screen/>
+        <h3>¿Que quieres saber?</h3>
+        <p>Selecciona la opción que desees</p>
+      </div>
+    );
+    
     const techs = json.filter((item) => item.sections.includes(selectedOption));
 
     switch (selectedOption) {
@@ -18,7 +25,7 @@ const Knowledge = () => {
         return (
           <>
             <div className="knowledge__section">
-              <h1>Principales</h1>
+              <h3>Principales</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "main")
@@ -44,7 +51,7 @@ const Knowledge = () => {
               </div>
             </div>
             <div className="knowledge__section">
-              <h1>Librerias</h1>
+              <h3>Librerias</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "frontLib")
@@ -73,7 +80,7 @@ const Knowledge = () => {
         return (
           <>
             <div className="knowledge__section">
-              <h1>Principales</h1>
+              <h3>Principales</h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: ".5rem" }}>
                 {techs
                   .filter((tech) => tech.subsection === "main")
@@ -97,7 +104,7 @@ const Knowledge = () => {
               </div>
             </div>
             <div className="knowledge__section">
-              <h1>Librerias</h1>
+              <h3>Librerias</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "backLib")
@@ -126,7 +133,7 @@ const Knowledge = () => {
         return (
           <>
             <div className="knowledge__section">
-              <h1>Diseño</h1>
+              <h3>Diseño</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "design")
@@ -150,7 +157,7 @@ const Knowledge = () => {
               </div>
             </div>
             <div className="knowledge__section">
-              <h1>Cloud</h1>
+              <h3>Cloud</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "cloud")
@@ -174,7 +181,7 @@ const Knowledge = () => {
               </div>
             </div>
             <div className="knowledge__section">
-              <h1>Organización</h1>
+              <h3>Organización</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "scheduling")
@@ -198,7 +205,7 @@ const Knowledge = () => {
               </div>
             </div>
             <div className="knowledge__section">
-              <h1>Más</h1>
+              <h3>Más</h3>
               <div>
                 {techs
                   .filter((tech) => tech.subsection === "extra")
