@@ -12,7 +12,7 @@ const FormTextArea = ({ alertVisible, setState, state }: Props) => {
   const [length, setLength] = useState<number>(0);
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    console.log("holi");
+    // console.log("holi");
     const value = e.target.value;
     const isValid = value !== "";
     setState((prev) => ({ ...prev, isValid, value }));

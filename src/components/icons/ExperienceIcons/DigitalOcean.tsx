@@ -6,7 +6,6 @@ interface Props {
 }
 
 const DigitalOcean = ({ color = "white", size = "1rem" }: Props) => {
-  console.log(color);
 
   return (
     <svg
