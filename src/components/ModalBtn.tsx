@@ -61,7 +61,7 @@ const ModalBtn = ({
         case "GameQuiz":
           return <CGameQuiz />;
         case "Knowledge":
-          return <Knowledge />;
+          return <Knowledge imperativeClose={imperativeClose} />;
         default:
           return <div>default</div>;
       }

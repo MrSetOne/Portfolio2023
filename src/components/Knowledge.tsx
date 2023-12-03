@@ -6,8 +6,16 @@ type clickOptions = "Front" | "Back" | "Others" | null;
 import { motion } from "framer-motion";
 import Screen from "./icons/Screen";
 
-const Knowledge = () => {
+interface Props {
+  imperativeClose: () => void;
+}
+
+const Knowledge = ({imperativeClose}:Props) => {
   const [selectedOption, setSelectedOption] = useState<clickOptions>(null);
+
+  window.onpopstate = () => {
+    if (window.location.pathname === "/") return imperativeClose();
+  };
 
   const cardContent = useMemo(() => {
     if (!selectedOption) return (
@@ -233,6 +241,8 @@ const Knowledge = () => {
         );
     }
   }, [selectedOption]);
+
+
 
   return (
     <div className="knowledge__container">
