@@ -67,8 +67,18 @@ const Experiencie = ({openCard}:Props) => {
         >
           Experiencia
         </h2>
-        <button>Saber más</button>
-        <ModalBtn defaultOpen={openCard} target="Knowledge">Here</ModalBtn>
+        <ModalBtn 
+          defaultOpen={openCard} 
+          target="Knowledge"
+          customStyles={{
+            backgroundColor:"#fca311",
+            padding:'0.5rem 1rem',
+            borderRadius:'2rem',
+            marginTop:'1rem',
+          }}
+        >
+          Saber más
+        </ModalBtn>
       </div>
       <ExperiencieRow
         screenWidth={screenWidth}

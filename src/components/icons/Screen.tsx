@@ -41,8 +41,6 @@ const Screen = () => {
       <motion.rect 
         variants={variants}
         animate={width > 650 ? 'desktop' : 'mobile'} 
-        // transition={{repeat: Infinity, duration:3, repeatType:'loop', repeatDelay:1}}
-        // transition={{repeat: Infinity, duration:2, repeatType:'loop', repeatDelay:5}} 
         width="25" 
         height="98" 
         x="72.5" 
@@ -52,8 +50,6 @@ const Screen = () => {
       <motion.rect
         variants={variants}
         animate={width > 650 ? 'desktop' : 'mobile'}
-        transition={{repeat: Infinity, duration:3, repeatType:'loop', repeatDelay:1}}
-        // transition={{repeat: Infinity, duration:2, repeatType:'loop', repeatDelay:5}} 
         width="25"
         height="98"
         x="174.5"
