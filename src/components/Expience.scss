@@ -1,0 +1,45 @@
+.experience__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .experience__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    > .experienceItem__header {
+      display: flex;
+      font-weight: 700;
+      .dotItem {
+        flex: none;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 0.5rem;
+        position: relative;
+      }
+      span {
+        margin-right: 0.5rem;
+      }
+      >div>h4{
+        color: #BBBBBB;
+      }
+    }
+    .experienceItem__description {
+      line-height: 1.7;
+      font-weight: 300;
+      margin-left: 24px;
+      @media screen and (max-width: 700px) {
+        line-height: 1.4;
+      }
+    }
+  }
+}
+.experience__line {
+  position: absolute;
+  left: calc(0.5rem - 2px);
+  top: 0.5rem;
+  width: 4px;
+  background-color: white;
+}

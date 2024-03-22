@@ -3,22 +3,23 @@ import Chips from "./Chips.astro";
 import StandardArticle from "./StandardArticle.astro";
 import me from '../assets/aboutMe.webp'
 import { Image } from "astro:assets";
-import Training from "./Training.astro";
-import Github from "./icons/Github"
-import Linkedin from "./icons/Linkedin";
-import Controller from "./icons/Controller";
-import FatCap from "./icons/FatCap";
-import Gpu from "./icons/Gpu";
-import Camera from "./icons/Camera";
-import RightArrow from "./icons/RightArrow.astro";
-import { ScrollContainer} from "react-indiana-drag-scroll";
 import 'react-indiana-drag-scroll/dist/style.css';
 import SimpleCode from "./icons/SimpleCode.astro";
 import TrainingAcordion from "./TrainingAccordion";
 import GitHubAboutme from "./GitHubAboutme.astro";
 import LinkedinAboutme from "./LinkedinAboutme.astro";
+import Experience from '../components/Expience'
 
-
+const chips = [
+  'Detallista',
+  'Team player',
+  'Creativo',
+  'Organizado',
+  'Autodidacta',
+  'Implicado',
+  'Comunicativo',
+  'Curioso'
+]
 ---
 <StandardArticle span={{col:2}} >
   <div class="aboutMe">
@@ -27,18 +28,7 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
       <h2>Sobre mi</h2>
       <p><b>Frontend</b> developer con conocimientos de <b>UX/UI</b> y <b>backend</b>. Mi stack tecnológico principal es <b>React, MongoDB y NodeJS</b>, aunque nunca digo que no a aprender nuevas tecnologias y frameworks. ¿Quien dijo miedo?</p>
       <div class="aboutMe__chips" >
-        <Chips chips={
-          [
-            'Detallista',
-            'Team player',
-            'Creativo',
-            'Organizado',
-            'Autodidacta',
-            'Implicado',
-            'Comunicativo',
-            'Curioso'
-          ]
-        }/>
+        <Chips chips={chips}/>
       </div>
       </div>
   </div>
@@ -46,6 +36,34 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
 <StandardArticle isBtn>
   <GitHubAboutme/>
 </StandardArticle>
+
+
+
+
+
+
+
+<StandardArticle span={{col:2}}>
+  <div class="experience__container">
+    <h2 class="experience__title">Experiencia</h2>
+    <Experience client:load />
+  </div>
+</StandardArticle>
+
+
+
+
+
+
+
+<article class="mainArticle training__container" >
+  <div class="training">
+    <h2>Formación</h2>
+    <TrainingAcordion client:load />
+  </div>
+</article>
+
+
 <StandardArticle cId="AboutmeExperience">
   <a href="#experienceMainBanner" class="AboutmeExperience">
     <div>
@@ -57,67 +75,8 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
     </div>
   </a>
 </StandardArticle>
-
-
-
-
-
-<!-- <div class="hobbies">
-  <div class="hobbies__title">
-    <h2>Mis aficiones</h2>
-    <RightArrow/>
-  </div>
-  <ScrollContainer 
-    client:load 
-    className="scroll-container" 
-    style={{
-      width:'100%', 
-      cursor:'default'
-    }} 
-  >
-    <div class="hobbies__content" >
-      <StandardArticle isBtn isSquare isCircle>
-        <a href="#">
-          <Controller size="50%" client:load />
-          <span>Videojuegos</span>
-        </a>
-      </StandardArticle>
-      <StandardArticle isBtn isSquare isCircle>
-        <a href="#">
-          <FatCap size="50%" client:load />
-          <span>Arte urbano</span>
-        </a>
-      </StandardArticle>
-      <StandardArticle isBtn isSquare isCircle>
-        <a href="#">
-          <Gpu size="50%" client:load />
-          <span>Hardware</span>
-        </a>
-      </StandardArticle>
-      <StandardArticle isBtn isSquare isCircle>
-        <a href="#">
-          <Camera size="50%" client:load />
-          <span>Fotografia</span>
-        </a>
-      </StandardArticle>
-    </div>
-  </ScrollContainer>
-</div> -->
-<article class="mainArticle training__container" >
-  <div class="training">
-    <h2>Formación</h2>
-    <TrainingAcordion client:load />
-  </div>
-</article>
 <StandardArticle isBtn>
   <LinkedinAboutme/>
-  <!-- <a href="https://www.linkedin.com/in/michaellaras/" target="_blank" class="linkedIn">
-    <div>
-      <Linkedin client:load size="40%" />
-      <span>Conecta conmigo en</span>
-      <h2>Linkedin</h2>
-    </div>
-  </a> -->
 </StandardArticle>
 <style lang="scss">
 
@@ -135,7 +94,6 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
       align-items: center;
     }
       
-    
     .aboutMe__text{
       position: relative;
       z-index: 1;
@@ -257,6 +215,7 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
       }
     }
   }
+
   .hobbies{
     height: 100%;
     display: flex;
@@ -335,7 +294,7 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
   }
 
   .training__container{
-    grid-column: span 2;
+    grid-column: 3;
     grid-row: span 2;
     padding:1.9rem;
     border-radius: 1.25rem;
@@ -362,15 +321,26 @@ import LinkedinAboutme from "./LinkedinAboutme.astro";
         padding: 0;
       }
       h2{
-        font-size: min(4rem, 10vw);
-        padding: 1.2rem .6rem;
-        border: .7rem solid white;
+        font-size: min(3rem, 7.5vw);
         text-transform: uppercase;
         color:#FCA311;
       }
     }
   }
 
-
+  .experience__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    >.experience__title{
+      border: .7rem solid white;
+      font-size: min(3rem, 7.5vw);
+      text-transform: uppercase;
+      padding: 1rem;
+      color:#FCA311;
+    }
+  }
 
 </style>
