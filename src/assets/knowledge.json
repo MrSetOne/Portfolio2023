@@ -123,6 +123,13 @@
     "subsection": "frontLib"
   },
   {
+    "title": "Angular",
+    "color": "#dd0031",
+    "visibleOnHome": true,
+    "sections": ["Front"],
+    "subsection": "main"
+  },
+  {
     "title": "JsonWebToken",
     "color": "#00b3e9",
     "visibleOnHome": true,

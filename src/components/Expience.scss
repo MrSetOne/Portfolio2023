@@ -1,13 +1,13 @@
-.training__list {
+.experience__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  .training__item {
+  .experience__item {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    > .trainingItem__header {
+    > .experienceItem__header {
       display: flex;
       font-weight: 700;
       .dotItem {
@@ -22,46 +22,37 @@
       span {
         margin-right: 0.5rem;
       }
+      > div > h4 {
+        color: #bbbbbb;
+      }
     }
-    .trainingItem__description {
+    .experienceItem__description {
       line-height: 1.7;
       font-weight: 300;
-      margin-left: 68px;
+      margin-left: 24px;
       @media screen and (max-width: 700px) {
         line-height: 1.4;
       }
     }
+    > .experience__tech-list {
+      display: flex;
+      gap: 0.5rem 1rem;
+      flex-wrap: wrap;
+      margin-left: 24px;
+      > .chip {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+        border-radius: 15rem;
+        background-color: #f1f1f12e;
+      }
+    }
   }
 }
-#line {
+.experience__line {
   position: absolute;
   left: calc(0.5rem - 2px);
   top: 0.5rem;
   width: 4px;
   background-color: white;
-}
-.TrainingAccordion__Btn {
-  margin-top: 1rem;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  span {
-    color: white;
-  }
-  > div {
-    flex: 1;
-    height: 1px;
-    width: 100%;
-    background-color: white;
-  }
-
-  &--disabled {
-    display: none;
-  }
 }

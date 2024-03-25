@@ -36,6 +36,7 @@ import Photoshop from "./Photoshop";
 import Illustrator from "./Illustrator";
 import DigitalOcean from "./DigitalOcean";
 import Trello from "./Trello";
+import Angular from "./Angular";
 
 interface Props {
   icon: string;
@@ -118,6 +119,8 @@ const ExperienceIcons = ({ icon, color = "white" }: Props) => {
       return <DigitalOcean color={color} />;
     case "Trello":
       return <Trello color={color} />;
+    case "Angular":
+      return <Angular color={color} />;
     default:
       return <></>;
   }
