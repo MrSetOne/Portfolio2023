@@ -34,6 +34,10 @@
     height: calc(100% - 51px);
     overflow: auto;
     padding: 0 2rem;
+
+    @media screen and (max-width: 600px){
+      padding: 0 2vw;
+    }
   }
 }
 
