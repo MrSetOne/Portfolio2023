@@ -2,7 +2,6 @@ import React, { useMemo, useRef, useState } from "react";
 import { useWindowSize } from "../hooks/useWindowsSize";
 import "./Expience.scss";
 
-
 const Experience = () => {
   const firstDot = useRef<HTMLInputElement>(null);
   const lastDot = useRef<HTMLInputElement>(null);
@@ -28,16 +27,10 @@ const Experience = () => {
     "Tailwind",
   ];
 
-  const quasarTechs = [
-    "TypeScript",
-    "Angular",
-    "RXJS",
-    "SCSS",
-    "Symfony",
-  ];
+  const quasarTechs = ["TypeScript", "Angular", "RXJS", "SCSS", "Symfony"];
 
   return (
-    <div style={{ overflow: "hidden", position: "relative" }} >
+    <div style={{ overflow: "hidden", position: "relative" }}>
       <div className="experience__line" style={{ height: lineHeight }} />
       <ul className="experience__list">
         <li className="experience__item">
@@ -49,7 +42,11 @@ const Experience = () => {
             </div>
           </div>
           <p className="experienceItem__description">
-            Responsable de desarrollar nuevas funcionalidades, mantener el código existente, corregir bugs. También colaboraré con el equipo de backend y diseño para asegurar la cohesión del proyecto. En este puesto pude probar a trabajar en varios proyectos de forma simultanea, cumpliendo con los plazos y objetivos establecidos.
+            Responsable de desarrollar nuevas funcionalidades, mantener el
+            código existente, corregir bugs. También colaboraré con el equipo de
+            backend y diseño para asegurar la cohesión del proyecto. En este
+            puesto pude probar a trabajar en varios proyectos de forma
+            simultanea, cumpliendo con los plazos y objetivos establecidos.
           </p>
           <div className="experience__tech-list">
             {quasarTechs.map((tech) => (
@@ -68,7 +65,11 @@ const Experience = () => {
             </div>
           </div>
           <p className="experienceItem__description">
-            Responsable del completo ciclo de vida de las nuevas funcionalidades. Estudiaba su viabilidad, realizaba el diseño, desarrollaba el código, y desplegaba las nuevas funcionalidades, siguiendo los principios SOLID para asegurar un código limpio, mantenible y escalable.
+            Responsable del completo ciclo de vida de las nuevas
+            funcionalidades. Estudiaba su viabilidad, realizaba el diseño,
+            desarrollaba el código, y desplegaba las nuevas funcionalidades,
+            siguiendo los principios SOLID para asegurar un código limpio,
+            mantenible y escalable.
           </p>
           <div className="experience__tech-list">
             {crowmieTechs.map((tech) => (

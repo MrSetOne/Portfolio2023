@@ -120,7 +120,7 @@ const ExperienceIcons = ({ icon, color = "white" }: Props) => {
     case "Trello":
       return <Trello color={color} />;
     case "Angular":
-      return <Angular color={color} />
+      return <Angular color={color} />;
     default:
       return <></>;
   }

@@ -10,7 +10,7 @@ interface Props {
   imperativeClose: () => void;
 }
 
-const Knowledge = ({imperativeClose}:Props) => {
+const Knowledge = ({ imperativeClose }: Props) => {
   const [selectedOption, setSelectedOption] = useState<clickOptions>(null);
 
   window.onpopstate = () => {
@@ -18,14 +18,15 @@ const Knowledge = ({imperativeClose}:Props) => {
   };
 
   const cardContent = useMemo(() => {
-    if (!selectedOption) return (
-      <div className="knowledge__content--empty">
-        <Screen/>
-        <h3>¿Que quieres saber?</h3>
-        <p>Selecciona la opción que desees</p>
-      </div>
-    );
-    
+    if (!selectedOption)
+      return (
+        <div className="knowledge__content--empty">
+          <Screen />
+          <h3>¿Que quieres saber?</h3>
+          <p>Selecciona la opción que desees</p>
+        </div>
+      );
+
     const techs = json.filter((item) => item.sections.includes(selectedOption));
 
     switch (selectedOption) {
@@ -241,8 +242,6 @@ const Knowledge = ({imperativeClose}:Props) => {
         );
     }
   }, [selectedOption]);
-
-
 
   return (
     <div className="knowledge__container">

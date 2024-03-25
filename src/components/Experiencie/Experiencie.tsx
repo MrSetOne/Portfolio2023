@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-import {
-  useScroll,
-} from "framer-motion";
+import { useScroll } from "framer-motion";
 import ExperiencieRow from "./ExperiencieRow";
 import json from "../../assets/knowledge.json";
 import { useWindowSize } from "../../hooks/useWindowsSize";
@@ -11,7 +9,7 @@ interface Props {
   openCard: boolean;
 }
 
-const Experiencie = ({openCard}:Props) => {
+const Experiencie = ({ openCard }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -67,17 +65,17 @@ const Experiencie = ({openCard}:Props) => {
         >
           Proyectos
         </h2>
-        <ModalBtn 
-          defaultOpen={openCard} 
+        <ModalBtn
+          defaultOpen={openCard}
           target="Knowledge"
           customStyles={{
-            backgroundColor:"#fca311",
-            padding:'0.5rem 1rem',
-            borderRadius:'2rem',
-            marginTop:'1rem',
-            textTransform:'uppercase',
-            fontWeight:500,
-            fontSize:'1rem'
+            backgroundColor: "#fca311",
+            padding: "0.5rem 1rem",
+            borderRadius: "2rem",
+            marginTop: "1rem",
+            textTransform: "uppercase",
+            fontWeight: 500,
+            fontSize: "1rem",
           }}
         >
           Ver tecnologías

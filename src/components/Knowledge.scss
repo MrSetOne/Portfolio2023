@@ -88,32 +88,32 @@
       }
     }
   }
-  .knowledge__content--empty{
+  .knowledge__content--empty {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    >svg{
+    > svg {
       margin-bottom: 2rem;
       max-width: 50%;
     }
-    >h3{
+    > h3 {
       font-size: min(2rem, 4vw);
       font-weight: 600;
       margin-bottom: 1rem;
     }
-    >p{
+    > p {
       font-size: min(1.5rem, 2.5vw);
       font-weight: 300;
     }
-    @media screen and (max-width: 650px){
+    @media screen and (max-width: 650px) {
       flex: 1;
-      >h3{
+      > h3 {
         font-size: min(2rem, 6vw);
       }
-      >p{
+      > p {
         font-size: min(1.5rem, 3vw);
       }
     }

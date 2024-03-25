@@ -22,8 +22,8 @@
       span {
         margin-right: 0.5rem;
       }
-      >div>h4{
-        color: #BBBBBB;
+      > div > h4 {
+        color: #bbbbbb;
       }
     }
     .experienceItem__description {
@@ -34,14 +34,14 @@
         line-height: 1.4;
       }
     }
-    >.experience__tech-list{
+    > .experience__tech-list {
       display: flex;
-      gap: .5rem 1rem;
+      gap: 0.5rem 1rem;
       flex-wrap: wrap;
       margin-left: 24px;
-      >.chip {
+      > .chip {
         display: inline-block;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         font-size: 16px;
         border-radius: 15rem;
         background-color: #f1f1f12e;

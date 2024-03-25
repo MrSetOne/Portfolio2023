@@ -12,25 +12,28 @@ const Accordion = () => {
 
   const variants = useMemo(() => {
     return {
-    open: {
-      height: "auto",
-      WebkitMaskImage:
-        "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)",
-      maskImage: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)",
-    },
-    closed: {
-      height: width <= 560 ? 300 : 800 ,
-      WebkitMaskImage:
-        "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
-      maskImage: "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
-    },
-  }},[width]);
+      open: {
+        height: "auto",
+        WebkitMaskImage:
+          "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)",
+        maskImage:
+          "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)",
+      },
+      closed: {
+        height: width <= 560 ? 300 : 800,
+        WebkitMaskImage:
+          "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
+        maskImage:
+          "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
+      },
+    };
+  }, [width]);
 
   const isAccordion = useMemo(() => {
     switch (true) {
       case width < 1330 && width > 1100:
         return true;
-      case width < 560: 
+      case width < 560:
         return true;
       default:
         return false;
@@ -38,9 +41,11 @@ const Accordion = () => {
   }, [width]);
 
   const btnClassName = useMemo(() => {
-    const baseName = "TrainingAccordion__Btn"
-    return isAccordion ? baseName : `TrainingAccordion__Btn ${baseName}--disabled`;    
-  },[isAccordion])
+    const baseName = "TrainingAccordion__Btn";
+    return isAccordion
+      ? baseName
+      : `TrainingAccordion__Btn ${baseName}--disabled`;
+  }, [isAccordion]);
 
   const AccordionClosed = useMemo(() => {
     if (!isAccordion) return true;
