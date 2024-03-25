@@ -62,10 +62,10 @@ const Experiencie = ({openCard}:Props) => {
       >
         <h2
           style={{
-            fontSize: "min(12vw, 11rem)",
+            fontSize: "min(11vw, 11rem)",
           }}
         >
-          Experiencia
+          Proyectos
         </h2>
         <ModalBtn 
           defaultOpen={openCard} 
@@ -75,9 +75,12 @@ const Experiencie = ({openCard}:Props) => {
             padding:'0.5rem 1rem',
             borderRadius:'2rem',
             marginTop:'1rem',
+            textTransform:'uppercase',
+            fontWeight:500,
+            fontSize:'1rem'
           }}
         >
-          Saber más
+          Ver tecnologías
         </ModalBtn>
       </div>
       <ExperiencieRow
