@@ -60,7 +60,9 @@
     width: 100%;
     background-color: white;
   }
-  @media screen and (min-width: 700px) {
+
+
+  &--disabled {
     display: none;
   }
 }

@@ -10,7 +10,8 @@ const Accordion = () => {
 
   const { width } = useWindowSize();
 
-  const variants = {
+  const variants = useMemo(() => {
+    return {
     open: {
       height: "auto",
       WebkitMaskImage:
@@ -18,19 +19,33 @@ const Accordion = () => {
       maskImage: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)",
     },
     closed: {
-      height: 368,
+      height: width <= 560 ? 300 : 800 ,
       WebkitMaskImage:
         "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
       maskImage: "linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)",
     },
-  };
+  }},[width]);
 
-  const isSmallScreen = useMemo(() => width < 700, [width]);
+  const isAccordion = useMemo(() => {
+    switch (true) {
+      case width < 1330 && width > 1100:
+        return true;
+      case width < 560: 
+        return true;
+      default:
+        return false;
+    }
+  }, [width]);
+
+  const btnClassName = useMemo(() => {
+    const baseName = "TrainingAccordion__Btn"
+    return isAccordion ? baseName : `TrainingAccordion__Btn ${baseName}--disabled`;    
+  },[isAccordion])
 
   const AccordionClosed = useMemo(() => {
-    if (!isSmallScreen) return true;
+    if (!isAccordion) return true;
     return open;
-  }, [isSmallScreen, open]);
+  }, [isAccordion, open]);
 
   const lineHeight = useMemo(() => {
     if (!lastDot.current || !firstDot.current) return 0;
@@ -94,7 +109,7 @@ const Accordion = () => {
           </li>
         </ul>
       </motion.div>
-      <button onClick={() => setOpen(!open)} className="TrainingAccordion__Btn">
+      <button onClick={() => setOpen(!open)} className={btnClassName}>
         <div />
         <span>{open ? "Ocultar" : "Ver más"}</span>
         <div />
